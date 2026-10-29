@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T08:32:54.724Z",
+  "generatedAt": "2026-10-29T08:41:01.542Z",
   "source": "public/data",
   "subjects": {
     "math": {
@@ -123,9 +123,9 @@
       "label": "语文",
       "topics": 652,
       "edges": {
-        "total": 812,
-        "hard": 268,
-        "soft": 544
+        "total": 872,
+        "hard": 329,
+        "soft": 543
       },
       "questions": 2290,
       "standards": 20,

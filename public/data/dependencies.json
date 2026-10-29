@@ -21679,9 +21679,99 @@
   },
   {
     "topicId": "cnc_j7001",
+    "prerequisiteId": "cnc_p487",
+    "reason": "小学阶段的记叙文读完，进入初中第一课写景散文，继续练写景的顺序与感官角度。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7012",
+    "prerequisiteId": "cnc_p481",
+    "reason": "小学已读过《学弈》等浅易文言，初中第一篇文言文在此基础上练「言」与「文」并重。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7004",
     "prerequisiteId": "cnc_p493",
-    "strength": "soft",
-    "reason": "小学语文读完，进入统编七年级上册，先学「春（朱自清）」。"
+    "reason": "小学积累的古诗词读完，初中第一首古诗在已有的意象与朗读经验上继续。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7076",
+    "prerequisiteId": "cnc_j7054",
+    "reason": "消息的六要素来自记叙文要素，先能读清一件事，再学用最简省的话报道一件事。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7104",
+    "prerequisiteId": "cnc_j7100",
+    "reason": "状物要先抓住特征，说明文在此基础上把特征说得准确、有条理。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7022",
+    "prerequisiteId": "cnc_j7014",
+    "reason": "议论要从记叙中提炼观点，先能读懂一篇记叙文的主旨，再学直接表明看法。",
+    "strength": "hard"
+  },
+  {
+    "topicId": "cnc_j7046",
+    "prerequisiteId": "cnc_j7014",
+    "strength": "hard",
+    "reason": "同为鲁迅的回忆性散文，先读百草园的童年视角，再读阿长身上由厌到敬的情感转折。"
+  },
+  {
+    "topicId": "cnc_j7082",
+    "prerequisiteId": "cnc_j7046",
+    "strength": "hard",
+    "reason": "同为鲁迅写人的散文，先练通过具体事件写一个人，再练把个人遭遇放到时代背景里写。"
+  },
+  {
+    "topicId": "cnc_j7122",
+    "prerequisiteId": "cnc_j7082",
+    "strength": "hard",
+    "reason": "先能读懂回忆性散文里的「我」，再读小说里虚构的「我」，注意叙述视角的差别。"
+  },
+  {
+    "topicId": "cnc_j7100",
+    "prerequisiteId": "cnc_j7059",
+    "strength": "hard",
+    "reason": "同属托物言志的散文，先读由竹及人，再读由树及人，注意象征的层层递进。"
+  },
+  {
+    "topicId": "cnc_j7060",
+    "prerequisiteId": "cnc_j7003",
+    "strength": "hard",
+    "reason": "同属写景散文，先练把景写活，再练由景入理、从花写到人。"
+  },
+  {
+    "topicId": "cnc_j7103",
+    "prerequisiteId": "cnc_j7060",
+    "strength": "hard",
+    "reason": "先练借景抒情，再练用平淡的语言写出味道，体会「淡而有味」。"
+  },
+  {
+    "topicId": "cnc_j7096",
+    "prerequisiteId": "cnc_j7004",
+    "strength": "hard",
+    "reason": "同为曹操的四言诗，先读吞吐日月的胸襟，再读老当益壮的进取。"
+  },
+  {
+    "topicId": "cnc_j7153",
+    "prerequisiteId": "cnc_j7114",
+    "strength": "hard",
+    "reason": "同为杜甫写安史之乱的诗，先读国破之痛，再读官府抓丁之惨。"
+  },
+  {
+    "topicId": "cnc_j7152",
+    "prerequisiteId": "cnc_j7110",
+    "strength": "hard",
+    "reason": "同为议论性文言，先学在说理中层层推进，再学托物寓意、以马喻人。"
+  },
+  {
+    "topicId": "cnc_j7133",
+    "prerequisiteId": "cnc_j7071",
+    "strength": "hard",
+    "reason": "同为说明性文言，先读程序说明，再读空间说明，注意说明顺序的不同。"
   },
   {
     "topicId": "cnc_j7002",
@@ -21726,6 +21816,12 @@
     "reason": "按统编教材的编排顺序，先学「天净沙·秋思（马致远）」，再学「秋天的怀念（史铁生）」。"
   },
   {
+    "topicId": "cnc_j7008",
+    "prerequisiteId": "cnc_j7003",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《雨的四季》，再读《秋天的怀念》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7009",
     "prerequisiteId": "cnc_j7008",
     "strength": "soft",
@@ -21762,6 +21858,12 @@
     "reason": "按统编教材的编排顺序，先学「陈太丘与友期行（《世说新语》）」，再学「从百草园到三味书屋（鲁迅）」。"
   },
   {
+    "topicId": "cnc_j7014",
+    "prerequisiteId": "cnc_j7011",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《荷叶·母亲》，再读《从百草园到三味书屋》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7015",
     "prerequisiteId": "cnc_j7014",
     "strength": "soft",
@@ -21780,10 +21882,22 @@
     "reason": "按统编教材的编排顺序，先学「再塑生命的人（海伦·凯勒）」，再学「《论语》十二章」。"
   },
   {
+    "topicId": "cnc_j7017",
+    "prerequisiteId": "cnc_j7013",
+    "strength": "hard",
+    "reason": "同属文言文，先读《陈太丘与友期行》，再读《《论语》十二章》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7018",
     "prerequisiteId": "cnc_j7017",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「《论语》十二章」，再学「峨眉山月歌（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7018",
+    "prerequisiteId": "cnc_j7007",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《天净沙·秋思》，再读《峨眉山月歌》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7019",
@@ -21816,10 +21930,22 @@
     "reason": "按统编教材的编排顺序，先学「纪念白求恩（毛泽东）」，再学「回忆我的母亲（朱德）」。"
   },
   {
+    "topicId": "cnc_j7023",
+    "prerequisiteId": "cnc_j7016",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《再塑生命的人》，再读《回忆我的母亲》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7024",
     "prerequisiteId": "cnc_j7023",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「回忆我的母亲（朱德）」，再学「梅岭三章（陈毅）」。"
+  },
+  {
+    "topicId": "cnc_j7024",
+    "prerequisiteId": "cnc_j7021",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《夜上受降城闻笛》，再读《梅岭三章》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7025",
@@ -21828,10 +21954,22 @@
     "reason": "按统编教材的编排顺序，先学「梅岭三章（陈毅）」，再学「诫子书（诸葛亮）」。"
   },
   {
+    "topicId": "cnc_j7025",
+    "prerequisiteId": "cnc_j7017",
+    "strength": "hard",
+    "reason": "同属文言文，先读《《论语》十二章》，再读《诫子书》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7026",
     "prerequisiteId": "cnc_j7025",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「诫子书（诸葛亮）」，再学「猫（郑振铎）」。"
+  },
+  {
+    "topicId": "cnc_j7026",
+    "prerequisiteId": "cnc_j7023",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《回忆我的母亲》，再读《猫》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7027",
@@ -21852,6 +21990,12 @@
     "reason": "按统编教材的编排顺序，先学「大雁归来（利奥波德）」，再学「狼（蒲松龄）」。"
   },
   {
+    "topicId": "cnc_j7029",
+    "prerequisiteId": "cnc_j7025",
+    "strength": "hard",
+    "reason": "同属文言文，先读《诫子书》，再读《狼》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7030",
     "prerequisiteId": "cnc_j7029",
     "strength": "soft",
@@ -21862,6 +22006,12 @@
     "prerequisiteId": "cnc_j7030",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「小圣施威降大圣（吴承恩）」，再学「皇帝的新装（安徒生）」。"
+  },
+  {
+    "topicId": "cnc_j7031",
+    "prerequisiteId": "cnc_j7028",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《大雁归来》，再读《皇帝的新装》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7032",
@@ -21888,10 +22038,22 @@
     "reason": "按统编教材的编排顺序，先学「蚊子和狮子（《伊索寓言》）」，再学「穿井得一人（《吕氏春秋》）」。"
   },
   {
+    "topicId": "cnc_j7035",
+    "prerequisiteId": "cnc_j7024",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《梅岭三章》，再读《穿井得一人》，在已建立的意象与手法上继续积累。"
+  },
+  {
     "topicId": "cnc_j7036",
     "prerequisiteId": "cnc_j7035",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「穿井得一人（《吕氏春秋》）」，再学「杞人忧天（《列子》）」。"
+  },
+  {
+    "topicId": "cnc_j7037",
+    "prerequisiteId": "cnc_j7034",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《蚊子和狮子》，再读《邓稼先》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7038",
@@ -21912,16 +22074,34 @@
     "reason": "按统编教材的编排顺序，先学「列夫·托尔斯泰（茨威格）」，再学「孙权劝学（《资治通鉴》）」。"
   },
   {
+    "topicId": "cnc_j7040",
+    "prerequisiteId": "cnc_j7029",
+    "strength": "hard",
+    "reason": "同属文言文，先读《狼》，再读《孙权劝学》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7041",
     "prerequisiteId": "cnc_j7040",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「孙权劝学（《资治通鉴》）」，再学「黄河颂（光未然）」。"
   },
   {
+    "topicId": "cnc_j7041",
+    "prerequisiteId": "cnc_j7036",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《杞人忧天》，再读《黄河颂》，在已建立的意象与手法上继续积累。"
+  },
+  {
     "topicId": "cnc_j7042",
     "prerequisiteId": "cnc_j7041",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「黄河颂（光未然）」，再学「老山界（陆定一）」。"
+  },
+  {
+    "topicId": "cnc_j7042",
+    "prerequisiteId": "cnc_j7039",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《列夫·托尔斯泰》，再读《老山界》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7043",
@@ -21942,10 +22122,22 @@
     "reason": "按统编教材的编排顺序，先学「土地的誓言（端木蕻良）」，再学「木兰诗」。"
   },
   {
+    "topicId": "cnc_j7045",
+    "prerequisiteId": "cnc_j7041",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《黄河颂》，再读《木兰诗》，在已建立的意象与手法上继续积累。"
+  },
+  {
     "topicId": "cnc_j7046",
     "prerequisiteId": "cnc_j7045",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「木兰诗」，再学「阿长与《山海经》（鲁迅）」。"
+  },
+  {
+    "topicId": "cnc_j7046",
+    "prerequisiteId": "cnc_j7044",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《土地的誓言》，再读《阿长与《山海经》》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7047",
@@ -21960,16 +22152,34 @@
     "reason": "按统编教材的编排顺序，先学「山地回忆（孙犁）」，再学「台阶（李森祥）」。"
   },
   {
+    "topicId": "cnc_j7048",
+    "prerequisiteId": "cnc_j7030",
+    "strength": "hard",
+    "reason": "同属小说，先读《小圣施威降大圣》，再读《台阶》，继续练情节、人物与叙述视角。"
+  },
+  {
     "topicId": "cnc_j7049",
     "prerequisiteId": "cnc_j7048",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「台阶（李森祥）」，再学「卖油翁（欧阳修）」。"
   },
   {
+    "topicId": "cnc_j7049",
+    "prerequisiteId": "cnc_j7040",
+    "strength": "hard",
+    "reason": "同属文言文，先读《孙权劝学》，再读《卖油翁》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7050",
     "prerequisiteId": "cnc_j7049",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「卖油翁（欧阳修）」，再学「竹里馆（王维）」。"
+  },
+  {
+    "topicId": "cnc_j7050",
+    "prerequisiteId": "cnc_j7045",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《木兰诗》，再读《竹里馆》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7051",
@@ -21996,10 +22206,22 @@
     "reason": "按统编教材的编排顺序，先学「晚春（韩愈）」，再学「驿路梨花（彭荆风）」。"
   },
   {
+    "topicId": "cnc_j7054",
+    "prerequisiteId": "cnc_j7048",
+    "strength": "hard",
+    "reason": "同属小说，先读《台阶》，再读《驿路梨花》，继续练情节、人物与叙述视角。"
+  },
+  {
     "topicId": "cnc_j7055",
     "prerequisiteId": "cnc_j7054",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「驿路梨花（彭荆风）」，再学「青春之光（祝红蕾）」。"
+  },
+  {
+    "topicId": "cnc_j7055",
+    "prerequisiteId": "cnc_j7047",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《山地回忆》，再读《青春之光》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7056",
@@ -22008,10 +22230,22 @@
     "reason": "按统编教材的编排顺序，先学「青春之光（祝红蕾）」，再学「有为有不为（季羡林）」。"
   },
   {
+    "topicId": "cnc_j7056",
+    "prerequisiteId": "cnc_j7022",
+    "strength": "hard",
+    "reason": "同属议论性文章，先读《纪念白求恩》，再读《有为有不为》，继续练观点、论据与论证。"
+  },
+  {
     "topicId": "cnc_j7057",
     "prerequisiteId": "cnc_j7056",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「有为有不为（季羡林）」，再学「陋室铭（刘禹锡）」。"
+  },
+  {
+    "topicId": "cnc_j7057",
+    "prerequisiteId": "cnc_j7049",
+    "strength": "hard",
+    "reason": "同属文言文，先读《卖油翁》，再读《陋室铭》，在已积累的实词与句式上继续。"
   },
   {
     "topicId": "cnc_j7058",
@@ -22026,6 +22260,12 @@
     "reason": "按统编教材的编排顺序，先学「爱莲说（周敦颐）」，再学「井冈翠竹（袁鹰）」。"
   },
   {
+    "topicId": "cnc_j7059",
+    "prerequisiteId": "cnc_j7055",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《青春之光》，再读《井冈翠竹》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7060",
     "prerequisiteId": "cnc_j7059",
     "strength": "soft",
@@ -22036,6 +22276,12 @@
     "prerequisiteId": "cnc_j7060",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「紫藤萝瀑布（宗璞）」，再学「假如生活欺骗了你（普希金）」。"
+  },
+  {
+    "topicId": "cnc_j7061",
+    "prerequisiteId": "cnc_j7053",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《晚春》，再读《假如生活欺骗了你》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7062",
@@ -22080,6 +22326,12 @@
     "reason": "按统编教材的编排顺序，先学「己亥杂诗（其五）（龚自珍）」，再学「太空一日（杨利伟）」。"
   },
   {
+    "topicId": "cnc_j7068",
+    "prerequisiteId": "cnc_j7060",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《紫藤萝瀑布》，再读《太空一日》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7069",
     "prerequisiteId": "cnc_j7068",
     "strength": "soft",
@@ -22092,16 +22344,34 @@
     "reason": "按统编教材的编排顺序，先学「「蛟龙」探海（许晨）」，再学「带上她的眼睛（刘慈欣）」。"
   },
   {
+    "topicId": "cnc_j7070",
+    "prerequisiteId": "cnc_j7054",
+    "strength": "hard",
+    "reason": "同属小说，先读《驿路梨花》，再读《带上她的眼睛》，继续练情节、人物与叙述视角。"
+  },
+  {
     "topicId": "cnc_j7071",
     "prerequisiteId": "cnc_j7070",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「带上她的眼睛（刘慈欣）」，再学「活板（沈括）」。"
   },
   {
+    "topicId": "cnc_j7071",
+    "prerequisiteId": "cnc_j7058",
+    "strength": "hard",
+    "reason": "同属文言文，先读《爱莲说》，再读《活板》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7072",
     "prerequisiteId": "cnc_j7071",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「活板（沈括）」，再学「泊秦淮（杜牧）」。"
+  },
+  {
+    "topicId": "cnc_j7072",
+    "prerequisiteId": "cnc_j7067",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《己亥杂诗（其五）》，再读《泊秦淮》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7073",
@@ -22158,6 +22428,12 @@
     "reason": "按统编教材的编排顺序，先学「国行公祭，为佑世界和平（新闻评论）」，再学「藤野先生（鲁迅）」。"
   },
   {
+    "topicId": "cnc_j7082",
+    "prerequisiteId": "cnc_j7069",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《「蛟龙」探海》，再读《藤野先生》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7083",
     "prerequisiteId": "cnc_j7082",
     "strength": "soft",
@@ -22182,6 +22458,12 @@
     "reason": "按统编教材的编排顺序，先学「美丽的颜色（艾芙·居里）」，再学「三峡（郦道元）」。"
   },
   {
+    "topicId": "cnc_j7086",
+    "prerequisiteId": "cnc_j7071",
+    "strength": "hard",
+    "reason": "同属文言文，先读《活板》，再读《三峡》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7087",
     "prerequisiteId": "cnc_j7086",
     "strength": "soft",
@@ -22204,6 +22486,12 @@
     "prerequisiteId": "cnc_j7089",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「与朱元思书（吴均）」，再学「野望（王绩）」。"
+  },
+  {
+    "topicId": "cnc_j7090",
+    "prerequisiteId": "cnc_j7075",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《约客》，再读《野望》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7091",
@@ -22260,6 +22548,12 @@
     "reason": "按统编教材的编排顺序，先学「梁甫行（曹植）」，再学「背影（朱自清）」。"
   },
   {
+    "topicId": "cnc_j7099",
+    "prerequisiteId": "cnc_j7085",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《美丽的颜色》，再读《背影》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7100",
     "prerequisiteId": "cnc_j7099",
     "strength": "soft",
@@ -22314,6 +22608,12 @@
     "reason": "按统编教材的编排顺序，先学「梦回繁华（毛宁）」，再学「得道多助，失道寡助（《孟子》）」。"
   },
   {
+    "topicId": "cnc_j7108",
+    "prerequisiteId": "cnc_j7089",
+    "strength": "hard",
+    "reason": "同属文言文，先读《与朱元思书》，再读《得道多助，失道寡助》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7109",
     "prerequisiteId": "cnc_j7108",
     "strength": "soft",
@@ -22342,6 +22642,12 @@
     "prerequisiteId": "cnc_j7112",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「周亚夫军细柳（司马迁）」，再学「饮酒（其五）（陶渊明）」。"
+  },
+  {
+    "topicId": "cnc_j7113",
+    "prerequisiteId": "cnc_j7098",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《梁甫行》，再读《饮酒（其五）》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7114",
@@ -22392,10 +22698,22 @@
     "reason": "按统编教材的编排顺序，先学「相见欢（金陵城上西楼）（朱敦儒）」，再学「如梦令（常记溪亭日暮）（李清照）」。"
   },
   {
+    "topicId": "cnc_j7122",
+    "prerequisiteId": "cnc_j7070",
+    "strength": "hard",
+    "reason": "同属小说，先读《带上她的眼睛》，再读《社戏》，继续练情节、人物与叙述视角。"
+  },
+  {
     "topicId": "cnc_j7123",
     "prerequisiteId": "cnc_j7122",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「社戏（鲁迅）」，再学「回延安（贺敬之）」。"
+  },
+  {
+    "topicId": "cnc_j7123",
+    "prerequisiteId": "cnc_j7103",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《昆明的雨》，再读《回延安》，继续练人物、细节与情感的表达。"
   },
   {
     "topicId": "cnc_j7124",
@@ -22414,6 +22732,12 @@
     "prerequisiteId": "cnc_j7125",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「灯笼（吴伯箫）」，再学「大自然的语言（竺可桢）」。"
+  },
+  {
+    "topicId": "cnc_j7126",
+    "prerequisiteId": "cnc_j7107",
+    "strength": "hard",
+    "reason": "同属说明文，先读《梦回繁华》，再读《大自然的语言》，继续练说明顺序与说明方法。"
   },
   {
     "topicId": "cnc_j7127",
@@ -22446,6 +22770,12 @@
     "reason": "按统编教材的编排顺序，先学「时间的脚印（陶世龙）」，再学「桃花源记（陶渊明）」。"
   },
   {
+    "topicId": "cnc_j7131",
+    "prerequisiteId": "cnc_j7112",
+    "strength": "hard",
+    "reason": "同属文言文，先读《周亚夫军细柳》，再读《桃花源记》，在已积累的实词与句式上继续。"
+  },
+  {
     "topicId": "cnc_j7132",
     "prerequisiteId": "cnc_j7131",
     "strength": "soft",
@@ -22462,6 +22792,12 @@
     "prerequisiteId": "cnc_j7133",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「核舟记（魏学洢）」，再学「关雎（《诗经》）」。"
+  },
+  {
+    "topicId": "cnc_j7134",
+    "prerequisiteId": "cnc_j7121",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《如梦令（常记溪亭日暮）》，再读《关雎》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7135",
@@ -22500,6 +22836,12 @@
     "reason": "按统编教材的编排顺序，先学「望洞庭湖上张丞相（孟浩然）」，再学「最后一次讲演（闻一多）」。"
   },
   {
+    "topicId": "cnc_j7140",
+    "prerequisiteId": "cnc_j7056",
+    "strength": "hard",
+    "reason": "同属议论性文章，先读《有为有不为》，再读《最后一次讲演》，继续练观点、论据与论证。"
+  },
+  {
     "topicId": "cnc_j7141",
     "prerequisiteId": "cnc_j7140",
     "strength": "soft",
@@ -22524,6 +22866,12 @@
     "reason": "按统编教材的编排顺序，先学「我一生中的重要抉择（王选）」，再学「壶口瀑布（梁衡）」。"
   },
   {
+    "topicId": "cnc_j7144",
+    "prerequisiteId": "cnc_j7125",
+    "strength": "hard",
+    "reason": "同属记叙类文本，先读《灯笼》，再读《壶口瀑布》，继续练人物、细节与情感的表达。"
+  },
+  {
     "topicId": "cnc_j7145",
     "prerequisiteId": "cnc_j7144",
     "strength": "soft",
@@ -22546,6 +22894,12 @@
     "prerequisiteId": "cnc_j7147",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「一滴水经过丽江（阿来）」，再学「北冥有鱼（《庄子》）」。"
+  },
+  {
+    "topicId": "cnc_j7148",
+    "prerequisiteId": "cnc_j7133",
+    "strength": "hard",
+    "reason": "同属文言文，先读《核舟记》，再读《北冥有鱼》，在已积累的实词与句式上继续。"
   },
   {
     "topicId": "cnc_j7149",
@@ -22576,6 +22930,12 @@
     "prerequisiteId": "cnc_j7152",
     "strength": "soft",
     "reason": "按统编教材的编排顺序，先学「马说（韩愈）」，再学「石壕吏（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7153",
+    "prerequisiteId": "cnc_j7139",
+    "strength": "hard",
+    "reason": "同属诗歌，先读《望洞庭湖上张丞相》，再读《石壕吏》，在已建立的意象与手法上继续积累。"
   },
   {
     "topicId": "cnc_j7154",
