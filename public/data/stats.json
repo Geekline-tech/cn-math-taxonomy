@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T07:55:39.894Z",
+  "generatedAt": "2026-10-29T08:32:54.724Z",
   "source": "public/data",
   "subjects": {
     "math": {
@@ -121,13 +121,13 @@
     "chinese": {
       "key": "chinese",
       "label": "语文",
-      "topics": 493,
+      "topics": 652,
       "edges": {
-        "total": 656,
+        "total": 812,
         "hard": 268,
-        "soft": 388
+        "soft": 544
       },
-      "questions": 1972,
+      "questions": 2290,
       "standards": 20,
       "grades": [
         {
@@ -165,16 +165,28 @@
           "count": 87,
           "label": "六年级",
           "stage": "primary"
+        },
+        {
+          "grade": 7,
+          "count": 75,
+          "label": "七年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 8,
+          "count": 84,
+          "label": "八年级",
+          "stage": "junior"
         }
       ],
       "domains": [
         {
           "name": "阅读理解",
-          "count": 269
+          "count": 343
         },
         {
           "name": "古诗文积累",
-          "count": 72
+          "count": 157
         },
         {
           "name": "习作基础",

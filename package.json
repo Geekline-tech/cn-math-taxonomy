@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "data": "node scripts/build-stats.mjs",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name origin --branch main --commit-dirty=true"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name origin --branch main --commit-dirty=true",
+    "data:cn": "node scripts/build-chinese-junior.mjs && node scripts/build-stats.mjs"
   },
   "dependencies": {
     "@ant-design/icons": "^6.3.4",

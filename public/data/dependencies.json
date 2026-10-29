@@ -21676,5 +21676,941 @@
     "prerequisiteId": "cnm_p031",
     "strength": "soft",
     "reason": "「口算加法」对学习「买卖我做主」有帮助，但不会前者也可以开始学后者。"
+  },
+  {
+    "topicId": "cnc_j7001",
+    "prerequisiteId": "cnc_p493",
+    "strength": "soft",
+    "reason": "小学语文读完，进入统编七年级上册，先学「春（朱自清）」。"
+  },
+  {
+    "topicId": "cnc_j7002",
+    "prerequisiteId": "cnc_j7001",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「春（朱自清）」，再学「济南的冬天（老舍）」。"
+  },
+  {
+    "topicId": "cnc_j7003",
+    "prerequisiteId": "cnc_j7002",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「济南的冬天（老舍）」，再学「雨的四季（刘湛秋）」。"
+  },
+  {
+    "topicId": "cnc_j7004",
+    "prerequisiteId": "cnc_j7003",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「雨的四季（刘湛秋）」，再学「观沧海（曹操）」。"
+  },
+  {
+    "topicId": "cnc_j7005",
+    "prerequisiteId": "cnc_j7004",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「观沧海（曹操）」，再学「次北固山下（王湾）」。"
+  },
+  {
+    "topicId": "cnc_j7006",
+    "prerequisiteId": "cnc_j7005",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「次北固山下（王湾）」，再学「闻王昌龄左迁龙标遥有此寄（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7007",
+    "prerequisiteId": "cnc_j7006",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「闻王昌龄左迁龙标遥有此寄（李白）」，再学「天净沙·秋思（马致远）」。"
+  },
+  {
+    "topicId": "cnc_j7008",
+    "prerequisiteId": "cnc_j7007",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「天净沙·秋思（马致远）」，再学「秋天的怀念（史铁生）」。"
+  },
+  {
+    "topicId": "cnc_j7009",
+    "prerequisiteId": "cnc_j7008",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「秋天的怀念（史铁生）」，再学「散步（莫怀戚）」。"
+  },
+  {
+    "topicId": "cnc_j7010",
+    "prerequisiteId": "cnc_j7009",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「散步（莫怀戚）」，再学「金色花（泰戈尔）」。"
+  },
+  {
+    "topicId": "cnc_j7011",
+    "prerequisiteId": "cnc_j7010",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「金色花（泰戈尔）」，再学「荷叶·母亲（冰心）」。"
+  },
+  {
+    "topicId": "cnc_j7012",
+    "prerequisiteId": "cnc_j7011",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「荷叶·母亲（冰心）」，再学「咏雪（《世说新语》）」。"
+  },
+  {
+    "topicId": "cnc_j7013",
+    "prerequisiteId": "cnc_j7012",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「咏雪（《世说新语》）」，再学「陈太丘与友期行（《世说新语》）」。"
+  },
+  {
+    "topicId": "cnc_j7014",
+    "prerequisiteId": "cnc_j7013",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「陈太丘与友期行（《世说新语》）」，再学「从百草园到三味书屋（鲁迅）」。"
+  },
+  {
+    "topicId": "cnc_j7015",
+    "prerequisiteId": "cnc_j7014",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「从百草园到三味书屋（鲁迅）」，再学「往事依依（于漪）」。"
+  },
+  {
+    "topicId": "cnc_j7016",
+    "prerequisiteId": "cnc_j7015",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「往事依依（于漪）」，再学「再塑生命的人（海伦·凯勒）」。"
+  },
+  {
+    "topicId": "cnc_j7017",
+    "prerequisiteId": "cnc_j7016",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「再塑生命的人（海伦·凯勒）」，再学「《论语》十二章」。"
+  },
+  {
+    "topicId": "cnc_j7018",
+    "prerequisiteId": "cnc_j7017",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「《论语》十二章」，再学「峨眉山月歌（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7019",
+    "prerequisiteId": "cnc_j7018",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「峨眉山月歌（李白）」，再学「江南逢李龟年（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7020",
+    "prerequisiteId": "cnc_j7019",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「江南逢李龟年（杜甫）」，再学「行军九日思长安故园（岑参）」。"
+  },
+  {
+    "topicId": "cnc_j7021",
+    "prerequisiteId": "cnc_j7020",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「行军九日思长安故园（岑参）」，再学「夜上受降城闻笛（李益）」。"
+  },
+  {
+    "topicId": "cnc_j7022",
+    "prerequisiteId": "cnc_j7021",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「夜上受降城闻笛（李益）」，再学「纪念白求恩（毛泽东）」。"
+  },
+  {
+    "topicId": "cnc_j7023",
+    "prerequisiteId": "cnc_j7022",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「纪念白求恩（毛泽东）」，再学「回忆我的母亲（朱德）」。"
+  },
+  {
+    "topicId": "cnc_j7024",
+    "prerequisiteId": "cnc_j7023",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「回忆我的母亲（朱德）」，再学「梅岭三章（陈毅）」。"
+  },
+  {
+    "topicId": "cnc_j7025",
+    "prerequisiteId": "cnc_j7024",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「梅岭三章（陈毅）」，再学「诫子书（诸葛亮）」。"
+  },
+  {
+    "topicId": "cnc_j7026",
+    "prerequisiteId": "cnc_j7025",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「诫子书（诸葛亮）」，再学「猫（郑振铎）」。"
+  },
+  {
+    "topicId": "cnc_j7027",
+    "prerequisiteId": "cnc_j7026",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「猫（郑振铎）」，再学「我的白鸽（陈忠实）」。"
+  },
+  {
+    "topicId": "cnc_j7028",
+    "prerequisiteId": "cnc_j7027",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「我的白鸽（陈忠实）」，再学「大雁归来（利奥波德）」。"
+  },
+  {
+    "topicId": "cnc_j7029",
+    "prerequisiteId": "cnc_j7028",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「大雁归来（利奥波德）」，再学「狼（蒲松龄）」。"
+  },
+  {
+    "topicId": "cnc_j7030",
+    "prerequisiteId": "cnc_j7029",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「狼（蒲松龄）」，再学「小圣施威降大圣（吴承恩）」。"
+  },
+  {
+    "topicId": "cnc_j7031",
+    "prerequisiteId": "cnc_j7030",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「小圣施威降大圣（吴承恩）」，再学「皇帝的新装（安徒生）」。"
+  },
+  {
+    "topicId": "cnc_j7032",
+    "prerequisiteId": "cnc_j7031",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「皇帝的新装（安徒生）」，再学「女娲造人（袁珂）」。"
+  },
+  {
+    "topicId": "cnc_j7033",
+    "prerequisiteId": "cnc_j7032",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「女娲造人（袁珂）」，再学「赫耳墨斯和雕像者（《伊索寓言》）」。"
+  },
+  {
+    "topicId": "cnc_j7034",
+    "prerequisiteId": "cnc_j7033",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「赫耳墨斯和雕像者（《伊索寓言》）」，再学「蚊子和狮子（《伊索寓言》）」。"
+  },
+  {
+    "topicId": "cnc_j7035",
+    "prerequisiteId": "cnc_j7034",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「蚊子和狮子（《伊索寓言》）」，再学「穿井得一人（《吕氏春秋》）」。"
+  },
+  {
+    "topicId": "cnc_j7036",
+    "prerequisiteId": "cnc_j7035",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「穿井得一人（《吕氏春秋》）」，再学「杞人忧天（《列子》）」。"
+  },
+  {
+    "topicId": "cnc_j7038",
+    "prerequisiteId": "cnc_j7037",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「邓稼先（杨振宁）」，再学「说和做（臧克家）」。"
+  },
+  {
+    "topicId": "cnc_j7039",
+    "prerequisiteId": "cnc_j7038",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「说和做（臧克家）」，再学「列夫·托尔斯泰（茨威格）」。"
+  },
+  {
+    "topicId": "cnc_j7040",
+    "prerequisiteId": "cnc_j7039",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「列夫·托尔斯泰（茨威格）」，再学「孙权劝学（《资治通鉴》）」。"
+  },
+  {
+    "topicId": "cnc_j7041",
+    "prerequisiteId": "cnc_j7040",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「孙权劝学（《资治通鉴》）」，再学「黄河颂（光未然）」。"
+  },
+  {
+    "topicId": "cnc_j7042",
+    "prerequisiteId": "cnc_j7041",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「黄河颂（光未然）」，再学「老山界（陆定一）」。"
+  },
+  {
+    "topicId": "cnc_j7043",
+    "prerequisiteId": "cnc_j7042",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「老山界（陆定一）」，再学「谁是最可爱的人（魏巍）」。"
+  },
+  {
+    "topicId": "cnc_j7044",
+    "prerequisiteId": "cnc_j7043",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「谁是最可爱的人（魏巍）」，再学「土地的誓言（端木蕻良）」。"
+  },
+  {
+    "topicId": "cnc_j7045",
+    "prerequisiteId": "cnc_j7044",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「土地的誓言（端木蕻良）」，再学「木兰诗」。"
+  },
+  {
+    "topicId": "cnc_j7046",
+    "prerequisiteId": "cnc_j7045",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「木兰诗」，再学「阿长与《山海经》（鲁迅）」。"
+  },
+  {
+    "topicId": "cnc_j7047",
+    "prerequisiteId": "cnc_j7046",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「阿长与《山海经》（鲁迅）」，再学「山地回忆（孙犁）」。"
+  },
+  {
+    "topicId": "cnc_j7048",
+    "prerequisiteId": "cnc_j7047",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「山地回忆（孙犁）」，再学「台阶（李森祥）」。"
+  },
+  {
+    "topicId": "cnc_j7049",
+    "prerequisiteId": "cnc_j7048",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「台阶（李森祥）」，再学「卖油翁（欧阳修）」。"
+  },
+  {
+    "topicId": "cnc_j7050",
+    "prerequisiteId": "cnc_j7049",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「卖油翁（欧阳修）」，再学「竹里馆（王维）」。"
+  },
+  {
+    "topicId": "cnc_j7051",
+    "prerequisiteId": "cnc_j7050",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「竹里馆（王维）」，再学「春夜洛城闻笛（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7052",
+    "prerequisiteId": "cnc_j7051",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「春夜洛城闻笛（李白）」，再学「逢入京使（岑参）」。"
+  },
+  {
+    "topicId": "cnc_j7053",
+    "prerequisiteId": "cnc_j7052",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「逢入京使（岑参）」，再学「晚春（韩愈）」。"
+  },
+  {
+    "topicId": "cnc_j7054",
+    "prerequisiteId": "cnc_j7053",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「晚春（韩愈）」，再学「驿路梨花（彭荆风）」。"
+  },
+  {
+    "topicId": "cnc_j7055",
+    "prerequisiteId": "cnc_j7054",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「驿路梨花（彭荆风）」，再学「青春之光（祝红蕾）」。"
+  },
+  {
+    "topicId": "cnc_j7056",
+    "prerequisiteId": "cnc_j7055",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「青春之光（祝红蕾）」，再学「有为有不为（季羡林）」。"
+  },
+  {
+    "topicId": "cnc_j7057",
+    "prerequisiteId": "cnc_j7056",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「有为有不为（季羡林）」，再学「陋室铭（刘禹锡）」。"
+  },
+  {
+    "topicId": "cnc_j7058",
+    "prerequisiteId": "cnc_j7057",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「陋室铭（刘禹锡）」，再学「爱莲说（周敦颐）」。"
+  },
+  {
+    "topicId": "cnc_j7059",
+    "prerequisiteId": "cnc_j7058",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「爱莲说（周敦颐）」，再学「井冈翠竹（袁鹰）」。"
+  },
+  {
+    "topicId": "cnc_j7060",
+    "prerequisiteId": "cnc_j7059",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「井冈翠竹（袁鹰）」，再学「紫藤萝瀑布（宗璞）」。"
+  },
+  {
+    "topicId": "cnc_j7061",
+    "prerequisiteId": "cnc_j7060",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「紫藤萝瀑布（宗璞）」，再学「假如生活欺骗了你（普希金）」。"
+  },
+  {
+    "topicId": "cnc_j7062",
+    "prerequisiteId": "cnc_j7061",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「假如生活欺骗了你（普希金）」，再学「未选择的路（弗罗斯特）」。"
+  },
+  {
+    "topicId": "cnc_j7063",
+    "prerequisiteId": "cnc_j7062",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「未选择的路（弗罗斯特）」，再学「登幽州台歌（陈子昂）」。"
+  },
+  {
+    "topicId": "cnc_j7064",
+    "prerequisiteId": "cnc_j7063",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「登幽州台歌（陈子昂）」，再学「望岳（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7065",
+    "prerequisiteId": "cnc_j7064",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「望岳（杜甫）」，再学「登飞来峰（王安石）」。"
+  },
+  {
+    "topicId": "cnc_j7066",
+    "prerequisiteId": "cnc_j7065",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「登飞来峰（王安石）」，再学「游山西村（陆游）」。"
+  },
+  {
+    "topicId": "cnc_j7067",
+    "prerequisiteId": "cnc_j7066",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「游山西村（陆游）」，再学「己亥杂诗（其五）（龚自珍）」。"
+  },
+  {
+    "topicId": "cnc_j7068",
+    "prerequisiteId": "cnc_j7067",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「己亥杂诗（其五）（龚自珍）」，再学「太空一日（杨利伟）」。"
+  },
+  {
+    "topicId": "cnc_j7069",
+    "prerequisiteId": "cnc_j7068",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「太空一日（杨利伟）」，再学「「蛟龙」探海（许晨）」。"
+  },
+  {
+    "topicId": "cnc_j7070",
+    "prerequisiteId": "cnc_j7069",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「「蛟龙」探海（许晨）」，再学「带上她的眼睛（刘慈欣）」。"
+  },
+  {
+    "topicId": "cnc_j7071",
+    "prerequisiteId": "cnc_j7070",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「带上她的眼睛（刘慈欣）」，再学「活板（沈括）」。"
+  },
+  {
+    "topicId": "cnc_j7072",
+    "prerequisiteId": "cnc_j7071",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「活板（沈括）」，再学「泊秦淮（杜牧）」。"
+  },
+  {
+    "topicId": "cnc_j7073",
+    "prerequisiteId": "cnc_j7072",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「泊秦淮（杜牧）」，再学「贾生（李商隐）」。"
+  },
+  {
+    "topicId": "cnc_j7074",
+    "prerequisiteId": "cnc_j7073",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「贾生（李商隐）」，再学「过松源晨炊漆公店（杨万里）」。"
+  },
+  {
+    "topicId": "cnc_j7075",
+    "prerequisiteId": "cnc_j7074",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「过松源晨炊漆公店（杨万里）」，再学「约客（赵师秀）」。"
+  },
+  {
+    "topicId": "cnc_j7077",
+    "prerequisiteId": "cnc_j7076",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「消息二则（毛泽东）」，再学「中国人首次进入自己的空间站」。"
+  },
+  {
+    "topicId": "cnc_j7078",
+    "prerequisiteId": "cnc_j7077",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「中国人首次进入自己的空间站」，再学「首届诺贝尔奖颁发」。"
+  },
+  {
+    "topicId": "cnc_j7079",
+    "prerequisiteId": "cnc_j7078",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「首届诺贝尔奖颁发」，再学「「飞天」凌空（新闻特写）」。"
+  },
+  {
+    "topicId": "cnc_j7080",
+    "prerequisiteId": "cnc_j7079",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「「飞天」凌空（新闻特写）」，再学「一着惊海天（通讯）」。"
+  },
+  {
+    "topicId": "cnc_j7081",
+    "prerequisiteId": "cnc_j7080",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「一着惊海天（通讯）」，再学「国行公祭，为佑世界和平（新闻评论）」。"
+  },
+  {
+    "topicId": "cnc_j7082",
+    "prerequisiteId": "cnc_j7081",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「国行公祭，为佑世界和平（新闻评论）」，再学「藤野先生（鲁迅）」。"
+  },
+  {
+    "topicId": "cnc_j7083",
+    "prerequisiteId": "cnc_j7082",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「藤野先生（鲁迅）」，再学「回忆鲁迅先生（萧红）」。"
+  },
+  {
+    "topicId": "cnc_j7084",
+    "prerequisiteId": "cnc_j7083",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「回忆鲁迅先生（萧红）」，再学「天上有颗「南仁东星」（王宏甲）」。"
+  },
+  {
+    "topicId": "cnc_j7085",
+    "prerequisiteId": "cnc_j7084",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「天上有颗「南仁东星」（王宏甲）」，再学「美丽的颜色（艾芙·居里）」。"
+  },
+  {
+    "topicId": "cnc_j7086",
+    "prerequisiteId": "cnc_j7085",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「美丽的颜色（艾芙·居里）」，再学「三峡（郦道元）」。"
+  },
+  {
+    "topicId": "cnc_j7087",
+    "prerequisiteId": "cnc_j7086",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「三峡（郦道元）」，再学「答谢中书书（陶弘景）」。"
+  },
+  {
+    "topicId": "cnc_j7088",
+    "prerequisiteId": "cnc_j7087",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「答谢中书书（陶弘景）」，再学「记承天寺夜游（苏轼）」。"
+  },
+  {
+    "topicId": "cnc_j7089",
+    "prerequisiteId": "cnc_j7088",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「记承天寺夜游（苏轼）」，再学「与朱元思书（吴均）」。"
+  },
+  {
+    "topicId": "cnc_j7090",
+    "prerequisiteId": "cnc_j7089",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「与朱元思书（吴均）」，再学「野望（王绩）」。"
+  },
+  {
+    "topicId": "cnc_j7091",
+    "prerequisiteId": "cnc_j7090",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「野望（王绩）」，再学「黄鹤楼（崔颢）」。"
+  },
+  {
+    "topicId": "cnc_j7092",
+    "prerequisiteId": "cnc_j7091",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「黄鹤楼（崔颢）」，再学「使至塞上（王维）」。"
+  },
+  {
+    "topicId": "cnc_j7093",
+    "prerequisiteId": "cnc_j7092",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「使至塞上（王维）」，再学「渡荆门送别（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7094",
+    "prerequisiteId": "cnc_j7093",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「渡荆门送别（李白）」，再学「钱塘湖春行（白居易）」。"
+  },
+  {
+    "topicId": "cnc_j7095",
+    "prerequisiteId": "cnc_j7094",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「钱塘湖春行（白居易）」，再学「庭中有奇树（《古诗十九首》）」。"
+  },
+  {
+    "topicId": "cnc_j7096",
+    "prerequisiteId": "cnc_j7095",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「庭中有奇树（《古诗十九首》）」，再学「龟虽寿（曹操）」。"
+  },
+  {
+    "topicId": "cnc_j7097",
+    "prerequisiteId": "cnc_j7096",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「龟虽寿（曹操）」，再学「赠从弟（其二）（刘桢）」。"
+  },
+  {
+    "topicId": "cnc_j7098",
+    "prerequisiteId": "cnc_j7097",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「赠从弟（其二）（刘桢）」，再学「梁甫行（曹植）」。"
+  },
+  {
+    "topicId": "cnc_j7099",
+    "prerequisiteId": "cnc_j7098",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「梁甫行（曹植）」，再学「背影（朱自清）」。"
+  },
+  {
+    "topicId": "cnc_j7100",
+    "prerequisiteId": "cnc_j7099",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「背影（朱自清）」，再学「白杨礼赞（茅盾）」。"
+  },
+  {
+    "topicId": "cnc_j7101",
+    "prerequisiteId": "cnc_j7100",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「白杨礼赞（茅盾）」，再学「永久的生命（严文井）」。"
+  },
+  {
+    "topicId": "cnc_j7102",
+    "prerequisiteId": "cnc_j7101",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「永久的生命（严文井）」，再学「我为什么而活着（罗素）」。"
+  },
+  {
+    "topicId": "cnc_j7103",
+    "prerequisiteId": "cnc_j7102",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「我为什么而活着（罗素）」，再学「昆明的雨（汪曾祺）」。"
+  },
+  {
+    "topicId": "cnc_j7104",
+    "prerequisiteId": "cnc_j7103",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「昆明的雨（汪曾祺）」，再学「中国石拱桥（茅以昇）」。"
+  },
+  {
+    "topicId": "cnc_j7105",
+    "prerequisiteId": "cnc_j7104",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「中国石拱桥（茅以昇）」，再学「苏州园林（叶圣陶）」。"
+  },
+  {
+    "topicId": "cnc_j7106",
+    "prerequisiteId": "cnc_j7105",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「苏州园林（叶圣陶）」，再学「人民英雄永垂不朽（周定舫）」。"
+  },
+  {
+    "topicId": "cnc_j7107",
+    "prerequisiteId": "cnc_j7106",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「人民英雄永垂不朽（周定舫）」，再学「梦回繁华（毛宁）」。"
+  },
+  {
+    "topicId": "cnc_j7108",
+    "prerequisiteId": "cnc_j7107",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「梦回繁华（毛宁）」，再学「得道多助，失道寡助（《孟子》）」。"
+  },
+  {
+    "topicId": "cnc_j7109",
+    "prerequisiteId": "cnc_j7108",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「得道多助，失道寡助（《孟子》）」，再学「富贵不能淫（《孟子》）」。"
+  },
+  {
+    "topicId": "cnc_j7110",
+    "prerequisiteId": "cnc_j7109",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「富贵不能淫（《孟子》）」，再学「生于忧患，死于安乐（《孟子》）」。"
+  },
+  {
+    "topicId": "cnc_j7111",
+    "prerequisiteId": "cnc_j7110",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「生于忧患，死于安乐（《孟子》）」，再学「愚公移山（《列子》）」。"
+  },
+  {
+    "topicId": "cnc_j7112",
+    "prerequisiteId": "cnc_j7111",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「愚公移山（《列子》）」，再学「周亚夫军细柳（司马迁）」。"
+  },
+  {
+    "topicId": "cnc_j7113",
+    "prerequisiteId": "cnc_j7112",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「周亚夫军细柳（司马迁）」，再学「饮酒（其五）（陶渊明）」。"
+  },
+  {
+    "topicId": "cnc_j7114",
+    "prerequisiteId": "cnc_j7113",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「饮酒（其五）（陶渊明）」，再学「春望（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7115",
+    "prerequisiteId": "cnc_j7114",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「春望（杜甫）」，再学「雁门太守行（李贺）」。"
+  },
+  {
+    "topicId": "cnc_j7116",
+    "prerequisiteId": "cnc_j7115",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「雁门太守行（李贺）」，再学「赤壁（杜牧）」。"
+  },
+  {
+    "topicId": "cnc_j7117",
+    "prerequisiteId": "cnc_j7116",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「赤壁（杜牧）」，再学「渔家傲（天接云涛连晓雾）（李清照）」。"
+  },
+  {
+    "topicId": "cnc_j7118",
+    "prerequisiteId": "cnc_j7117",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「渔家傲（天接云涛连晓雾）（李清照）」，再学「浣溪沙（一曲新词酒一杯）（晏殊）」。"
+  },
+  {
+    "topicId": "cnc_j7119",
+    "prerequisiteId": "cnc_j7118",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「浣溪沙（一曲新词酒一杯）（晏殊）」，再学「采桑子（轻舟短棹西湖好）（欧阳修）」。"
+  },
+  {
+    "topicId": "cnc_j7120",
+    "prerequisiteId": "cnc_j7119",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「采桑子（轻舟短棹西湖好）（欧阳修）」，再学「相见欢（金陵城上西楼）（朱敦儒）」。"
+  },
+  {
+    "topicId": "cnc_j7121",
+    "prerequisiteId": "cnc_j7120",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「相见欢（金陵城上西楼）（朱敦儒）」，再学「如梦令（常记溪亭日暮）（李清照）」。"
+  },
+  {
+    "topicId": "cnc_j7123",
+    "prerequisiteId": "cnc_j7122",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「社戏（鲁迅）」，再学「回延安（贺敬之）」。"
+  },
+  {
+    "topicId": "cnc_j7124",
+    "prerequisiteId": "cnc_j7123",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「回延安（贺敬之）」，再学「安塞腰鼓（刘成章）」。"
+  },
+  {
+    "topicId": "cnc_j7125",
+    "prerequisiteId": "cnc_j7124",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「安塞腰鼓（刘成章）」，再学「灯笼（吴伯箫）」。"
+  },
+  {
+    "topicId": "cnc_j7126",
+    "prerequisiteId": "cnc_j7125",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「灯笼（吴伯箫）」，再学「大自然的语言（竺可桢）」。"
+  },
+  {
+    "topicId": "cnc_j7127",
+    "prerequisiteId": "cnc_j7126",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「大自然的语言（竺可桢）」，再学「恐龙无处不有（阿西莫夫）」。"
+  },
+  {
+    "topicId": "cnc_j7128",
+    "prerequisiteId": "cnc_j7127",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「恐龙无处不有（阿西莫夫）」，再学「被压扁的沙子（阿西莫夫）」。"
+  },
+  {
+    "topicId": "cnc_j7129",
+    "prerequisiteId": "cnc_j7128",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「被压扁的沙子（阿西莫夫）」，再学「月亮是从哪里来的（卞毓麟）」。"
+  },
+  {
+    "topicId": "cnc_j7130",
+    "prerequisiteId": "cnc_j7129",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「月亮是从哪里来的（卞毓麟）」，再学「时间的脚印（陶世龙）」。"
+  },
+  {
+    "topicId": "cnc_j7131",
+    "prerequisiteId": "cnc_j7130",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「时间的脚印（陶世龙）」，再学「桃花源记（陶渊明）」。"
+  },
+  {
+    "topicId": "cnc_j7132",
+    "prerequisiteId": "cnc_j7131",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「桃花源记（陶渊明）」，再学「小石潭记（柳宗元）」。"
+  },
+  {
+    "topicId": "cnc_j7133",
+    "prerequisiteId": "cnc_j7132",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「小石潭记（柳宗元）」，再学「核舟记（魏学洢）」。"
+  },
+  {
+    "topicId": "cnc_j7134",
+    "prerequisiteId": "cnc_j7133",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「核舟记（魏学洢）」，再学「关雎（《诗经》）」。"
+  },
+  {
+    "topicId": "cnc_j7135",
+    "prerequisiteId": "cnc_j7134",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「关雎（《诗经》）」，再学「蒹葭（《诗经》）」。"
+  },
+  {
+    "topicId": "cnc_j7136",
+    "prerequisiteId": "cnc_j7135",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「蒹葭（《诗经》）」，再学「式微（《诗经·邶风》）」。"
+  },
+  {
+    "topicId": "cnc_j7137",
+    "prerequisiteId": "cnc_j7136",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「式微（《诗经·邶风》）」，再学「子衿（《诗经·郑风》）」。"
+  },
+  {
+    "topicId": "cnc_j7138",
+    "prerequisiteId": "cnc_j7137",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「子衿（《诗经·郑风》）」，再学「送杜少府之任蜀州（王勃）」。"
+  },
+  {
+    "topicId": "cnc_j7139",
+    "prerequisiteId": "cnc_j7138",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「送杜少府之任蜀州（王勃）」，再学「望洞庭湖上张丞相（孟浩然）」。"
+  },
+  {
+    "topicId": "cnc_j7140",
+    "prerequisiteId": "cnc_j7139",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「望洞庭湖上张丞相（孟浩然）」，再学「最后一次讲演（闻一多）」。"
+  },
+  {
+    "topicId": "cnc_j7141",
+    "prerequisiteId": "cnc_j7140",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「最后一次讲演（闻一多）」，再学「敬业与乐业（梁启超）」。"
+  },
+  {
+    "topicId": "cnc_j7142",
+    "prerequisiteId": "cnc_j7141",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「敬业与乐业（梁启超）」，再学「应有格物致知精神（丁肇中）」。"
+  },
+  {
+    "topicId": "cnc_j7143",
+    "prerequisiteId": "cnc_j7142",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「应有格物致知精神（丁肇中）」，再学「我一生中的重要抉择（王选）」。"
+  },
+  {
+    "topicId": "cnc_j7144",
+    "prerequisiteId": "cnc_j7143",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「我一生中的重要抉择（王选）」，再学「壶口瀑布（梁衡）」。"
+  },
+  {
+    "topicId": "cnc_j7145",
+    "prerequisiteId": "cnc_j7144",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「壶口瀑布（梁衡）」，再学「在长江源头各拉丹冬（马丽华）」。"
+  },
+  {
+    "topicId": "cnc_j7146",
+    "prerequisiteId": "cnc_j7145",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「在长江源头各拉丹冬（马丽华）」，再学「登勃朗峰（马克·吐温）」。"
+  },
+  {
+    "topicId": "cnc_j7147",
+    "prerequisiteId": "cnc_j7146",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「登勃朗峰（马克·吐温）」，再学「一滴水经过丽江（阿来）」。"
+  },
+  {
+    "topicId": "cnc_j7148",
+    "prerequisiteId": "cnc_j7147",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「一滴水经过丽江（阿来）」，再学「北冥有鱼（《庄子》）」。"
+  },
+  {
+    "topicId": "cnc_j7149",
+    "prerequisiteId": "cnc_j7148",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「北冥有鱼（《庄子》）」，再学「庄子与惠子游于濠梁之上（《庄子》）」。"
+  },
+  {
+    "topicId": "cnc_j7150",
+    "prerequisiteId": "cnc_j7149",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「庄子与惠子游于濠梁之上（《庄子》）」，再学「虽有嘉肴（《礼记》）」。"
+  },
+  {
+    "topicId": "cnc_j7151",
+    "prerequisiteId": "cnc_j7150",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「虽有嘉肴（《礼记》）」，再学「大道之行也（《礼记》）」。"
+  },
+  {
+    "topicId": "cnc_j7152",
+    "prerequisiteId": "cnc_j7151",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「大道之行也（《礼记》）」，再学「马说（韩愈）」。"
+  },
+  {
+    "topicId": "cnc_j7153",
+    "prerequisiteId": "cnc_j7152",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「马说（韩愈）」，再学「石壕吏（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7154",
+    "prerequisiteId": "cnc_j7153",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「石壕吏（杜甫）」，再学「茅屋为秋风所破歌（杜甫）」。"
+  },
+  {
+    "topicId": "cnc_j7155",
+    "prerequisiteId": "cnc_j7154",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「茅屋为秋风所破歌（杜甫）」，再学「卖炭翁（白居易）」。"
+  },
+  {
+    "topicId": "cnc_j7156",
+    "prerequisiteId": "cnc_j7155",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「卖炭翁（白居易）」，再学「题破山寺后禅院（常建）」。"
+  },
+  {
+    "topicId": "cnc_j7157",
+    "prerequisiteId": "cnc_j7156",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「题破山寺后禅院（常建）」，再学「送友人（李白）」。"
+  },
+  {
+    "topicId": "cnc_j7158",
+    "prerequisiteId": "cnc_j7157",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「送友人（李白）」，再学「卜算子·黄州定慧院寓居作（苏轼）」。"
+  },
+  {
+    "topicId": "cnc_j7159",
+    "prerequisiteId": "cnc_j7158",
+    "strength": "soft",
+    "reason": "按统编教材的编排顺序，先学「卜算子·黄州定慧院寓居作（苏轼）」，再学「卜算子·咏梅（陆游）」。"
   }
 ]

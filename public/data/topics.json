@@ -63050,5 +63050,4298 @@
         "note": "统编版该册的常见教学内容。条目是公开转述，不是逐页核对的原文。"
       }
     ]
+  },
+  {
+    "id": "cnc_j7001",
+    "name": "春（朱自清）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·春",
+    "type": "reasoning",
+    "description": "朱自清的写景散文，依次写春草、春花、春风、春雨、迎春五幅画面，用比喻拟人写出春天的生机。",
+    "mastery_criteria": [
+      "能说出五幅春景图的顺序和对应画面",
+      "能辨析比喻、拟人、排比的表达效果"
+    ],
+    "diagnostic_question": {
+      "question": "「小草偷偷地从土里钻出来」用了什么修辞？",
+      "answer": "拟人"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7002",
+    "name": "济南的冬天（老舍）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·济南的冬天",
+    "type": "reasoning",
+    "description": "老舍抓住济南冬天「温晴」的特点，写阳光朗照下的山、薄雪覆盖下的山、城外远山和冬天的水。",
+    "mastery_criteria": [
+      "能概括济南冬天「温晴」的总特点",
+      "能说出写山的三幅画面"
+    ],
+    "diagnostic_question": {
+      "question": "《济南的冬天》总写济南冬天特点的是哪两个字？",
+      "answer": "温晴"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7003",
+    "name": "雨的四季（刘湛秋）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·雨的四季",
+    "type": "reasoning",
+    "description": "按春夏秋冬顺序写雨，春雨娇媚、夏雨热烈粗犷、秋雨端庄沉静、冬雨自然平静。",
+    "mastery_criteria": [
+      "能说出四季的雨各自的特点",
+      "能找出文中直接抒情的句子"
+    ],
+    "diagnostic_question": {
+      "question": "《雨的四季》的作者是？",
+      "answer": "刘湛秋"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7004",
+    "name": "观沧海（曹操）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·古代诗歌四首",
+    "type": "conceptual",
+    "description": "曹操北征乌桓途经碣石山所作，写大海吞吐日月的气象，抒发统一天下的雄心。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「日月之行，若出其中」的想象与胸襟"
+    ],
+    "diagnostic_question": {
+      "question": "「日月之行，若出其中」的下一句是什么？",
+      "answer": "星汉灿烂，若出其里"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7005",
+    "name": "次北固山下（王湾）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·古代诗歌四首",
+    "type": "conceptual",
+    "description": "写冬末春初行舟北固山下所见，以「海日生残夜，江春入旧年」写时序交替，末句借归雁寄托乡思。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中蕴含哲理的一联"
+    ],
+    "diagnostic_question": {
+      "question": "「海日生残夜」的下一句是什么？",
+      "answer": "江春入旧年"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7006",
+    "name": "闻王昌龄左迁龙标遥有此寄（李白）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·古代诗歌四首",
+    "type": "conceptual",
+    "description": "听说友人被贬龙标，李白以明月寄愁心，表达深切的同情与牵挂。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「杨花」「子规」的烘托作用"
+    ],
+    "diagnostic_question": {
+      "question": "「我寄愁心与明月」的下一句是什么？",
+      "answer": "随君直到夜郎西"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7007",
+    "name": "天净沙·秋思（马致远）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第1单元 阅读·古代诗歌四首",
+    "type": "conceptual",
+    "description": "用九个名词性意象叠加出深秋黄昏的羁旅画面，末句「断肠人在天涯」点明主旨。",
+    "mastery_criteria": [
+      "能默写全曲",
+      "能说出意象叠加的写法与主旨句"
+    ],
+    "diagnostic_question": {
+      "question": "「夕阳西下」的下一句是什么？",
+      "answer": "断肠人在天涯"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7008",
+    "name": "秋天的怀念（史铁生）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·秋天的怀念",
+    "type": "reasoning",
+    "description": "写双腿瘫痪后母亲忍着病痛照顾「我」，反复要带「我」去看菊花，结尾以「好好儿活」收束。",
+    "mastery_criteria": [
+      "能概括母亲的形象特点",
+      "能理解「好好儿活」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "《秋天的怀念》的作者是？",
+      "answer": "史铁生"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7009",
+    "name": "散步（莫怀戚）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·散步",
+    "type": "reasoning",
+    "description": "一家人田野散步，母亲要走大路、儿子要走小路，「我」背起母亲、妻子背起儿子，写出尊老爱幼的家庭责任。",
+    "mastery_criteria": [
+      "能复述散步中的分歧与解决",
+      "能理解以小见大的写法"
+    ],
+    "diagnostic_question": {
+      "question": "《散步》中出现的分歧是什么？",
+      "answer": "母亲要走大路，儿子要走小路"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7010",
+    "name": "金色花（泰戈尔）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·散文诗二首",
+    "type": "reasoning",
+    "description": "孩子想象自己变成一朵金色花，悄悄陪伴母亲，以儿童视角写母子之爱。",
+    "mastery_criteria": [
+      "能说出「我」变成金色花后的几次行动",
+      "能体会儿童视角的表达效果"
+    ],
+    "diagnostic_question": {
+      "question": "《金色花》的作者泰戈尔是哪个国家的？",
+      "answer": "印度"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7011",
+    "name": "荷叶·母亲（冰心）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·散文诗二首",
+    "type": "reasoning",
+    "description": "由雨中荷叶护红莲联想到母亲庇护女儿，借物抒情，结尾直呼母亲。",
+    "mastery_criteria": [
+      "能说出荷叶与母亲的对应关系",
+      "能理解借物抒情的写法"
+    ],
+    "diagnostic_question": {
+      "question": "《荷叶·母亲》中荷叶象征什么？",
+      "answer": "母亲"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7012",
+    "name": "咏雪（《世说新语》）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·《世说新语》二则",
+    "type": "reasoning",
+    "description": "谢安雪天考问子侄，谢朗比作「撒盐空中」，谢道韫以「柳絮因风起」胜出。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出两个比喻各自的妙处"
+    ],
+    "diagnostic_question": {
+      "question": "「未若柳絮因风起」是谁说的？",
+      "answer": "谢道韫"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7013",
+    "name": "陈太丘与友期行（《世说新语》）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第2单元 阅读·《世说新语》二则",
+    "type": "reasoning",
+    "description": "友人失约又当着元方面骂其父，七岁的元方以「无信」「无礼」反驳，入门不顾。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出元方反驳的两条理由"
+    ],
+    "diagnostic_question": {
+      "question": "「日中不至，则是无信」中的「信」是什么意思？",
+      "answer": "信用"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7014",
+    "name": "从百草园到三味书屋（鲁迅）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 阅读·从百草园到三味书屋",
+    "type": "reasoning",
+    "description": "由百草园的乐园生活写到三味书屋的读书生活，以美女蛇、雪地捕鸟等细节写童年。",
+    "mastery_criteria": [
+      "能说出百草园和三味书屋两部分的内容",
+      "能分析写景的顺序与感官角度"
+    ],
+    "diagnostic_question": {
+      "question": "《从百草园到三味书屋》写了哪两处生活空间？",
+      "answer": "百草园和三味书屋"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7015",
+    "name": "往事依依（于漪）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 阅读·往事依依",
+    "type": "reasoning",
+    "description": "于漪回忆少年读书往事，写两位国文老师入情入理的朗诵如何激发自己的阅读兴趣。",
+    "mastery_criteria": [
+      "能概括文中回忆的几件事",
+      "能理解「依依」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "《往事依依》的作者是？",
+      "answer": "于漪"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7016",
+    "name": "再塑生命的人（海伦·凯勒）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 阅读·再塑生命的人",
+    "type": "reasoning",
+    "description": "莎莉文老师用实物教学让盲聋的海伦第一次理解「水」这个词，从此打开认识世界的大门。",
+    "mastery_criteria": [
+      "能复述「水」的顿悟过程",
+      "能理解题目的含义"
+    ],
+    "diagnostic_question": {
+      "question": "「再塑生命的人」指的是谁？",
+      "answer": "莎莉文老师"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7017",
+    "name": "《论语》十二章",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 阅读·《论语》十二章",
+    "type": "reasoning",
+    "description": "选录孔子及弟子论学习态度、学习方法与修身做人的十二章语录，多为格言警句。",
+    "mastery_criteria": [
+      "能默写十二章中的名句",
+      "能准确翻译「罔」「殆」「逾矩」等词"
+    ],
+    "diagnostic_question": {
+      "question": "「学而不思则罔」的下一句是什么？",
+      "answer": "思而不学则殆"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7018",
+    "name": "峨眉山月歌（李白）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写秋夜峨眉山月映入平羌江，连夜发清溪、向三峡、下渝州，五个地名连缀成行旅图。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中的五个地名"
+    ],
+    "diagnostic_question": {
+      "question": "「峨眉山月半轮秋」的下一句是什么？",
+      "answer": "影入平羌江水流"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7019",
+    "name": "江南逢李龟年（杜甫）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "在江南暮春与流落的乐师李龟年重逢，以「落花时节」写身世与国运的衰落。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「落花时节」的双关含义"
+    ],
+    "diagnostic_question": {
+      "question": "「正是江南好风景」的下一句是什么？",
+      "answer": "落花时节又逢君"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7020",
+    "name": "行军九日思长安故园（岑参）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "重阳节行军途中无酒可饮，遥想长安故园的菊花此时应在战场边开放。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「九日」的节令与诗中的忧国之情"
+    ],
+    "diagnostic_question": {
+      "question": "「遥怜故园菊」的下一句是什么？",
+      "answer": "应傍战场开"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7021",
+    "name": "夜上受降城闻笛（李益）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "月夜登受降城，沙似雪、月如霜，忽闻芦管声，一夜征人尽望乡。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中的比喻与思乡主题"
+    ],
+    "diagnostic_question": {
+      "question": "「不知何处吹芦管」的下一句是什么？",
+      "answer": "一夜征人尽望乡"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7022",
+    "name": "纪念白求恩（毛泽东）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第4单元 阅读·纪念白求恩",
+    "type": "reasoning",
+    "description": "悼念加拿大医生白求恩，赞扬其国际主义精神、毫不利己专门利人的精神和对技术精益求精。",
+    "mastery_criteria": [
+      "能说出白求恩精神的三层内涵",
+      "能辨析对比论证的作用"
+    ],
+    "diagnostic_question": {
+      "question": "白求恩医生来自哪个国家？",
+      "answer": "加拿大"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7023",
+    "name": "回忆我的母亲（朱德）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第4单元 阅读·回忆我的母亲",
+    "type": "reasoning",
+    "description": "回忆母亲勤劳俭朴的一生，写她对自己的教育和影响，语言平实而深情。",
+    "mastery_criteria": [
+      "能概括母亲的形象特点",
+      "能说出文章以事写人的选材方式"
+    ],
+    "diagnostic_question": {
+      "question": "《回忆我的母亲》的作者是？",
+      "answer": "朱德"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7024",
+    "name": "梅岭三章（陈毅）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第4单元 阅读·梅岭三章",
+    "type": "conceptual",
+    "description": "陈毅在梅岭被围、伤病交加时写下的绝笔诗，三章层层递进，写献身革命的决心。",
+    "mastery_criteria": [
+      "能默写三章中的名句",
+      "能说出「泉台」「阎罗」的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "「此去泉台招旧部」的下一句是什么？",
+      "answer": "旌旗十万斩阎罗"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7025",
+    "name": "诫子书（诸葛亮）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第4单元 阅读·诫子书",
+    "type": "reasoning",
+    "description": "诸葛亮写给儿子的家书，主张静以修身、俭以养德，强调立志与惜时。",
+    "mastery_criteria": [
+      "能默写全文",
+      "能翻译「淡泊」「宁静」「险躁」等词"
+    ],
+    "diagnostic_question": {
+      "question": "「静以修身」的下一句是什么？",
+      "answer": "俭以养德"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7026",
+    "name": "猫（郑振铎）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第5单元 阅读·猫",
+    "type": "reasoning",
+    "description": "写家中三次养猫的经历，第三只猫被冤枉偷吃芙蓉鸟，「我」的武断成为永久的悔恨。",
+    "mastery_criteria": [
+      "能复述三次养猫的不同结局",
+      "能理解「不能凭主观臆断」的主旨"
+    ],
+    "diagnostic_question": {
+      "question": "《猫》的作者是？",
+      "answer": "郑振铎"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7027",
+    "name": "我的白鸽（陈忠实）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第5单元 阅读·我的白鸽",
+    "type": "reasoning",
+    "description": "写老舅送来的一对白鸽在家中筑巢、育雏的过程，写出对纯洁生命的珍视。",
+    "mastery_criteria": [
+      "能梳理白鸽到来的过程",
+      "能体会作者对生命的情感"
+    ],
+    "diagnostic_question": {
+      "question": "《我的白鸽》的作者是？",
+      "answer": "陈忠实"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7028",
+    "name": "大雁归来（利奥波德）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第5单元 阅读·大雁归来",
+    "type": "reasoning",
+    "description": "以科学观察笔记的笔法写三月大雁北归，知识性与抒情性结合，表达生态伦理观。",
+    "mastery_criteria": [
+      "能说出文章的知识性与抒情性",
+      "能理解作者的土地伦理观"
+    ],
+    "diagnostic_question": {
+      "question": "《大雁归来》的作者利奥波德是哪个国家的？",
+      "answer": "美国"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7029",
+    "name": "狼（蒲松龄）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第5单元 阅读·狼",
+    "type": "reasoning",
+    "description": "屠户遇两狼，先投骨后倚薪，最终奋起杀狼，结尾议论「狼亦黠矣，而顷刻两毙」。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出故事的三层情节与寓意"
+    ],
+    "diagnostic_question": {
+      "question": "「狼亦黠矣」的下一句是什么？",
+      "answer": "而顷刻两毙"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7030",
+    "name": "小圣施威降大圣（吴承恩）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·小圣施威降大圣",
+    "type": "reasoning",
+    "description": "选自《西游记》第六回，二郎神与孙悟空各显神通斗变化，写得诙谐热闹。",
+    "mastery_criteria": [
+      "能梳理两人斗变化的过程",
+      "能说出人物各自的性格特点"
+    ],
+    "diagnostic_question": {
+      "question": "「小圣」指的是谁？",
+      "answer": "二郎神"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7031",
+    "name": "皇帝的新装（安徒生）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·皇帝的新装",
+    "type": "reasoning",
+    "description": "皇帝被两个骗子愚弄，穿着「看不见的新衣」游行，只有孩子说出了真话。",
+    "mastery_criteria": [
+      "能复述故事情节",
+      "能说出童话的讽刺对象"
+    ],
+    "diagnostic_question": {
+      "question": "《皇帝的新装》的作者安徒生是哪个国家的？",
+      "answer": "丹麦"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7032",
+    "name": "女娲造人（袁珂）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·女娲造人",
+    "type": "reasoning",
+    "description": "袁珂根据古代神话改写，写女娲用黄泥捏人、以藤条挥洒泥点造人，并安排男女婚配。",
+    "mastery_criteria": [
+      "能复述造人的过程",
+      "能说出神话想象的特点"
+    ],
+    "diagnostic_question": {
+      "question": "女娲最初用什么造人？",
+      "answer": "黄土（泥）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7033",
+    "name": "赫耳墨斯和雕像者（《伊索寓言》）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·寓言四则",
+    "type": "reasoning",
+    "description": "赫耳墨斯化作凡人问自己雕像的价钱，结果被告知只算「添头」，讽刺爱慕虚荣者。",
+    "mastery_criteria": [
+      "能复述情节",
+      "能说出寓言的讽刺点"
+    ],
+    "diagnostic_question": {
+      "question": "赫耳墨斯问自己雕像的价钱，得到的回答是什么？",
+      "answer": "只算添头，白送"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7034",
+    "name": "蚊子和狮子（《伊索寓言》）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·寓言四则",
+    "type": "reasoning",
+    "description": "蚊子专咬狮子鼻子周围无毛处而取胜，得意时却被蜘蛛网粘住，说明骄兵必败。",
+    "mastery_criteria": [
+      "能复述情节",
+      "能说出寓言的两层寓意"
+    ],
+    "diagnostic_question": {
+      "question": "蚊子战胜狮子后遭遇了什么？",
+      "answer": "被蜘蛛网粘住"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7035",
+    "name": "穿井得一人（《吕氏春秋》）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·寓言四则",
+    "type": "reasoning",
+    "description": "丁氏穿井后说「吾穿井得一人」，本指省下一个劳力，却被传成从井里挖出一个人。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出寓意"
+    ],
+    "diagnostic_question": {
+      "question": "「穿井得一人」中「穿」的意思是？",
+      "answer": "挖掘"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7036",
+    "name": "杞人忧天（《列子》）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "上",
+    "chapter": "七年级上册 第6单元 阅读·寓言四则",
+    "type": "reasoning",
+    "description": "杞国人担心天塌地陷、无处寄身，经人开导才释然，讽刺无谓的忧虑。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出「忧」的具体内容与寓意"
+    ],
+    "diagnostic_question": {
+      "question": "杞人担心的是什么？",
+      "answer": "天塌地陷，无处寄身"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7037",
+    "name": "邓稼先（杨振宁）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第1单元 阅读·邓稼先",
+    "type": "reasoning",
+    "description": "杨振宁写挚友邓稼先，用对比与细节写他忠厚平实、身先士卒，称他为「两弹元勋」。",
+    "mastery_criteria": [
+      "能概括邓稼先的人物形象",
+      "能说出对比手法的作用"
+    ],
+    "diagnostic_question": {
+      "question": "《邓稼先》的作者是？",
+      "answer": "杨振宁"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7038",
+    "name": "说和做（臧克家）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第1单元 阅读·说和做",
+    "type": "reasoning",
+    "description": "记闻一多先生的言行片段，以「做了再说」「说了就做」写他作为学者和革命家的两面。",
+    "mastery_criteria": [
+      "能说出文章的两部分结构",
+      "能概括闻一多的人物形象"
+    ],
+    "diagnostic_question": {
+      "question": "《说和做》写的是哪位先生？",
+      "answer": "闻一多"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7039",
+    "name": "列夫·托尔斯泰（茨威格）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第1单元 阅读·列夫·托尔斯泰",
+    "type": "reasoning",
+    "description": "茨威格先写托尔斯泰平庸甚至丑陋的外貌，再聚焦那双洞察世事的眼睛，形成强烈反差。",
+    "mastery_criteria": [
+      "能说出欲扬先抑的写法",
+      "能分析外貌描写的作用"
+    ],
+    "diagnostic_question": {
+      "question": "《列夫·托尔斯泰》的作者茨威格是哪个国家的？",
+      "answer": "奥地利"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7040",
+    "name": "孙权劝学（《资治通鉴》）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第1单元 阅读·孙权劝学",
+    "type": "reasoning",
+    "description": "孙权劝吕蒙读书，吕蒙就学后大有长进，鲁肃惊叹「非复吴下阿蒙」。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出成语「刮目相待」的出处与含义"
+    ],
+    "diagnostic_question": {
+      "question": "「士别三日，即更刮目相待」是谁说的？",
+      "answer": "鲁肃"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7041",
+    "name": "黄河颂（光未然）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第2单元 阅读·黄河颂",
+    "type": "reasoning",
+    "description": "《黄河大合唱》第二乐章的歌词，以「望」「颂」两层结构赞美黄河，象征民族精神。",
+    "mastery_criteria": [
+      "能说出歌词的两层结构",
+      "能理解黄河的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "《黄河颂》是《黄河大合唱》的第几个乐章？",
+      "answer": "第二乐章"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7042",
+    "name": "老山界（陆定一）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第2单元 阅读·老山界",
+    "type": "reasoning",
+    "description": "记红军长征翻越老山界的经过，按时间顺序写登山、露宿、翻山，突出红军的乐观与坚韧。",
+    "mastery_criteria": [
+      "能按时间顺序梳理翻山过程",
+      "能体会红军的精神品质"
+    ],
+    "diagnostic_question": {
+      "question": "《老山界》写的是哪支队伍翻山？",
+      "answer": "红军（长征）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7043",
+    "name": "谁是最可爱的人（魏巍）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第2单元 阅读·谁是最可爱的人",
+    "type": "reasoning",
+    "description": "以三个典型事例写志愿军战士，提出「谁是最可爱的人」这一著名命题。",
+    "mastery_criteria": [
+      "能说出三个典型事例",
+      "能理解设问与议论抒情的作用"
+    ],
+    "diagnostic_question": {
+      "question": "《谁是最可爱的人》中「最可爱的人」指谁？",
+      "answer": "志愿军战士"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7044",
+    "name": "土地的誓言（端木蕻良）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第2单元 阅读·土地的誓言",
+    "type": "reasoning",
+    "description": "以呼告和排比写东北故土的丰饶美丽，抒发对沦陷家乡的思念与收复失地的决心。",
+    "mastery_criteria": [
+      "能找出呼告、排比句并说明效果",
+      "能体会深沉的家国之痛"
+    ],
+    "diagnostic_question": {
+      "question": "《土地的誓言》的作者是？",
+      "answer": "端木蕻良"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7045",
+    "name": "木兰诗",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第2单元 阅读·木兰诗",
+    "type": "conceptual",
+    "description": "北朝民歌，写木兰代父从军、十年征战、辞官还乡，详写儿女情、略写征战事。",
+    "mastery_criteria": [
+      "能背诵全诗",
+      "能说出详略安排及其作用"
+    ],
+    "diagnostic_question": {
+      "question": "「将军百战死」的下一句是什么？",
+      "answer": "壮士十年归"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7046",
+    "name": "阿长与《山海经》（鲁迅）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 阅读·阿长与《山海经》",
+    "type": "reasoning",
+    "description": "写保姆阿长的种种「缺点」，再写她买来《山海经》的意外之举，情感由厌烦转为敬意与怀念。",
+    "mastery_criteria": [
+      "能说出欲扬先抑的结构",
+      "能分析阿长的人物形象"
+    ],
+    "diagnostic_question": {
+      "question": "阿长为「我」买来了什么书？",
+      "answer": "《山海经》"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7047",
+    "name": "山地回忆（孙犁）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 阅读·山地回忆",
+    "type": "reasoning",
+    "description": "回忆抗战时期在阜平与山地姑娘妞儿一家的交往，以一双袜子串起军民情谊。",
+    "mastery_criteria": [
+      "能梳理与妞儿交往的几件事",
+      "能体会孙犁清新朴素的语言风格"
+    ],
+    "diagnostic_question": {
+      "question": "《山地回忆》的作者是？",
+      "answer": "孙犁"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7048",
+    "name": "台阶（李森祥）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 阅读·台阶",
+    "type": "reasoning",
+    "description": "父亲用大半辈子造起九级台阶的新屋，台阶建成后却感到失落，写出农民的自尊与艰辛。",
+    "mastery_criteria": [
+      "能梳理父亲造台阶的过程",
+      "能理解「台阶」的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "《台阶》中父亲最大的心愿是什么？",
+      "answer": "造一栋有高台阶的新屋"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7049",
+    "name": "卖油翁（欧阳修）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 阅读·卖油翁",
+    "type": "reasoning",
+    "description": "陈尧咨善射而自矜，卖油翁以酌油穿钱孔说明「惟手熟尔」，讲熟能生巧。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出故事的寓意"
+    ],
+    "diagnostic_question": {
+      "question": "卖油翁对陈尧咨箭术的评价是哪四个字？",
+      "answer": "惟手熟尔"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7050",
+    "name": "竹里馆（王维）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写独坐竹林弹琴长啸、明月相照的幽静之境，表现诗人恬淡自适的心境。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「幽篁」「长啸」的意思"
+    ],
+    "diagnostic_question": {
+      "question": "「深林人不知」的下一句是什么？",
+      "answer": "明月来相照"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7051",
+    "name": "春夜洛城闻笛（李白）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "春夜洛城闻笛声《折杨柳》，触发满城游子的故园之情。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「折柳」的文化含义"
+    ],
+    "diagnostic_question": {
+      "question": "「此夜曲中闻折柳」的下一句是什么？",
+      "answer": "何人不起故园情"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7052",
+    "name": "逢入京使（岑参）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "赴安西途中遇入京使者，无纸笔，只能托口信报平安，写尽思乡之情。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「龙钟」的意思"
+    ],
+    "diagnostic_question": {
+      "question": "「马上相逢无纸笔」的下一句是什么？",
+      "answer": "凭君传语报平安"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7053",
+    "name": "晚春（韩愈）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写暮春草木争芳、杨花榆荚如雪飞舞，寄寓珍惜光阴之意。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出拟人手法的运用"
+    ],
+    "diagnostic_question": {
+      "question": "「杨花榆荚无才思」的下一句是什么？",
+      "answer": "惟解漫天作雪飞"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7054",
+    "name": "驿路梨花（彭荆风）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第4单元 阅读·驿路梨花",
+    "type": "reasoning",
+    "description": "以「谁是小茅屋的主人」设置悬念，层层引出解放军、梨花姑娘等，写雷锋精神代代相传。",
+    "mastery_criteria": [
+      "能梳理悬念解开的过程",
+      "能理解梨花的多重含义"
+    ],
+    "diagnostic_question": {
+      "question": "小茅屋最初是谁盖的？",
+      "answer": "解放军"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7055",
+    "name": "青春之光（祝红蕾）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第4单元 阅读·青春之光",
+    "type": "reasoning",
+    "description": "写黄文秀放弃大城市工作回乡扶贫、最终牺牲在扶贫路上的事迹，语言朴实感人。",
+    "mastery_criteria": [
+      "能概括黄文秀的事迹",
+      "能理解题目「青春之光」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "《青春之光》写的人物是？",
+      "answer": "黄文秀"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7056",
+    "name": "有为有不为（季羡林）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第4单元 阅读·有为有不为",
+    "type": "reasoning",
+    "description": "季羡林谈「有为」与「有不为」的界限，主张以良知和道义作为取舍标准。",
+    "mastery_criteria": [
+      "能说出「有为」「有不为」的含义",
+      "能梳理论证的层次"
+    ],
+    "diagnostic_question": {
+      "question": "《有为有不为》的作者是？",
+      "answer": "季羡林"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7057",
+    "name": "陋室铭（刘禹锡）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第4单元 阅读·短文两篇",
+    "type": "reasoning",
+    "description": "以「山不在高」「水不在深」起兴，写陋室不陋在于德馨，托物言志。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出托物言志的写法"
+    ],
+    "diagnostic_question": {
+      "question": "「斯是陋室」的下一句是什么？",
+      "answer": "惟吾德馨"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7058",
+    "name": "爱莲说（周敦颐）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第4单元 阅读·短文两篇",
+    "type": "reasoning",
+    "description": "以莲喻君子，用菊之隐逸、牡丹之富贵作衬托，表明自己洁身自好的志向。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出三种花的象征意义与衬托手法"
+    ],
+    "diagnostic_question": {
+      "question": "「出淤泥而不染」的下一句是什么？",
+      "answer": "濯清涟而不妖"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7059",
+    "name": "井冈翠竹（袁鹰）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·井冈翠竹",
+    "type": "reasoning",
+    "description": "以井冈山的毛竹为线索，由竹子写到人，赞颂革命者的坚韧与奉献。",
+    "mastery_criteria": [
+      "能说出由物及人的写法",
+      "能理解竹子的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "《井冈翠竹》中竹子象征什么？",
+      "answer": "井冈山人民和革命者的精神"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7060",
+    "name": "紫藤萝瀑布（宗璞）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·紫藤萝瀑布",
+    "type": "reasoning",
+    "description": "由眼前盛开的紫藤萝写到十多年前的凋零，领悟「花和人都会遇到各种各样的不幸，但生命的长河是无止境的」。",
+    "mastery_criteria": [
+      "能说出文章的情感变化",
+      "能理解由景入理的结构"
+    ],
+    "diagnostic_question": {
+      "question": "《紫藤萝瀑布》的作者是？",
+      "answer": "宗璞"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7061",
+    "name": "假如生活欺骗了你（普希金）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·外国诗二首",
+    "type": "conceptual",
+    "description": "以劝慰的口吻告诉人们要镇静、乐观，相信快乐的日子终会到来。",
+    "mastery_criteria": [
+      "能背诵全诗",
+      "能说出诗歌的哲理"
+    ],
+    "diagnostic_question": {
+      "question": "《假如生活欺骗了你》的作者是？",
+      "answer": "普希金"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7062",
+    "name": "未选择的路（弗罗斯特）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·外国诗二首",
+    "type": "conceptual",
+    "description": "写林中岔路的选择，以「路」喻人生道路，表达对人生抉择的思考。",
+    "mastery_criteria": [
+      "能说出「路」的象征意义",
+      "能理解诗歌的哲理"
+    ],
+    "diagnostic_question": {
+      "question": "《未选择的路》的作者是？",
+      "answer": "弗罗斯特"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7063",
+    "name": "登幽州台歌（陈子昂）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·古代诗歌五首",
+    "type": "conceptual",
+    "description": "登台远眺，前不见古人、后不见来者，以天地之辽阔写怀才不遇的孤独悲怆。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗歌的时空感与情感"
+    ],
+    "diagnostic_question": {
+      "question": "「念天地之悠悠」的下一句是什么？",
+      "answer": "独怆然而涕下"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7064",
+    "name": "望岳（杜甫）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·古代诗歌五首",
+    "type": "conceptual",
+    "description": "望泰山而作，写泰山的高峻雄奇，末句「会当凌绝顶，一览众山小」抒发登临之志。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「钟」「割」的妙处"
+    ],
+    "diagnostic_question": {
+      "question": "「会当凌绝顶」的下一句是什么？",
+      "answer": "一览众山小"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7065",
+    "name": "登飞来峰（王安石）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·古代诗歌五首",
+    "type": "conceptual",
+    "description": "登塔远望，以「不畏浮云遮望眼，自缘身在最高层」写高瞻远瞩的胸襟与变法决心。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「浮云」的比喻义"
+    ],
+    "diagnostic_question": {
+      "question": "「不畏浮云遮望眼」的下一句是什么？",
+      "answer": "自缘身在最高层"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7066",
+    "name": "游山西村（陆游）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·古代诗歌五首",
+    "type": "conceptual",
+    "description": "写游山西村所见的人情风物，「山重水复疑无路，柳暗花明又一村」成为哲理名句。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出名句的哲理"
+    ],
+    "diagnostic_question": {
+      "question": "「山重水复疑无路」的下一句是什么？",
+      "answer": "柳暗花明又一村"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7067",
+    "name": "己亥杂诗（其五）（龚自珍）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第5单元 阅读·古代诗歌五首",
+    "type": "conceptual",
+    "description": "辞官南归途中所作，以「落红不是无情物，化作春泥更护花」表明继续奉献的心志。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「落红」的比喻义"
+    ],
+    "diagnostic_question": {
+      "question": "「落红不是无情物」的下一句是什么？",
+      "answer": "化作春泥更护花"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7068",
+    "name": "太空一日（杨利伟）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 阅读·太空一日",
+    "type": "reasoning",
+    "description": "杨利伟自述神舟五号飞行的一日，写火箭振动、飞船异响等真实细节，冷静而动人。",
+    "mastery_criteria": [
+      "能梳理飞行中的几个关键片段",
+      "能体会航天员的心理素质"
+    ],
+    "diagnostic_question": {
+      "question": "《太空一日》的作者是？",
+      "answer": "杨利伟"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7069",
+    "name": "「蛟龙」探海（许晨）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 阅读·「蛟龙」探海",
+    "type": "reasoning",
+    "description": "报告文学，记「蛟龙」号载人潜水器海试下潜的过程，写科研人员的严谨与担当。",
+    "mastery_criteria": [
+      "能梳理下潜的关键环节",
+      "能体会报告文学的真实性"
+    ],
+    "diagnostic_question": {
+      "question": "「蛟龙」号是什么装备？",
+      "answer": "载人潜水器"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7070",
+    "name": "带上她的眼睛（刘慈欣）",
+    "domain": "阅读理解",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 阅读·带上她的眼睛",
+    "type": "reasoning",
+    "description": "科幻小说，写领航员带「她」的眼睛看地表世界，结尾揭示她被困地心，写孤独与牺牲。",
+    "mastery_criteria": [
+      "能梳理情节与伏笔",
+      "能理解结尾的震撼效果"
+    ],
+    "diagnostic_question": {
+      "question": "《带上她的眼睛》的作者是？",
+      "answer": "刘慈欣"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7071",
+    "name": "活板（沈括）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 阅读·活板",
+    "type": "reasoning",
+    "description": "选自《梦溪笔谈》，按制字、排版、印刷、拆版的顺序说明毕昇活字印刷术。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出活板印刷的几道工序与「活」的体现"
+    ],
+    "diagnostic_question": {
+      "question": "活板印刷的发明者是？",
+      "answer": "毕昇"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7072",
+    "name": "泊秦淮（杜牧）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "夜泊秦淮，听到商女唱《后庭花》，借古讽今，忧愤晚唐统治者的醉生梦死。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「后庭花」的典故与讽刺意味"
+    ],
+    "diagnostic_question": {
+      "question": "「商女不知亡国恨」的下一句是什么？",
+      "answer": "隔江犹唱后庭花"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7073",
+    "name": "贾生（李商隐）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写汉文帝召见贾谊却只问鬼神不问苍生，讽刺统治者不识贤才。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「不问苍生问鬼神」的讽刺意味"
+    ],
+    "diagnostic_question": {
+      "question": "「可怜夜半虚前席」的下一句是什么？",
+      "answer": "不问苍生问鬼神"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7074",
+    "name": "过松源晨炊漆公店（杨万里）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写山行下岭的感受，以「一山放出一山拦」说明困难接连不断、不可轻忽。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗句的哲理"
+    ],
+    "diagnostic_question": {
+      "question": "「正入万山圈子里」的下一句是什么？",
+      "answer": "一山放出一山拦"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7075",
+    "name": "约客（赵师秀）",
+    "domain": "古诗文积累",
+    "grade": 7,
+    "semester": "下",
+    "chapter": "七年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "黄梅时节雨夜候客不至，敲棋落灯花，以闲淡之景写等待的惆怅。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出以景写情的手法"
+    ],
+    "diagnostic_question": {
+      "question": "「有约不来过夜半」的下一句是什么？",
+      "answer": "闲敲棋子落灯花"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7076",
+    "name": "消息二则（毛泽东）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·消息二则",
+    "type": "reasoning",
+    "description": "《我三十万大军胜利南渡长江》《人民解放军百万大军横渡长江》两则消息，具备电头、导语、主体、背景、结语的完整结构。",
+    "mastery_criteria": [
+      "能指出消息的电头、导语、主体",
+      "能说出消息语言准确简洁的特点"
+    ],
+    "diagnostic_question": {
+      "question": "消息开头标明发报单位、地点、时间的部分叫什么？",
+      "answer": "电头"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7077",
+    "name": "中国人首次进入自己的空间站",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·中国人首次进入自己的空间站",
+    "type": "reasoning",
+    "description": "报道神舟十二号航天员进入天和核心舱，属事件通讯，以时间为序记录关键节点。",
+    "mastery_criteria": [
+      "能梳理报道的时间线",
+      "能说出通讯与消息的区别"
+    ],
+    "diagnostic_question": {
+      "question": "中国人首次进入自己的空间站是在哪一年？",
+      "answer": "2021年"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7078",
+    "name": "首届诺贝尔奖颁发",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·首届诺贝尔奖颁发",
+    "type": "reasoning",
+    "description": "报道1901年首届诺贝尔奖颁发，交代奖项设置、获奖者与奖金来源，是典型的倒金字塔结构。",
+    "mastery_criteria": [
+      "能说出倒金字塔结构的特点",
+      "能找出消息的五个组成部分"
+    ],
+    "diagnostic_question": {
+      "question": "首届诺贝尔奖颁发于哪一年？",
+      "answer": "1901年"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7079",
+    "name": "「飞天」凌空（新闻特写）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·「飞天」凌空",
+    "type": "reasoning",
+    "description": "记跳水姑娘吕伟夺魁的瞬间，放大「1.7 秒」的动作细节，是新闻特写的代表作。",
+    "mastery_criteria": [
+      "能说出新闻特写与消息的区别",
+      "能分析动词与比喻的表达效果"
+    ],
+    "diagnostic_question": {
+      "question": "新闻特写《「飞天」凌空》写的是哪位运动员？",
+      "answer": "吕伟"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7080",
+    "name": "一着惊海天（通讯）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·一着惊海天",
+    "type": "reasoning",
+    "description": "记录我国航母舰载战斗机首次成功着舰，写现场的紧张与成功后的激动，属事件通讯。",
+    "mastery_criteria": [
+      "能梳理着舰过程的几个阶段",
+      "能体会场面描写的现场感"
+    ],
+    "diagnostic_question": {
+      "question": "我国航母舰载战斗机首次成功着舰是在哪一年？",
+      "answer": "2012年"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7081",
+    "name": "国行公祭，为佑世界和平（新闻评论）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第1单元 阅读·国行公祭，为佑世界和平",
+    "type": "reasoning",
+    "description": "就南京大屠杀死难者国家公祭日发表评论，摆事实、讲道理，表明铭记历史、珍爱和平的立场。",
+    "mastery_criteria": [
+      "能说出新闻评论的文体特点",
+      "能找出论点与论据"
+    ],
+    "diagnostic_question": {
+      "question": "国家公祭日是哪一天？",
+      "answer": "12月13日"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7082",
+    "name": "藤野先生（鲁迅）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第2单元 阅读·藤野先生",
+    "type": "reasoning",
+    "description": "回忆在日本仙台学医时的老师藤野严九郎，写添改讲义、纠正解剖图等事，交织着爱国情感与弃医从文的抉择。",
+    "mastery_criteria": [
+      "能概括藤野先生的三件事",
+      "能说出双线并行的结构"
+    ],
+    "diagnostic_question": {
+      "question": "《藤野先生》中鲁迅在哪个城市学医？",
+      "answer": "仙台"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7083",
+    "name": "回忆鲁迅先生（萧红）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第2单元 阅读·回忆鲁迅先生",
+    "type": "reasoning",
+    "description": "萧红以零散的日常片段写鲁迅的笑、走路的姿势、待客、工作，于琐屑处见人格。",
+    "mastery_criteria": [
+      "能说出片段式写法的好处",
+      "能概括鲁迅的形象特点"
+    ],
+    "diagnostic_question": {
+      "question": "《回忆鲁迅先生》的作者是？",
+      "answer": "萧红"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7084",
+    "name": "天上有颗「南仁东星」（王宏甲）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第2单元 阅读·天上有颗「南仁东星」",
+    "type": "reasoning",
+    "description": "写南仁东主持建设 FAST「中国天眼」的二十二年，表现科学家的执着与家国情怀。",
+    "mastery_criteria": [
+      "能概括南仁东的主要贡献",
+      "能理解题目中「星」的双重含义"
+    ],
+    "diagnostic_question": {
+      "question": "南仁东主持建设的大科学装置是？",
+      "answer": "FAST（中国天眼）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7085",
+    "name": "美丽的颜色（艾芙·居里）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第2单元 阅读·美丽的颜色",
+    "type": "reasoning",
+    "description": "居里夫人女儿写的传记片段，记夫妇二人在简陋棚屋提炼镭的四年，写科学发现的艰辛与喜悦。",
+    "mastery_criteria": [
+      "能复述提炼镭的过程",
+      "能理解「美丽的颜色」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "《美丽的颜色》写的是哪位科学家？",
+      "answer": "居里夫人（玛丽·居里）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7086",
+    "name": "三峡（郦道元）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·三峡",
+    "type": "reasoning",
+    "description": "先写山势连绵高峻，再按夏、春冬、秋的顺序写水，末尾引渔歌作结。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出写景的顺序与四季水的特点"
+    ],
+    "diagnostic_question": {
+      "question": "《三峡》选自哪部著作？",
+      "answer": "《水经注》"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7087",
+    "name": "答谢中书书（陶弘景）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·短文二篇",
+    "type": "reasoning",
+    "description": "以「山川之美，古来共谈」总起，写高峰清流、石壁五色、猿鸟夕日，最后以「未复有能与其奇者」收束。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出写景的层次与视角"
+    ],
+    "diagnostic_question": {
+      "question": "「山川之美」的下一句是什么？",
+      "answer": "古来共谈"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7088",
+    "name": "记承天寺夜游（苏轼）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·短文二篇",
+    "type": "reasoning",
+    "description": "元丰六年夜访张怀民，写庭下积水空明、竹柏影如藻荇，末尾自嘲「闲人」。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出比喻的妙处与「闲人」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "「庭下如积水空明」的下一句是什么？",
+      "answer": "水中藻、荇交横，盖竹柏影也"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7089",
+    "name": "与朱元思书（吴均）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·与朱元思书",
+    "type": "reasoning",
+    "description": "写富春江自富阳至桐庐的奇山异水，以「鸢飞戾天者，望峰息心」表达鄙弃名利之情。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出「异水」「奇山」各写了什么"
+    ],
+    "diagnostic_question": {
+      "question": "「风烟俱净」的下一句是什么？",
+      "answer": "天山共色"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7090",
+    "name": "野望（王绩）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·唐诗五首",
+    "type": "conceptual",
+    "description": "写秋日黄昏野外远望，牧人驱犊、猎马带禽，末句「长歌怀采薇」表达隐居之意。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「采薇」的典故"
+    ],
+    "diagnostic_question": {
+      "question": "「树树皆秋色」的下一句是什么？",
+      "answer": "山山唯落晖"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7091",
+    "name": "黄鹤楼（崔颢）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·唐诗五首",
+    "type": "conceptual",
+    "description": "由黄鹤楼的传说写到眼前晴川草树，末联「日暮乡关何处是」抒发乡愁。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出前四句虚写、后四句实写的结构"
+    ],
+    "diagnostic_question": {
+      "question": "「晴川历历汉阳树」的下一句是什么？",
+      "answer": "芳草萋萋鹦鹉洲"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7092",
+    "name": "使至塞上（王维）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·唐诗五首",
+    "type": "conceptual",
+    "description": "出使边塞途中所作，以「大漠孤烟直，长河落日圆」写塞外壮阔景象。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能赏析「直」「圆」二字的妙处"
+    ],
+    "diagnostic_question": {
+      "question": "「大漠孤烟直」的下一句是什么？",
+      "answer": "长河落日圆"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7093",
+    "name": "渡荆门送别（李白）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·唐诗五首",
+    "type": "conceptual",
+    "description": "出蜀渡荆门所见，写山随平野尽、江入大荒流，尾联借故乡水送别。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出颔联的画面感"
+    ],
+    "diagnostic_question": {
+      "question": "「山随平野尽」的下一句是什么？",
+      "answer": "江入大荒流"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7094",
+    "name": "钱塘湖春行（白居易）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 阅读·唐诗五首",
+    "type": "conceptual",
+    "description": "写西湖早春景象，以「早莺」「新燕」「乱花」「浅草」写初春的生机。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中体现「早春」的词语"
+    ],
+    "diagnostic_question": {
+      "question": "「几处早莺争暖树」的下一句是什么？",
+      "answer": "谁家新燕啄春泥"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7095",
+    "name": "庭中有奇树（《古诗十九首》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "由庭中奇树开花写到折枝赠远，以「此物何足贵，但感别经时」收束相思。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出借物抒情的手法"
+    ],
+    "diagnostic_question": {
+      "question": "「攀条折其荣」的下一句是什么？",
+      "answer": "将以遗所思"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7096",
+    "name": "龟虽寿（曹操）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "以神龟、腾蛇起兴，写「老骥伏枥，志在千里」，表达老当益壮的进取精神。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中哲理性的句子"
+    ],
+    "diagnostic_question": {
+      "question": "「老骥伏枥」的下一句是什么？",
+      "answer": "志在千里"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7097",
+    "name": "赠从弟（其二）（刘桢）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "以山上松柏不畏严寒为喻，勉励堂弟坚守本性、不惧严酷环境。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出松柏的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "「岂不罹凝寒」的下一句是什么？",
+      "answer": "松柏有本性"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7098",
+    "name": "梁甫行（曹植）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写海边百姓住草屋、与禽兽杂处的困苦生活，表达对民生的同情。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗歌的现实关怀"
+    ],
+    "diagnostic_question": {
+      "question": "「八方各异气」的下一句是什么？",
+      "answer": "千里殊风雨"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7099",
+    "name": "背影（朱自清）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第4单元 阅读·背影",
+    "type": "reasoning",
+    "description": "回忆祖母去世、父亲失业的那年冬天，父亲在浦口车站为「我」买橘子爬月台的背影，四次写背影，层层推进情感。",
+    "mastery_criteria": [
+      "能找出文中四次写背影的位置",
+      "能分析父亲爬月台的动作描写"
+    ],
+    "diagnostic_question": {
+      "question": "《背影》中父亲为「我」买的是什么水果？",
+      "answer": "橘子"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7100",
+    "name": "白杨礼赞（茅盾）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第4单元 阅读·白杨礼赞",
+    "type": "reasoning",
+    "description": "以西北高原的白杨树象征北方农民和民族精神，用象征手法层层递进地礼赞。",
+    "mastery_criteria": [
+      "能说出白杨树的象征意义",
+      "能找出反复出现的抒情句"
+    ],
+    "diagnostic_question": {
+      "question": "《白杨礼赞》中白杨树象征什么？",
+      "answer": "北方农民和中华民族的精神"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7101",
+    "name": "永久的生命（严文井）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第4单元 阅读·散文二篇",
+    "type": "reasoning",
+    "description": "以小草、小牛犊写生命的繁衍不息，阐明个体生命有限而生命整体永久的哲理。",
+    "mastery_criteria": [
+      "能说出文章的核心观点",
+      "能理解欲扬先抑的写法"
+    ],
+    "diagnostic_question": {
+      "question": "《永久的生命》的作者是？",
+      "answer": "严文井"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7102",
+    "name": "我为什么而活着（罗素）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第4单元 阅读·散文二篇",
+    "type": "reasoning",
+    "description": "罗素自述支配一生的三种激情：对爱情的渴望、对知识的追求、对人类苦难不可遏制的同情。",
+    "mastery_criteria": [
+      "能说出三种激情",
+      "能理解文章的逻辑层次"
+    ],
+    "diagnostic_question": {
+      "question": "《我为什么而活着》的作者是？",
+      "answer": "罗素"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7103",
+    "name": "昆明的雨（汪曾祺）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第4单元 阅读·昆明的雨",
+    "type": "reasoning",
+    "description": "由画写起，写昆明的雨、仙人头、菌子、杨梅、缅桂花，语言平淡而有味。",
+    "mastery_criteria": [
+      "能说出文章写了哪些昆明风物",
+      "能体会平淡自然的语言风格"
+    ],
+    "diagnostic_question": {
+      "question": "《昆明的雨》的作者是？",
+      "answer": "汪曾祺"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7104",
+    "name": "中国石拱桥（茅以昇）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第5单元 阅读·中国石拱桥",
+    "type": "reasoning",
+    "description": "以赵州桥、卢沟桥为例说明中国石拱桥的特点，按总—分—总结构，用词准确。",
+    "mastery_criteria": [
+      "能说出中国石拱桥的三大特点",
+      "能分析举例子的说明方法"
+    ],
+    "diagnostic_question": {
+      "question": "《中国石拱桥》举了哪两座桥为例？",
+      "answer": "赵州桥和卢沟桥"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7105",
+    "name": "苏州园林（叶圣陶）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第5单元 阅读·苏州园林",
+    "type": "reasoning",
+    "description": "抓住「务必使游览者无论站在哪个点上，眼前总是一幅完美的图画」这一总特征，从亭台轩榭、假山池沼、花木、近远景逐层说明。",
+    "mastery_criteria": [
+      "能说出苏州园林的总特征",
+      "能梳理四个「讲究」的分说"
+    ],
+    "diagnostic_question": {
+      "question": "《苏州园林》的作者是？",
+      "answer": "叶圣陶"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7106",
+    "name": "人民英雄永垂不朽（周定舫）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第5单元 阅读·人民英雄永垂不朽",
+    "type": "reasoning",
+    "description": "按瞻仰顺序说明人民英雄纪念碑的位置、结构、浮雕，空间顺序与历史顺序结合。",
+    "mastery_criteria": [
+      "能说出文章的说明顺序",
+      "能概括浮雕的内容与主题"
+    ],
+    "diagnostic_question": {
+      "question": "人民英雄纪念碑坐落在哪里？",
+      "answer": "北京天安门广场"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7107",
+    "name": "梦回繁华（毛宁）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第5单元 阅读·梦回繁华",
+    "type": "reasoning",
+    "description": "说明《清明上河图》的创作背景、画面内容与艺术价值，语言兼具说明性与文学性。",
+    "mastery_criteria": [
+      "能说出画面的三个段落内容",
+      "能体会说明文中的文学笔法"
+    ],
+    "diagnostic_question": {
+      "question": "《梦回繁华》介绍的是哪幅名画？",
+      "answer": "《清明上河图》"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7108",
+    "name": "得道多助，失道寡助（《孟子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·《孟子》三章",
+    "type": "reasoning",
+    "description": "提出「天时不如地利，地利不如人和」，层层论证「人和」即得道，得道者多助。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出中心论点与论证思路"
+    ],
+    "diagnostic_question": {
+      "question": "「天时不如地利」的下一句是什么？",
+      "answer": "地利不如人和"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7109",
+    "name": "富贵不能淫（《孟子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·《孟子》三章",
+    "type": "reasoning",
+    "description": "孟子批驳景春对公孙衍、张仪的推崇，提出大丈夫的标准：居仁、立礼、行义。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出「大丈夫」的三条标准"
+    ],
+    "diagnostic_question": {
+      "question": "「富贵不能淫」的下一句是什么？",
+      "answer": "贫贱不能移，威武不能屈"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7110",
+    "name": "生于忧患，死于安乐（《孟子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·《孟子》三章",
+    "type": "reasoning",
+    "description": "先举六位圣贤起于微贱之例，再论困境磨炼人才，最后得出「生于忧患，死于安乐」。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出举例论证与道理论证的结合"
+    ],
+    "diagnostic_question": {
+      "question": "「故天将降大任于是人也」的下一句是什么？",
+      "answer": "必先苦其心志，劳其筋骨"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7111",
+    "name": "愚公移山（《列子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·愚公移山",
+    "type": "reasoning",
+    "description": "愚公率子孙挖山不止，智叟嘲笑，最终天帝感其诚派夸娥氏二子背走两山。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出愚公与智叟的对比及其寓意"
+    ],
+    "diagnostic_question": {
+      "question": "《愚公移山》选自哪部著作？",
+      "answer": "《列子》"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7112",
+    "name": "周亚夫军细柳（司马迁）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·周亚夫军细柳",
+    "type": "reasoning",
+    "description": "汉文帝劳军，细柳营军纪严明，周亚夫以军礼相见，文帝称其为「真将军」。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出对比手法与人物形象"
+    ],
+    "diagnostic_question": {
+      "question": "周亚夫驻军的营寨叫什么？",
+      "answer": "细柳"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7113",
+    "name": "饮酒（其五）（陶渊明）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·诗词五首",
+    "type": "conceptual",
+    "description": "写结庐人境而无车马喧的心境，以「采菊东篱下，悠然见南山」写物我合一的境界。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「心远」与「真意」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "「采菊东篱下」的下一句是什么？",
+      "answer": "悠然见南山"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7114",
+    "name": "春望（杜甫）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·诗词五首",
+    "type": "conceptual",
+    "description": "安史之乱中困居长安所作，写国破城春、感时伤别，末联以白发更短写忧思之深。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「感时花溅泪」的两种理解"
+    ],
+    "diagnostic_question": {
+      "question": "「国破山河在」的下一句是什么？",
+      "answer": "城春草木深"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7115",
+    "name": "雁门太守行（李贺）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·诗词五首",
+    "type": "conceptual",
+    "description": "以浓烈色彩写边塞战争场面，末句「报君黄金台上意，提携玉龙为君死」抒报国之志。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出诗中色彩的运用"
+    ],
+    "diagnostic_question": {
+      "question": "「黑云压城城欲摧」的下一句是什么？",
+      "answer": "甲光向日金鳞开"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7116",
+    "name": "赤壁（杜牧）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·诗词五首",
+    "type": "conceptual",
+    "description": "由赤壁古战场的一支折戟引发怀古，以二乔的命运设想历史另一种可能。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出「以小见大」的写法"
+    ],
+    "diagnostic_question": {
+      "question": "「东风不与周郎便」的下一句是什么？",
+      "answer": "铜雀春深锁二乔"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7117",
+    "name": "渔家傲（天接云涛连晓雾）（李清照）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 阅读·诗词五首",
+    "type": "conceptual",
+    "description": "以梦境写海天壮阔，借「九万里风鹏正举」表达对自由与理想的追求，风格豪放。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出这首词的豪放风格"
+    ],
+    "diagnostic_question": {
+      "question": "「九万里风鹏正举」的下一句是什么？",
+      "answer": "风休住，蓬舟吹取三山去"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7118",
+    "name": "浣溪沙（一曲新词酒一杯）（晏殊）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "由饮酒听歌写到花落燕归，以「无可奈何花落去，似曾相识燕归来」写时光流逝的怅惘。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出名句的哲理与情感"
+    ],
+    "diagnostic_question": {
+      "question": "「无可奈何花落去」的下一句是什么？",
+      "answer": "似曾相识燕归来"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7119",
+    "name": "采桑子（轻舟短棹西湖好）（欧阳修）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写泛舟颍州西湖所见，水面无风、琉璃滑，惊起沙禽掠岸飞。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出动静结合的手法"
+    ],
+    "diagnostic_question": {
+      "question": "「轻舟短棹西湖好」的下一句是什么？",
+      "answer": "绿水逶迤"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7120",
+    "name": "相见欢（金陵城上西楼）（朱敦儒）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "登金陵城楼望秋色，写中原沦丧、无人收复的悲愤，末句「试倩悲风吹泪过扬州」。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出词中的家国之痛"
+    ],
+    "diagnostic_question": {
+      "question": "「万里夕阳垂地大江流」出自哪首词？",
+      "answer": "《相见欢》（金陵城上西楼）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7121",
+    "name": "如梦令（常记溪亭日暮）（李清照）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "上",
+    "chapter": "八年级上册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "回忆少女时溪亭饮酒、误入藕花深处、争渡惊起鸥鹭的欢乐场景。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出词中的生活情趣"
+    ],
+    "diagnostic_question": {
+      "question": "「争渡，争渡」的下一句是什么？",
+      "answer": "惊起一滩鸥鹭"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7122",
+    "name": "社戏（鲁迅）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第1单元 阅读·社戏",
+    "type": "reasoning",
+    "description": "写「我」在平桥村与农家孩子夜航去赵庄看戏、归途偷豆的经历，结尾说再没吃到那夜似的好豆。",
+    "mastery_criteria": [
+      "能梳理看戏前、看戏、归途的情节",
+      "能理解结尾「好豆」「好戏」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "《社戏》中「我」去看戏的地点是？",
+      "answer": "赵庄"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7123",
+    "name": "回延安（贺敬之）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第1单元 阅读·回延安",
+    "type": "reasoning",
+    "description": "采用陕北信天游形式，两行一节、比兴兼用，写重回延安的激动与对延安的深情。",
+    "mastery_criteria": [
+      "能说出信天游的形式特点",
+      "能找出诗中的比兴句"
+    ],
+    "diagnostic_question": {
+      "question": "《回延安》采用哪种民歌形式？",
+      "answer": "信天游"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7124",
+    "name": "安塞腰鼓（刘成章）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第1单元 阅读·安塞腰鼓",
+    "type": "reasoning",
+    "description": "以大量短句、排比和反复写安塞腰鼓的磅礴气势，表现黄土高原的生命力量。",
+    "mastery_criteria": [
+      "能说出排比与反复的表达效果",
+      "能体会文章的气势"
+    ],
+    "diagnostic_question": {
+      "question": "《安塞腰鼓》的作者是？",
+      "answer": "刘成章"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7125",
+    "name": "灯笼（吴伯箫）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第1单元 阅读·灯笼",
+    "type": "reasoning",
+    "description": "由儿时挑灯笼的回忆写到乡情、亲情与家国之感，以灯笼为线索串联多种情思。",
+    "mastery_criteria": [
+      "能梳理与灯笼相关的事件",
+      "能说出以物为线索的写法"
+    ],
+    "diagnostic_question": {
+      "question": "《灯笼》的作者是？",
+      "answer": "吴伯箫"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7126",
+    "name": "大自然的语言（竺可桢）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第2单元 阅读·大自然的语言",
+    "type": "reasoning",
+    "description": "以「大自然的语言」喻物候现象，说明物候学的意义与影响物候的四个因素。",
+    "mastery_criteria": [
+      "能说出影响物候的四个因素",
+      "能分析由现象到本质的说明顺序"
+    ],
+    "diagnostic_question": {
+      "question": "《大自然的语言》的作者是？",
+      "answer": "竺可桢"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7127",
+    "name": "恐龙无处不有（阿西莫夫）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第2单元 阅读·阿西莫夫短文两篇",
+    "type": "reasoning",
+    "description": "由南极洲发现恐龙化石推断大陆曾经相连，说明板块构造理论，逻辑推理层层推进。",
+    "mastery_criteria": [
+      "能复述作者的推理过程",
+      "能说出由现象到结论的说明方法"
+    ],
+    "diagnostic_question": {
+      "question": "恐龙化石在南极洲被发现，由此推断出什么？",
+      "answer": "大陆曾经是连在一起的（板块漂移）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7128",
+    "name": "被压扁的沙子（阿西莫夫）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第2单元 阅读·阿西莫夫短文两篇",
+    "type": "reasoning",
+    "description": "以斯石英的形成条件为证据，支持恐龙灭绝的「撞击说」而非「火山说」。",
+    "mastery_criteria": [
+      "能说出斯石英的形成条件",
+      "能理清两种学说的证据链"
+    ],
+    "diagnostic_question": {
+      "question": "「被压扁的沙子」指的是？",
+      "answer": "斯石英"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7129",
+    "name": "月亮是从哪里来的（卞毓麟）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第2单元 阅读·月亮是从哪里来的",
+    "type": "reasoning",
+    "description": "介绍月球起源的几种假说，重点讲「大碰撞说」，体现科学假说需要证据支持。",
+    "mastery_criteria": [
+      "能说出至少三种月球起源假说",
+      "能理解假说与证据的关系"
+    ],
+    "diagnostic_question": {
+      "question": "目前较受支持的月球起源假说是？",
+      "answer": "大碰撞说"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7130",
+    "name": "时间的脚印（陶世龙）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第2单元 阅读·时间的脚印",
+    "type": "reasoning",
+    "description": "说明岩石如何记录时间：沉积、侵蚀、化石与地层，把抽象的时间变成可见的痕迹。",
+    "mastery_criteria": [
+      "能说出岩石记录时间的几种方式",
+      "能体会题目比喻的妙处"
+    ],
+    "diagnostic_question": {
+      "question": "「时间的脚印」在文中指什么？",
+      "answer": "岩石留下的地质痕迹"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7131",
+    "name": "桃花源记（陶渊明）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 阅读·桃花源记",
+    "type": "reasoning",
+    "description": "渔人误入桃花源，见世外桃源般的村落，离开后再寻不得，寄托对理想社会的向往。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出桃花源的理想社会特征"
+    ],
+    "diagnostic_question": {
+      "question": "「豁然开朗」的上一句是什么？",
+      "answer": "复行数十步"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7132",
+    "name": "小石潭记（柳宗元）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 阅读·小石潭记",
+    "type": "reasoning",
+    "description": "记发现小石潭、观鱼、望溪、坐潭上的过程，由乐转凄，含蓄写出贬谪的心境。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出作者情感由乐转悲的原因"
+    ],
+    "diagnostic_question": {
+      "question": "「潭中鱼可百许头」的下一句是什么？",
+      "answer": "皆若空游无所依"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7133",
+    "name": "核舟记（魏学洢）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 阅读·核舟记",
+    "type": "reasoning",
+    "description": "说明王叔远所刻核舟「大苏泛赤壁」，按船舱、船头、船尾、船背的顺序写，突出技艺之奇。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出文章的说明顺序"
+    ],
+    "diagnostic_question": {
+      "question": "核舟的主题是「大苏泛赤壁」，其中「大苏」指谁？",
+      "answer": "苏轼"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7134",
+    "name": "关雎（《诗经》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 阅读·《诗经》二首",
+    "type": "conceptual",
+    "description": "《诗经》首篇，以雎鸠起兴，写君子对淑女的思慕与追求，重章叠句。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出比兴与重章叠句的手法"
+    ],
+    "diagnostic_question": {
+      "question": "「关关雎鸠」的下一句是什么？",
+      "answer": "在河之洲"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7135",
+    "name": "蒹葭（《诗经》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 阅读·《诗经》二首",
+    "type": "conceptual",
+    "description": "以蒹葭白露起兴，写追寻伊人而不得的怅惘，意境朦胧悠远。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出「伊人」的多义性"
+    ],
+    "diagnostic_question": {
+      "question": "「蒹葭苍苍」的下一句是什么？",
+      "answer": "白露为霜"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7136",
+    "name": "式微（《诗经·邶风》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "役夫在露水中劳作，反复问「胡不归」，抒发对统治者的怨愤。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出「式微」的意思"
+    ],
+    "diagnostic_question": {
+      "question": "「式微式微」的下一句是什么？",
+      "answer": "胡不归"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7137",
+    "name": "子衿（《诗经·郑风》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "女子思念心上人，以「青青子衿」起兴，写等待中的焦灼。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出「衿」的意思"
+    ],
+    "diagnostic_question": {
+      "question": "「青青子衿」的下一句是什么？",
+      "answer": "悠悠我心"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7138",
+    "name": "送杜少府之任蜀州（王勃）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "送别诗却不作悲语，「海内存知己，天涯若比邻」以开阔胸襟写离别。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出此诗与一般送别诗的不同"
+    ],
+    "diagnostic_question": {
+      "question": "「海内存知己」的下一句是什么？",
+      "answer": "天涯若比邻"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7139",
+    "name": "望洞庭湖上张丞相（孟浩然）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第3单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写洞庭湖的壮阔气象，末联「坐观垂钓者，徒有羡鱼情」委婉表达求仕之意。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出干谒诗的特点"
+    ],
+    "diagnostic_question": {
+      "question": "「气蒸云梦泽」的下一句是什么？",
+      "answer": "波撼岳阳城"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7140",
+    "name": "最后一次讲演（闻一多）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第4单元 阅读·最后一次讲演",
+    "type": "reasoning",
+    "description": "闻一多在李公朴追悼会上的即兴讲演，怒斥反动派，语言短促有力，多用设问反问。",
+    "mastery_criteria": [
+      "能说出讲演词的针对性特点",
+      "能分析人称转换的表达效果"
+    ],
+    "diagnostic_question": {
+      "question": "《最后一次讲演》的作者是？",
+      "answer": "闻一多"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7141",
+    "name": "敬业与乐业（梁启超）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第4单元 阅读·敬业与乐业",
+    "type": "reasoning",
+    "description": "提出「敬业乐业」是人类生活的不二法门，分论有业、敬业、乐业，用事例与道理论证。",
+    "mastery_criteria": [
+      "能说出文章的三层分论点",
+      "能辨析举例论证与道理论证"
+    ],
+    "diagnostic_question": {
+      "question": "《敬业与乐业》的作者是？",
+      "answer": "梁启超"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7142",
+    "name": "应有格物致知精神（丁肇中）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第4单元 阅读·应有格物致知精神",
+    "type": "reasoning",
+    "description": "丁肇中结合自身科研经历，主张真正的格物致知是实验与探索，而非埋头读书。",
+    "mastery_criteria": [
+      "能说出「格物致知」的含义",
+      "能梳理论证的层次"
+    ],
+    "diagnostic_question": {
+      "question": "《应有格物致知精神》的作者是？",
+      "answer": "丁肇中"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7143",
+    "name": "我一生中的重要抉择（王选）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第4单元 阅读·我一生中的重要抉择",
+    "type": "reasoning",
+    "description": "王选讲自己做出的人生抉择，劝勉青年扶植新秀、甘做人梯，语言幽默坦诚。",
+    "mastery_criteria": [
+      "能概括作者的主要观点",
+      "能体会演讲的幽默与真诚"
+    ],
+    "diagnostic_question": {
+      "question": "《我一生中的重要抉择》的作者是？",
+      "answer": "王选"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7144",
+    "name": "壶口瀑布（梁衡）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第5单元 阅读·壶口瀑布",
+    "type": "reasoning",
+    "description": "两次到壶口，写枯水季与雨季瀑布的不同形态，由景及理，赞颂黄河的品格。",
+    "mastery_criteria": [
+      "能说出两次观瀑的不同景象",
+      "能理解由景入理的写法"
+    ],
+    "diagnostic_question": {
+      "question": "《壶口瀑布》的作者是？",
+      "answer": "梁衡"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7145",
+    "name": "在长江源头各拉丹冬（马丽华）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第5单元 阅读·在长江源头各拉丹冬",
+    "type": "reasoning",
+    "description": "记随考察队进入长江源头各拉丹冬的经历，写高原冰雪的壮美与身体的艰险。",
+    "mastery_criteria": [
+      "能梳理行程与所见景物",
+      "能体会作者的身体感受与精神"
+    ],
+    "diagnostic_question": {
+      "question": "长江的源头是？",
+      "answer": "各拉丹冬（唐古拉山）"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7146",
+    "name": "登勃朗峰（马克·吐温）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第5单元 阅读·登勃朗峰",
+    "type": "reasoning",
+    "description": "前半写登山所见美景，后半写乘马车下山的惊险与车夫的滑稽，笔调幽默。",
+    "mastery_criteria": [
+      "能说出文章两部分的不同笔调",
+      "能体会幽默讽刺的语言"
+    ],
+    "diagnostic_question": {
+      "question": "《登勃朗峰》的作者是？",
+      "answer": "马克·吐温"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7147",
+    "name": "一滴水经过丽江（阿来）",
+    "domain": "阅读理解",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第5单元 阅读·一滴水经过丽江",
+    "type": "reasoning",
+    "description": "以一滴水的视角游历丽江，从雪山到古城到金沙江，构思新奇，视角独特。",
+    "mastery_criteria": [
+      "能说出「一滴水」视角的妙处",
+      "能梳理水滴的行踪"
+    ],
+    "diagnostic_question": {
+      "question": "《一滴水经过丽江》的作者是？",
+      "answer": "阿来"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.YD.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7148",
+    "name": "北冥有鱼（《庄子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·《庄子》二则",
+    "type": "reasoning",
+    "description": "写鲲鹏之大与海运徙南冥，以夸张想象写「逍遥」的境界。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出鲲鹏的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "「北冥有鱼」的下一句是什么？",
+      "answer": "其名为鲲"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7149",
+    "name": "庄子与惠子游于濠梁之上（《庄子》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·《庄子》二则",
+    "type": "reasoning",
+    "description": "庄子与惠子濠上辩论「鱼之乐」，一重审美体验，一重逻辑推理，机锋迭出。",
+    "mastery_criteria": [
+      "能翻译全文",
+      "能说出两人观点的分歧所在"
+    ],
+    "diagnostic_question": {
+      "question": "「子非鱼，安知鱼之乐」是谁说的？",
+      "answer": "惠子"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7150",
+    "name": "虽有嘉肴（《礼记》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·《礼记》二则",
+    "type": "reasoning",
+    "description": "以嘉肴、至道作比，说明学然后知不足、教然后知困，得出「教学相长」。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出「教学相长」的含义"
+    ],
+    "diagnostic_question": {
+      "question": "「教学相长」出自哪篇文章？",
+      "answer": "《虽有嘉肴》"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7151",
+    "name": "大道之行也（《礼记》）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·《礼记》二则",
+    "type": "reasoning",
+    "description": "描绘「大同」社会的图景：天下为公、选贤与能、讲信修睦、人人得其所养。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出大同社会的几条特征"
+    ],
+    "diagnostic_question": {
+      "question": "「大道之行也」的下一句是什么？",
+      "answer": "天下为公"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7152",
+    "name": "马说（韩愈）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·马说",
+    "type": "reasoning",
+    "description": "以千里马喻人才、伯乐喻识才者，托物寓意，讽刺埋没人才的社会现实。",
+    "mastery_criteria": [
+      "能背诵并默写全文",
+      "能说出托物寓意的写法"
+    ],
+    "diagnostic_question": {
+      "question": "「世有伯乐」的下一句是什么？",
+      "answer": "然后有千里马"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7153",
+    "name": "石壕吏（杜甫）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·唐诗三首",
+    "type": "conceptual",
+    "description": "写差役夜捉人、老妇哭诉的场面，以叙事白描反映战争给百姓带来的苦难。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出诗中的叙事视角与白描手法"
+    ],
+    "diagnostic_question": {
+      "question": "「吏呼一何怒」的下一句是什么？",
+      "answer": "妇啼一何苦"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7154",
+    "name": "茅屋为秋风所破歌（杜甫）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·唐诗三首",
+    "type": "conceptual",
+    "description": "写秋风破屋、屋漏难眠的处境，由个人之苦推及天下寒士，抒「大庇天下」的胸怀。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出由己及人的情感升华"
+    ],
+    "diagnostic_question": {
+      "question": "「安得广厦千万间」的下一句是什么？",
+      "answer": "大庇天下寒士俱欢颜"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7155",
+    "name": "卖炭翁（白居易）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 阅读·唐诗三首",
+    "type": "conceptual",
+    "description": "写卖炭翁烧炭、运炭、被宫使掠夺的过程，以对比揭露「宫市」之害。",
+    "mastery_criteria": [
+      "能背诵并默写全诗",
+      "能说出诗中的对比手法"
+    ],
+    "diagnostic_question": {
+      "question": "「可怜身上衣正单」的下一句是什么？",
+      "answer": "心忧炭贱愿天寒"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7156",
+    "name": "题破山寺后禅院（常建）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "清晨入古寺，写曲径通幽、禅房花木，以「万籁此都寂，但余钟磬音」收束，意境幽静。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出以声衬静的手法"
+    ],
+    "diagnostic_question": {
+      "question": "「曲径通幽处」的下一句是什么？",
+      "answer": "禅房花木深"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7157",
+    "name": "送友人（李白）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "以青山白水、浮云落日写送别场景，「挥手自兹去，萧萧班马鸣」以马鸣衬离情。",
+    "mastery_criteria": [
+      "能默写全诗",
+      "能说出颈联的比喻与对仗"
+    ],
+    "diagnostic_question": {
+      "question": "「浮云游子意」的下一句是什么？",
+      "answer": "落日故人情"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7158",
+    "name": "卜算子·黄州定慧院寓居作（苏轼）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "借孤鸿写自己被贬黄州的孤高寂寞，「拣尽寒枝不肯栖，寂寞沙洲冷」托物言志。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出孤鸿的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "「拣尽寒枝不肯栖」的下一句是什么？",
+      "answer": "寂寞沙洲冷"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
+  },
+  {
+    "id": "cnc_j7159",
+    "name": "卜算子·咏梅（陆游）",
+    "domain": "古诗文积累",
+    "grade": 8,
+    "semester": "下",
+    "chapter": "八年级下册 第6单元 课外古诗词诵读",
+    "type": "conceptual",
+    "description": "写梅花在驿外断桥边寂寞开放、无意争春，「零落成泥碾作尘，只有香如故」自明心志。",
+    "mastery_criteria": [
+      "能默写全词",
+      "能说出梅花的象征意义"
+    ],
+    "diagnostic_question": {
+      "question": "「零落成泥碾作尘」的下一句是什么？",
+      "answer": "只有香如故"
+    },
+    "external": false,
+    "subject": "chinese",
+    "standards": [
+      {
+        "id": "ccs-2022:4.GS.01",
+        "confidence": "inferred",
+        "note": "第四学段（7—9 年级）的常见教学内容。编号由本图谱自编，内容为公开转述，未逐页核对教材原文。"
+      }
+    ]
   }
 ]
