@@ -1,0 +1,147 @@
+{
+  "description": "方案 b：18 个 cnm_ext_* 已从 topics.json 删除，不再作为节点。诊断或浏览遇到旧 id（例如 ?target=cnm_ext_002）时，按 targets 跳到对应的小学正式知识点。targets 是该外部节点所概括内容里的代表知识点，不是完整清单。",
+  "aliases": {
+    "cnm_ext_001": {
+      "name": "整数四则运算与运算律",
+      "targets": [
+        "cnm_p033",
+        "cnm_p074",
+        "cnm_p058",
+        "cnm_p116"
+      ]
+    },
+    "cnm_ext_002": {
+      "name": "分数的意义与四则运算",
+      "targets": [
+        "cnm_p165",
+        "cnm_p173",
+        "cnm_p178",
+        "cnm_p183"
+      ]
+    },
+    "cnm_ext_003": {
+      "name": "小数的意义与四则运算",
+      "targets": [
+        "cnm_p118",
+        "cnm_p125",
+        "cnm_p133",
+        "cnm_p138"
+      ]
+    },
+    "cnm_ext_004": {
+      "name": "百分数及其应用",
+      "targets": [
+        "cnm_p194",
+        "cnm_p203",
+        "cnm_p205"
+      ]
+    },
+    "cnm_ext_005": {
+      "name": "比与比例（含正比例、反比例）",
+      "targets": [
+        "cnm_p185",
+        "cnm_p210",
+        "cnm_p213",
+        "cnm_p214"
+      ]
+    },
+    "cnm_ext_006": {
+      "name": "认识负数",
+      "targets": [
+        "cnm_p201"
+      ]
+    },
+    "cnm_ext_007": {
+      "name": "用字母表示数与简易方程",
+      "targets": [
+        "cnm_p142",
+        "cnm_p145"
+      ]
+    },
+    "cnm_ext_008": {
+      "name": "因数、倍数、质数与合数",
+      "targets": [
+        "cnm_p153",
+        "cnm_p157",
+        "cnm_p159"
+      ]
+    },
+    "cnm_ext_009": {
+      "name": "常见数量关系与单位换算",
+      "targets": [
+        "cnm_p111",
+        "cnm_p069",
+        "cnm_p056",
+        "cnm_p062"
+      ]
+    },
+    "cnm_ext_010": {
+      "name": "平面图形的认识及周长面积",
+      "targets": [
+        "cnm_p089",
+        "cnm_p147",
+        "cnm_p148",
+        "cnm_p192"
+      ]
+    },
+    "cnm_ext_011": {
+      "name": "三角形的分类与内角和",
+      "targets": [
+        "cnm_p122",
+        "cnm_p124"
+      ]
+    },
+    "cnm_ext_012": {
+      "name": "立体图形的认识及表面积体积",
+      "targets": [
+        "cnm_p160",
+        "cnm_p207",
+        "cnm_p209"
+      ]
+    },
+    "cnm_ext_013": {
+      "name": "角的认识与度量",
+      "targets": [
+        "cnm_p100",
+        "cnm_p101"
+      ]
+    },
+    "cnm_ext_014": {
+      "name": "平行与垂直",
+      "targets": [
+        "cnm_p103",
+        "cnm_p104"
+      ]
+    },
+    "cnm_ext_015": {
+      "name": "图形的平移、旋转与轴对称",
+      "targets": [
+        "cnm_p128",
+        "cnm_p171",
+        "cnm_p127"
+      ]
+    },
+    "cnm_ext_016": {
+      "name": "用数对和方向距离确定位置",
+      "targets": [
+        "cnm_p136",
+        "cnm_p180"
+      ]
+    },
+    "cnm_ext_017": {
+      "name": "统计表、统计图与平均数",
+      "targets": [
+        "cnm_p085",
+        "cnm_p175",
+        "cnm_p199",
+        "cnm_p129"
+      ]
+    },
+    "cnm_ext_018": {
+      "name": "可能性",
+      "targets": [
+        "cnm_p140"
+      ]
+    }
+  }
+}

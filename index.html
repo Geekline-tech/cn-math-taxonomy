@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN" data-subject="math">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Origin · 中小学知识图谱与自适应诊断</title>
+    <meta
+      name="description"
+      content="Origin 覆盖数学、语文、英语、物理的知识图谱。沿先修关系自适应出题，从选中的知识点往回追，定位真正没学会的那一步。"
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <script>
+      (function () {
+        try {
+          var raw = localStorage.getItem('origin.theme') || 'system'
+          var dark =
+            raw === 'dark' ||
+            (raw === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          if (dark) document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

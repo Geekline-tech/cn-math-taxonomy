@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-10-29T06:57:18.904Z",
+  "source": "public/data",
+  "subjects": {
+    "math": {
+      "key": "math",
+      "label": "数学",
+      "topics": 845,
+      "edges": {
+        "total": 1406,
+        "hard": 1190,
+        "soft": 216
+      },
+      "questions": 3527,
+      "standards": 314,
+      "grades": [
+        {
+          "grade": 1,
+          "count": 48,
+          "label": "一年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 2,
+          "count": 31,
+          "label": "二年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 3,
+          "count": 39,
+          "label": "三年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 4,
+          "count": 41,
+          "label": "四年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 5,
+          "count": 52,
+          "label": "五年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 6,
+          "count": 48,
+          "label": "六年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 7,
+          "count": 119,
+          "label": "七年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 8,
+          "count": 114,
+          "label": "八年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 9,
+          "count": 82,
+          "label": "九年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 10,
+          "count": 78,
+          "label": "高一",
+          "stage": "senior"
+        },
+        {
+          "grade": 11,
+          "count": 65,
+          "label": "高二",
+          "stage": "senior"
+        },
+        {
+          "grade": 12,
+          "count": 53,
+          "label": "选必一",
+          "stage": "senior"
+        },
+        {
+          "grade": 13,
+          "count": 33,
+          "label": "选必二",
+          "stage": "senior"
+        },
+        {
+          "grade": 14,
+          "count": 42,
+          "label": "选必三",
+          "stage": "senior"
+        }
+      ],
+      "domains": [
+        {
+          "name": "数与代数",
+          "count": 421
+        },
+        {
+          "name": "图形与几何",
+          "count": 270
+        },
+        {
+          "name": "统计与概率",
+          "count": 113
+        },
+        {
+          "name": "综合与实践",
+          "count": 41
+        }
+      ]
+    },
+    "chinese": {
+      "key": "chinese",
+      "label": "语文",
+      "topics": 493,
+      "edges": {
+        "total": 656,
+        "hard": 268,
+        "soft": 388
+      },
+      "questions": 1972,
+      "standards": 20,
+      "grades": [
+        {
+          "grade": 1,
+          "count": 79,
+          "label": "一年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 2,
+          "count": 78,
+          "label": "二年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 3,
+          "count": 82,
+          "label": "三年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 4,
+          "count": 83,
+          "label": "四年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 5,
+          "count": 84,
+          "label": "五年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 6,
+          "count": 87,
+          "label": "六年级",
+          "stage": "primary"
+        }
+      ],
+      "domains": [
+        {
+          "name": "阅读理解",
+          "count": 269
+        },
+        {
+          "name": "古诗文积累",
+          "count": 72
+        },
+        {
+          "name": "习作基础",
+          "count": 61
+        },
+        {
+          "name": "识字写字",
+          "count": 47
+        },
+        {
+          "name": "词语",
+          "count": 16
+        },
+        {
+          "name": "拼音",
+          "count": 15
+        },
+        {
+          "name": "句子",
+          "count": 13
+        }
+      ]
+    },
+    "english": {
+      "key": "english",
+      "label": "英语",
+      "topics": 724,
+      "edges": {
+        "total": 914,
+        "hard": 221,
+        "soft": 693
+      },
+      "questions": 2896,
+      "standards": 116,
+      "grades": [
+        {
+          "grade": 3,
+          "count": 71,
+          "label": "三年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 4,
+          "count": 42,
+          "label": "四年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 5,
+          "count": 54,
+          "label": "五年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 6,
+          "count": 41,
+          "label": "六年级",
+          "stage": "primary"
+        },
+        {
+          "grade": 7,
+          "count": 108,
+          "label": "七年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 8,
+          "count": 88,
+          "label": "八年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 9,
+          "count": 61,
+          "label": "九年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 10,
+          "count": 44,
+          "label": "必修一",
+          "stage": "senior"
+        },
+        {
+          "grade": 11,
+          "count": 37,
+          "label": "必修二",
+          "stage": "senior"
+        },
+        {
+          "grade": 12,
+          "count": 36,
+          "label": "必修三",
+          "stage": "senior"
+        },
+        {
+          "grade": 13,
+          "count": 35,
+          "label": "选必一",
+          "stage": "senior"
+        },
+        {
+          "grade": 14,
+          "count": 36,
+          "label": "选必二",
+          "stage": "senior"
+        },
+        {
+          "grade": 15,
+          "count": 35,
+          "label": "选必三",
+          "stage": "senior"
+        },
+        {
+          "grade": 16,
+          "count": 36,
+          "label": "选必四",
+          "stage": "senior"
+        }
+      ],
+      "domains": [
+        {
+          "name": "语法",
+          "count": 202
+        },
+        {
+          "name": "读写",
+          "count": 179
+        },
+        {
+          "name": "词汇",
+          "count": 177
+        },
+        {
+          "name": "日常表达",
+          "count": 134
+        },
+        {
+          "name": "语音",
+          "count": 32
+        }
+      ]
+    },
+    "physics": {
+      "key": "physics",
+      "label": "物理",
+      "topics": 269,
+      "edges": {
+        "total": 637,
+        "hard": 377,
+        "soft": 260
+      },
+      "questions": 1076,
+      "standards": 197,
+      "grades": [
+        {
+          "grade": 8,
+          "count": 52,
+          "label": "八年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 9,
+          "count": 40,
+          "label": "九年级",
+          "stage": "junior"
+        },
+        {
+          "grade": 10,
+          "count": 27,
+          "label": "高一",
+          "stage": "senior"
+        },
+        {
+          "grade": 11,
+          "count": 25,
+          "label": "高二",
+          "stage": "senior"
+        },
+        {
+          "grade": 12,
+          "count": 37,
+          "label": "选必一",
+          "stage": "senior"
+        },
+        {
+          "grade": 13,
+          "count": 28,
+          "label": "选必二",
+          "stage": "senior"
+        },
+        {
+          "grade": 14,
+          "count": 26,
+          "label": "选必三",
+          "stage": "senior"
+        },
+        {
+          "grade": 15,
+          "count": 34,
+          "label": "选必四",
+          "stage": "senior"
+        }
+      ],
+      "domains": [
+        {
+          "name": "运动和相互作用",
+          "count": 161
+        },
+        {
+          "name": "能量",
+          "count": 50
+        },
+        {
+          "name": "物质",
+          "count": 38
+        },
+        {
+          "name": "跨学科实践",
+          "count": 20
+        }
+      ]
+    }
+  }
+}
