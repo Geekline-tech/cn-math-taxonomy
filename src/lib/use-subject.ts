@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
@@ -21,21 +21,38 @@ export const useSubjectStore = create<SubjectState>()(
 
 export function useSubject() {
   const [params, setParams] = useSearchParams()
-  const subject = useSubjectStore((state) => state.subject)
-  const setSubject = useSubjectStore((state) => state.setSubject)
+  const stored = useSubjectStore((state) => state.subject)
+  const setStored = useSubjectStore((state) => state.setSubject)
+
+  const fromUrl = params.get('subject')
+  const subject = isSubject(fromUrl) ? fromUrl : stored
+  const lastUrl = useRef<string | null>(null)
 
   useEffect(() => {
-    const fromUrl = params.get('subject')
-    if (isSubject(fromUrl) && fromUrl !== subject) setSubject(fromUrl)
-  }, [params, subject, setSubject])
+    if (fromUrl === lastUrl.current) return
+    lastUrl.current = fromUrl
+    if (isSubject(fromUrl) && fromUrl !== stored) setStored(fromUrl)
+  }, [fromUrl, stored, setStored])
 
   useEffect(() => {
     document.documentElement.dataset.subject = subject
-    const next = new URLSearchParams(params)
-    if (subject === 'math') next.delete('subject')
-    else next.set('subject', subject)
-    if (next.toString() !== params.toString()) setParams(next, { replace: true })
-  }, [subject, params, setParams])
+  }, [subject])
+
+  const setSubject = useCallback(
+    (next: SubjectKey) => {
+      setStored(next)
+      setParams(
+        (prev) => {
+          const copy = new URLSearchParams(prev)
+          if (next === 'math') copy.delete('subject')
+          else copy.set('subject', next)
+          return copy
+        },
+        { replace: true },
+      )
+    },
+    [setStored, setParams],
+  )
 
   return { subject, setSubject }
 }

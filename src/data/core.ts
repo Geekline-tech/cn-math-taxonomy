@@ -17,12 +17,15 @@ export type StandardsFile = {
   source?: Record<string, unknown>
 }
 
-export type CoreData = {
+export type BaseData = {
   topics: Topic[]
   deps: Dependency[]
-  questions: Question[]
   aliases: Aliases
   standards: StandardsFile
+}
+
+export type CoreData = BaseData & {
+  questions: Question[]
 }
 
 async function getJson<T>(file: string): Promise<T> {
@@ -31,53 +34,60 @@ async function getJson<T>(file: string): Promise<T> {
   return (await response.json()) as T
 }
 
-let corePromise: Promise<CoreData> | null = null
+let basePromise: Promise<BaseData> | null = null
+const questionPromises = new Map<SubjectKey, Promise<Question[]>>()
 
-export function loadCore(): Promise<CoreData> {
-  if (!corePromise) {
-    corePromise = Promise.all([
+export function loadBase(): Promise<BaseData> {
+  if (!basePromise) {
+    basePromise = Promise.all([
       getJson<Topic[]>('topics.json'),
       getJson<Dependency[]>('dependencies.json'),
-      getJson<Question[]>('questions.json'),
       getJson<Aliases>('id-aliases.json'),
       getJson<StandardsFile>('cn-curriculum-standards.json'),
     ])
-      .then(([topics, deps, questions, aliases, standards]) => ({
-        topics,
-        deps,
-        questions,
-        aliases,
-        standards,
-      }))
+      .then(([topics, deps, aliases, standards]) => ({ topics, deps, aliases, standards }))
       .catch((error: unknown) => {
-        corePromise = null
+        basePromise = null
         throw error
       })
   }
-  return corePromise
+  return basePromise
 }
 
-const graphCache = new Map<SubjectKey, Graph>()
-
-export async function loadSubjectGraph(subject: SubjectKey): Promise<Graph> {
-  const cached = graphCache.get(subject)
+export function loadQuestions(subject: SubjectKey): Promise<Question[]> {
+  const cached = questionPromises.get(subject)
   if (cached) return cached
-  const core = await loadCore()
+  const task = getJson<Question[]>(`questions-${subject}.json`).catch((error: unknown) => {
+    questionPromises.delete(subject)
+    throw error
+  })
+  questionPromises.set(subject, task)
+  return task
+}
+
+const graphCache = new Map<string, Graph>()
+
+export async function loadSubjectGraph(subject: SubjectKey, withQuestions = true): Promise<Graph> {
+  const cacheKey = `${subject}:${withQuestions ? 'q' : 'nq'}`
+  const cached = graphCache.get(cacheKey)
+  if (cached) return cached
+  const [base, questions] = await Promise.all([
+    loadBase(),
+    withQuestions ? loadQuestions(subject) : Promise.resolve([] as Question[]),
+  ])
   const prefix = PREFIX[subject]
-  const topics = core.topics.filter((topic) => topic.id.startsWith(prefix))
+  const topics = base.topics.filter((topic) => topic.id.startsWith(prefix))
   const ids = new Set(topics.map((topic) => topic.id))
-  const deps = core.deps.filter((dep) => ids.has(dep.topicId) && ids.has(dep.prerequisiteId))
-  const questions = core.questions.filter((question) => ids.has(question.topicId))
+  const deps = base.deps.filter((dep) => ids.has(dep.topicId) && ids.has(dep.prerequisiteId))
   const graph = DiagEngine.buildGraph(topics, deps, questions)
-  graphCache.set(subject, graph)
+  graphCache.set(cacheKey, graph)
   return graph
 }
 
-export function standardsById(core: CoreData): Map<string, StandardItem> {
-  return new Map(core.standards.items.map((item) => [item.id, item]))
+export function standardsById(standards: StandardsFile): Map<string, StandardItem> {
+  return new Map(standards.items.map((item) => [item.id, item]))
 }
 
 export function resolveIds(raw: string, aliases: Aliases): string[] {
-  const ids = DiagEngine.resolveTargets(raw, aliases as Record<string, unknown>)
-  return ids
+  return DiagEngine.resolveTargets(raw, aliases as Record<string, unknown>)
 }

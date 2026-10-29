@@ -30,20 +30,15 @@ import {
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { TopicGraph, type Depth } from '@/components/topic-graph'
-import { loadCore } from '@/data/core'
+import { loadBase } from '@/data/core'
 import DiagEngine from '@/engine/diag-engine'
 import type { Graph, StandardItem, SubjectKey, Topic } from '@/engine/types'
+import { gradeLabel, missingStages, STAGE_LABEL, stageOf, stagesOf, type Stage } from '@/lib/grades'
+import { SUBJECTS } from '@/lib/subjects'
 import { useGraph } from '@/lib/use-graph'
 import { useSubject } from '@/lib/use-subject'
 
 const { Text, Title, Paragraph } = Typography
-
-const STAGE_OPTIONS = [
-  { value: 'all', label: '全部' },
-  { value: 'primary', label: '小学' },
-  { value: 'junior', label: '初中' },
-  { value: 'senior', label: '高中' },
-]
 
 const DEPTH_OPTIONS = [
   { value: '1', label: '1 层' },
@@ -53,20 +48,6 @@ const DEPTH_OPTIONS = [
 ]
 
 const STAGE_COLOR = { primary: 'blue', junior: 'purple', senior: 'magenta' } as const
-
-function stageOf(grade: number) {
-  if (grade <= 6) return 'primary' as const
-  if (grade <= 9) return 'junior' as const
-  return 'senior' as const
-}
-
-function gradeText(grade: number) {
-  const names = ['一', '二', '三', '四', '五', '六', '七', '八', '九']
-  if (grade <= 9) return `${names[grade - 1] ?? ''}年级`
-  if (grade === 10) return '高一'
-  if (grade === 11) return '高二'
-  return `选必${['一', '二', '三', '四'][grade - 12] ?? ''}`
-}
 
 function volumeLabel(volume: string) {
   const match = /^([一二三四五六七八九])([上下全])$/.exec(volume)
@@ -109,8 +90,8 @@ function groupTopics(topics: Topic[]): VolumeGroup[] {
 function useStandards() {
   const [items, setItems] = useState<StandardItem[]>([])
   useEffect(() => {
-    loadCore()
-      .then((core) => setItems(core.standards.items))
+    loadBase()
+      .then((base) => setItems(base.standards.items))
       .catch(() => setItems([]))
   }, [])
   return items
@@ -132,7 +113,7 @@ type ListPaneProps = {
 }
 
 function ListPane(props: ListPaneProps) {
-  const { graph, selectedId, onSelect, query, onQuery, stage, onStage, grade, onGrade, domain, onDomain } = props
+  const { graph, subject, selectedId, onSelect, query, onQuery, stage, onStage, grade, onGrade, domain, onDomain } = props
   const { token } = theme.useToken()
 
   const filtered = useMemo(() => {
@@ -152,9 +133,22 @@ function ListPane(props: ListPaneProps) {
   }, [graph, query, stage, grade, domain])
 
   const groups = useMemo(() => groupTopics(filtered), [filtered])
-  const grades = useMemo(
+  const allGrades = useMemo(
     () => [...new Set(graph.topics.filter((topic) => !topic.external).map((topic) => topic.grade))].sort((a, b) => a - b),
     [graph],
+  )
+  const stageOptions = useMemo(
+    () => [
+      { value: 'all', label: '全部' },
+      ...stagesOf(allGrades).map((item) => ({ value: item, label: STAGE_LABEL[item] })),
+    ],
+    [allGrades],
+  )
+  const absent = useMemo(() => missingStages(allGrades), [allGrades])
+  const grades = useMemo(
+    () =>
+      stage === 'all' ? allGrades : allGrades.filter((item) => stageOf(item) === stage),
+    [allGrades, stage],
   )
   const domains = useMemo(
     () => [...new Set(graph.topics.filter((topic) => !topic.external).map((topic) => topic.domain))],
@@ -189,7 +183,7 @@ function ListPane(props: ListPaneProps) {
         value={query}
         onChange={(event) => onQuery(event.target.value)}
       />
-      <Segmented block size="small" value={stage} options={STAGE_OPTIONS} onChange={(value) => onStage(String(value))} />
+      <Segmented block size="small" value={stage} options={stageOptions} onChange={(value) => onStage(String(value))} />
       <Space.Compact block>
         <Select
           style={{ flex: 1 }}
@@ -197,7 +191,7 @@ function ListPane(props: ListPaneProps) {
           allowClear
           value={grade}
           onChange={(value) => onGrade(value)}
-          options={grades.map((item) => ({ value: item, label: gradeText(item) }))}
+          options={grades.map((item) => ({ value: item, label: gradeLabel(subject, item) }))}
         />
         <Select
           style={{ flex: 1 }}
@@ -208,9 +202,18 @@ function ListPane(props: ListPaneProps) {
           options={domains.map((item) => ({ value: item, label: item }))}
         />
       </Space.Compact>
-      <Text type="secondary" style={{ fontSize: 12 }}>
-        共 {filtered.length} 个知识点
-      </Text>
+      <Space direction="vertical" size={2}>
+        <Text type="secondary" style={{ fontSize: 12 }}>
+          共 {filtered.length} 个知识点
+        </Text>
+        {absent.length ? (
+          <Text style={{ fontSize: 12, color: token.colorWarning }}>
+            {SUBJECTS.find((item) => item.key === subject)?.label}目前只收录
+            {stagesOf(allGrades).map((item) => STAGE_LABEL[item]).join('、')}内容，
+            {absent.map((item) => STAGE_LABEL[item]).join('、')}还没有题库数据。
+          </Text>
+        ) : null}
+      </Space>
       <div style={{ flex: 1, overflow: 'auto', borderTop: `1px solid ${token.colorBorderSecondary}` }}>
         {groups.length ? (
           <Collapse
@@ -271,12 +274,13 @@ function ListPane(props: ListPaneProps) {
 
 type DetailPaneProps = {
   graph: Graph
+  subject: SubjectKey
   topic: Topic
   standards: StandardItem[]
   onSelect: (id: string) => void
 }
 
-function DetailPane({ graph, topic, standards, onSelect }: DetailPaneProps) {
+function DetailPane({ graph, subject, topic, standards, onSelect }: DetailPaneProps) {
   const navigate = useNavigate()
   const { message } = AntdApp.useApp()
   const prereqs = graph.prereqs[topic.id] || []
@@ -293,7 +297,7 @@ function DetailPane({ graph, topic, standards, onSelect }: DetailPaneProps) {
             {topic.name}
           </Title>
           <Space size={4} wrap>
-            <Tag color={STAGE_COLOR[stageOf(topic.grade)]}>{gradeText(topic.grade)}</Tag>
+            <Tag color={STAGE_COLOR[stageOf(topic.grade)]}>{gradeLabel(subject, topic.grade)}</Tag>
             <Tag>{topic.domain}</Tag>
             {topic.type ? <Tag color="default">{topic.type}</Tag> : null}
             <Tag color="default">{topic.id}</Tag>
@@ -414,7 +418,7 @@ function DetailPane({ graph, topic, standards, onSelect }: DetailPaneProps) {
 
 export function ExplorePage() {
   const { subject } = useSubject()
-  const { graph, error } = useGraph(subject)
+  const { graph, error } = useGraph(subject, false)
   const standards = useStandards()
   const screens = Grid.useBreakpoint()
   const [params, setParams] = useSearchParams()
@@ -429,6 +433,17 @@ export function ExplorePage() {
 
   const selectedId = params.get('id')
   const selected = selectedId && graph ? graph.byId[selectedId] : undefined
+
+  const availableStages = useMemo(
+    () => (graph ? stagesOf(graph.topics.filter((topic) => !topic.external).map((topic) => topic.grade)) : []),
+    [graph],
+  )
+
+  useEffect(() => {
+    if (!graph || !availableStages.length) return
+    if (stage !== 'all' && !availableStages.includes(stage as Stage)) setStage('all')
+    if (grade && !graph.topics.some((topic) => topic.grade === grade && !topic.external)) setGrade(undefined)
+  }, [graph, availableStages, stage, grade])
 
   const firstVisible = graph
     ? graph.topics.find(
@@ -554,7 +569,7 @@ export function ExplorePage() {
   )
 
   const detailPane = selected ? (
-    <DetailPane graph={graph} topic={selected} standards={standards} onSelect={select} />
+    <DetailPane graph={graph} subject={subject} topic={selected} standards={standards} onSelect={select} />
   ) : (
     <Flex align="center" justify="center" style={{ height: '100%' }}>
       <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="选一个知识点查看详情" />

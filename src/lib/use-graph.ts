@@ -7,13 +7,13 @@ type State = {
   error: string | null
 }
 
-export function useGraph(subject: SubjectKey): State {
+export function useGraph(subject: SubjectKey, withQuestions = true): State {
   const [state, setState] = useState<State>({ graph: null, error: null })
 
   useEffect(() => {
     let alive = true
     setState({ graph: null, error: null })
-    loadSubjectGraph(subject)
+    loadSubjectGraph(subject, withQuestions)
       .then((graph) => {
         if (alive) setState({ graph, error: null })
       })
@@ -23,7 +23,7 @@ export function useGraph(subject: SubjectKey): State {
     return () => {
       alive = false
     }
-  }, [subject])
+  }, [subject, withQuestions])
 
   return state
 }

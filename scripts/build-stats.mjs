@@ -41,11 +41,13 @@ const [topics, deps, questions, standards] = await Promise.all([
 ])
 
 const subjects = {}
+const questionBatches = {}
 for (const s of SUBJECTS) {
   const own = topics.filter((t) => t.id.startsWith(s.prefix))
   const ids = new Set(own.map((t) => t.id))
   const edges = deps.filter((e) => ids.has(e.topicId))
   const qs = questions.filter((q) => ids.has(q.topicId))
+  questionBatches[s.key] = qs
 
   const grades = new Map()
   for (const t of own) {
@@ -88,7 +90,18 @@ const payload = {
 await mkdir(dirname(outFile), { recursive: true })
 await writeFile(outFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8')
 
+await Promise.all(
+  Object.entries(questionBatches).map(([key, list]) =>
+    writeFile(join(dataDir, `questions-${key}.json`), JSON.stringify(list), 'utf8'),
+  ),
+)
+
 const summary = Object.values(subjects)
   .map((s) => `${s.label} ${s.topics} 点 / ${s.edges.total} 边 / ${s.questions} 题`)
   .join('，')
 console.log(`stats.json 已生成：${summary}`)
+console.log(
+  `分科题库已生成：${Object.entries(questionBatches)
+    .map(([key, list]) => `${key} ${list.length} 题`)
+    .join('，')}`,
+)

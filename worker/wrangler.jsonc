@@ -1,0 +1,26 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "origin-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "AI_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "AI_FALLBACK_MODEL": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+    "AI_DAILY_LIMIT": "500",
+    "PROBE_TOKEN": "origin-probe-2026",
+    "MAX_ARCHIVE_BYTES": "900000"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "origin-db",
+      "database_id": "a2ee9813-c065-4041-9c70-e99ee94ff770"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  }
+}

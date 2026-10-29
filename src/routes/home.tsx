@@ -61,12 +61,14 @@ export function HomePage() {
   const stats = data?.subjects[subject]
   const maxGradeCount = stats ? Math.max(...stats.grades.map((grade) => grade.count)) : 1
   const stageTotals = stats
-    ? (['primary', 'junior', 'senior'] as const).map((stage) => ({
-        stage,
-        label: STAGE_LABEL[stage],
-        count: stats.grades.filter((grade) => grade.stage === stage).reduce((sum, grade) => sum + grade.count, 0),
-        grades: stats.grades.filter((grade) => grade.stage === stage).length,
-      }))
+    ? (['primary', 'junior', 'senior'] as const)
+        .map((stage) => ({
+          stage,
+          label: STAGE_LABEL[stage],
+          count: stats.grades.filter((grade) => grade.stage === stage).reduce((sum, grade) => sum + grade.count, 0),
+          grades: stats.grades.filter((grade) => grade.stage === stage).length,
+        }))
+        .filter((item) => item.count > 0)
     : []
 
   return (

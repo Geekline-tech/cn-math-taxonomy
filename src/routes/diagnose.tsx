@@ -31,11 +31,14 @@ import {
   Typography,
   theme,
 } from 'antd'
-import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import { PathGraph } from '@/components/path-graph'
+import { AiExplain } from '@/components/ai-explain'
 import DiagEngine from '@/engine/diag-engine'
 import type { Graph, Question, Result, Session, SubjectKey, Topic } from '@/engine/types'
+import * as store from '@/lib/children-store'
+import { SUBJECTS } from '@/lib/subjects'
 import { useGraph } from '@/lib/use-graph'
 import { useSubject } from '@/lib/use-subject'
 
@@ -277,6 +280,21 @@ export function DiagnosePage() {
   const [selfEval, setSelfEval] = useState(false)
   const [confirm, setConfirm] = useState(3)
   const [started, setStarted] = useState(false)
+  const [archive, setArchive] = useState<{ status: 'idle' | 'saved' | 'nofile' | 'failed'; name?: string }>({
+    status: 'idle',
+  })
+  const savedRef = useRef('')
+
+  useEffect(() => {
+    setPhase('pick')
+    setSession(null)
+    setLast(null)
+    setInput('')
+    setSelfEval(false)
+    setArchive({ status: 'idle' })
+    setStarted(false)
+    savedRef.current = ''
+  }, [subject])
 
   const item = useMemo(
     () => (graph && session && phase === 'quiz' && !last ? DiagEngine.nextItem(graph, session) : null),
@@ -298,6 +316,38 @@ export function DiagnosePage() {
     [graph, session, phase],
   )
 
+  useEffect(() => {
+    if (phase !== 'result' || !summary || !session || !summary.asked) return
+    const key = [subject, session.seed, session.targets.join(',')].join('|')
+    if (savedRef.current === key) return
+    savedRef.current = key
+    const child = store.current()
+    if (!child) {
+      setArchive({ status: 'nofile' })
+      return
+    }
+    const ok = store.saveRecord(child.id, {
+      key,
+      subject,
+      label,
+      mode: summary.mode,
+      asked: summary.asked,
+      targets: summary.mode === 'screen' || summary.targets.length > 6 ? undefined : summary.targets,
+      counts: {
+        weak: summary.weak.length,
+        shaky: summary.shaky.length,
+        mastered: summary.mastered.length,
+        untested: summary.untested.length,
+      },
+      weak: summary.weak,
+      roots: summary.roots.map((root) => root.id),
+      shaky: summary.shaky,
+      mastered: summary.mastered,
+      savedAt: '',
+    })
+    setArchive(ok ? { status: 'saved', name: child.name } : { status: 'failed' })
+  }, [phase, summary, session, subject, label])
+
   const start = (targets: string[], nextLabel: string, mode: 'target' | 'screen') => {
     if (!graph) return
     const created = DiagEngine.createSession(graph, targets, {
@@ -310,6 +360,8 @@ export function DiagnosePage() {
     setLast(null)
     setInput('')
     setPhase('quiz')
+    setArchive({ status: 'idle' })
+    savedRef.current = ''
   }
 
   useEffect(() => {
@@ -381,7 +433,14 @@ export function DiagnosePage() {
           </Space>
         }
       >
-        <PickPane graph={graph} subject={subject} onStart={start} confirm={confirm} onConfirm={setConfirm} />
+        <PickPane
+          key={subject}
+          graph={graph}
+          subject={subject}
+          onStart={start}
+          confirm={confirm}
+          onConfirm={setConfirm}
+        />
       </Card>,
     )
   }
@@ -551,6 +610,47 @@ export function DiagnosePage() {
               重新诊断
             </Button>
           </Flex>
+          {archive.status === 'saved' ? (
+            <Alert
+              style={{ marginTop: 12 }}
+              type="success"
+              showIcon
+              title={`已存入「${archive.name}」的学习档案`}
+              description={
+                <>
+                  薄弱点与根因已记录下来，下次诊断同一知识点时会对比进步。
+                  <Link to="/children" style={{ marginLeft: 8 }}>
+                    查看档案
+                  </Link>
+                </>
+              }
+            />
+          ) : null}
+          {archive.status === 'nofile' ? (
+            <Alert
+              style={{ marginTop: 12 }}
+              type="info"
+              showIcon
+              title="这次结果没有存进档案"
+              description={
+                <>
+                  还没有建立孩子档案，结果只在本次浏览有效。
+                  <Link to="/children" style={{ marginLeft: 8 }}>
+                    去建一个档案
+                  </Link>
+                </>
+              }
+            />
+          ) : null}
+          {archive.status === 'failed' ? (
+            <Alert
+              style={{ marginTop: 12 }}
+              type="warning"
+              showIcon
+              title="结果没能写入档案"
+              description="浏览器不允许保存本地数据（可能是隐私模式或存储已满），本次结果请自行截图留存。"
+            />
+          ) : null}
           {summary.limitReached ? (
             <Alert
               style={{ marginTop: 12 }}
@@ -591,8 +691,31 @@ export function DiagnosePage() {
               dataSource={summary.roots}
               renderItem={(root) => {
                 const topic = graph.byId[root.id]
+                const record = session?.answers.find((entry) => entry.id === root.id)
+                const bank = graph.bank[root.id] ?? []
+                const question = bank.find((entry) => entry.id === record?.qid) ?? bank[0]
                 return (
-                  <List.Item>
+                  <List.Item
+                    actions={
+                      topic
+                        ? [
+                            <AiExplain
+                              key="ai"
+                              input={{
+                                subject: SUBJECTS.find((entry) => entry.key === subject)?.label,
+                                grade: gradeText(topic.grade),
+                                topic: topic.name,
+                                chapter: topic.chapter,
+                                prompt: question?.prompt,
+                                answer: question?.answer,
+                                studentAnswer: record?.text,
+                                explanation: question?.explanation,
+                              }}
+                            />,
+                          ]
+                        : undefined
+                    }
+                  >
                     <Space direction="vertical" size={4} style={{ width: '100%' }}>
                       <Space size={8} wrap>
                         <Tag color="red">根因</Tag>
