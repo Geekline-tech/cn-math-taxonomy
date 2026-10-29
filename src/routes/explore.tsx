@@ -442,6 +442,8 @@ export function ExplorePage() {
   })
   const [domain, setDomain] = useState<string | undefined>(undefined)
   const [depth, setDepth] = useState<string>('2')
+  const [tab, setTab] = useState<'list' | 'graph' | 'detail'>('list')
+  const isMobile = !screens.lg
 
   const selectedId = params.get('id')
   const selected = selectedId && graph ? graph.byId[selectedId] : undefined
@@ -474,10 +476,11 @@ export function ExplorePage() {
     setParams(next, { replace: true })
   }, [selectedId, firstVisible, params, setParams])
 
-  const select = (id: string) => {
-    const next = new URLSearchParams(params)
-    next.set('id', id)
-    setParams(next, { replace: true })
+  const select = (id: string, next?: 'list' | 'graph' | 'detail') => {
+    const nextParams = new URLSearchParams(params)
+    nextParams.set('id', id)
+    setParams(nextParams, { replace: true })
+    if (next && isMobile) setTab(next)
   }
 
   if (error) {
@@ -501,7 +504,7 @@ export function ExplorePage() {
       graph={graph}
       subject={subject}
       selectedId={selectedId}
-      onSelect={select}
+      onSelect={(id) => select(id, 'graph')}
       query={query}
       onQuery={setQuery}
       stage={stage}
@@ -560,7 +563,7 @@ export function ExplorePage() {
               graph={graph}
               selectedId={selected.id}
               depth={depth === 'all' ? 'all' : (Number(depth) as Depth)}
-              onSelect={select}
+              onSelect={(id) => select(id, 'detail')}
             />
         ) : (
           <Flex align="center" justify="center" style={{ height: '100%' }}>
@@ -569,7 +572,7 @@ export function ExplorePage() {
               description="从左侧选一个知识点，这里只画它附近的先修与后续"
             >
               {firstVisible ? (
-                <Button type="primary" icon={<NodeIndexOutlined />} onClick={() => select(firstVisible.id)}>
+                <Button type="primary" icon={<NodeIndexOutlined />} onClick={() => select(firstVisible.id, 'graph')}>
                   先看看「{firstVisible.name}」
                 </Button>
               ) : null}
@@ -594,9 +597,11 @@ export function ExplorePage() {
         <Card styles={{ body: { padding: 0 } }}>
           <Tabs
             centered
+            activeKey={tab}
+            onChange={(key) => setTab(key as typeof tab)}
             items={[
               { key: 'list', label: '目录', children: <div style={{ height: '70vh' }}>{listPane}</div> },
-              { key: 'graph', label: '图谱', children: <div style={{ height: '70vh' }}>{graphPane}</div> },
+              { key: 'graph', label: '图谱', children: <div style={{ height: '70vh' }}>{tab === 'graph' ? graphPane : null}</div> },
               { key: 'detail', label: '详情', children: <div style={{ height: '70vh' }}>{detailPane}</div> },
             ]}
           />
