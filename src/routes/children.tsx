@@ -4,6 +4,7 @@ import {
   DeleteOutlined,
   DownloadOutlined,
   EditOutlined,
+  LogoutOutlined,
   PlusOutlined,
   UploadOutlined,
   UserOutlined,
@@ -30,11 +31,14 @@ import {
   Upload,
 } from 'antd'
 import { useReducer, useState } from 'react'
-import { apiEnabled, cloudLoad, cloudSave } from '@/lib/api'
+import { useNavigate } from 'react-router-dom'
+import { getArchive, putArchive } from '@/lib/api'
+import { AuthModal } from '@/components/auth-modal'
+import { useAuth, useAuthStore } from '@/lib/auth'
 import type { Child, ChildRecord, ImportSummary } from '@/lib/children-store'
 import * as store from '@/lib/children-store'
 
-const { Text, Paragraph } = Typography
+const { Text } = Typography
 
 const SUBJECT_LABEL = { math: '数学', chinese: '语文', english: '英语', physics: '物理' } as const
 
@@ -46,15 +50,15 @@ function formatTime(value: string) {
 
 export function ChildrenPage() {
   const { message, modal } = AntdApp.useApp()
+  const navigate = useNavigate()
   const [, forceUpdate] = useReducer((value: number) => value + 1, 0)
   const [editing, setEditing] = useState<Child | null>(null)
   const [formOpen, setFormOpen] = useState(false)
   const [form] = Form.useForm<{ name: string; grade: string; textbook: string }>()
   const [cloudBusy, setCloudBusy] = useState(false)
-  const [backupOpen, setBackupOpen] = useState(false)
-  const [backupCode, setBackupCode] = useState('')
-  const [restoreOpen, setRestoreOpen] = useState(false)
-  const [restoreCode, setRestoreCode] = useState('')
+  const [authOpen, setAuthOpen] = useState(false)
+  const { token, user, signedIn, isAdmin } = useAuth()
+  const clearAuth = useAuthStore((state) => state.clear)
 
   const children = store.list()
   const active = store.current()
@@ -151,11 +155,15 @@ export function ChildrenPage() {
   }
 
   const doCloudBackup = async () => {
+    if (!signedIn) {
+      setAuthOpen(true)
+      return
+    }
     setCloudBusy(true)
     try {
-      const result = await cloudSave(store.exportBackup())
-      setBackupCode(result.code)
-      setBackupOpen(true)
+      await putArchive(token, store.exportBackup())
+      message.success('已保存到云端账号')
+      refresh()
     } catch (error) {
       message.error(error instanceof Error ? error.message : '云端备份失败')
     } finally {
@@ -164,21 +172,29 @@ export function ChildrenPage() {
   }
 
   const doCloudRestore = async () => {
-    const code = restoreCode.trim().toUpperCase()
-    if (code.length < 6) {
-      message.warning('同步码是 8 位字母数字')
+    if (!signedIn) {
+      setAuthOpen(true)
       return
     }
     setCloudBusy(true)
     try {
-      const result = await cloudLoad(code)
-      setRestoreOpen(false)
+      const result = await getArchive(token)
+      if (result.empty || !result.payload) {
+        message.info('这个账号还没有云端档案，先备份一次')
+        return
+      }
       mergeText(JSON.stringify(result.payload))
     } catch (error) {
       message.error(error instanceof Error ? error.message : '云端读取失败')
     } finally {
       setCloudBusy(false)
     }
+  }
+
+  const doSignOut = () => {
+    clearAuth()
+    message.success('已退出云端账号')
+    refresh()
   }
 
   return (
@@ -259,32 +275,55 @@ export function ChildrenPage() {
           <Card
             title={active ? `${active.name} 的诊断记录` : '诊断记录'}
             extra={
-              <Space>
-                {apiEnabled ? (
-                  <Dropdown
-                    menu={{
-                      items: [
-                        {
-                          key: 'backup',
-                          icon: <CloudUploadOutlined />,
-                          label: '备份到云端',
-                          disabled: !children.length,
-                          onClick: () => void doCloudBackup(),
-                        },
-                        {
-                          key: 'restore',
-                          icon: <CloudDownloadOutlined />,
-                          label: '从云端恢复',
-                          onClick: () => setRestoreOpen(true),
-                        },
-                      ],
-                    }}
-                  >
-                    <Button icon={<CloudUploadOutlined />} loading={cloudBusy}>
-                      云端
-                    </Button>
-                  </Dropdown>
-                ) : null}
+              <Space wrap>
+                <Dropdown
+                  menu={{
+                    items: signedIn
+                      ? [
+                          {
+                            key: 'backup',
+                            icon: <CloudUploadOutlined />,
+                            label: '保存到云端',
+                            onClick: () => void doCloudBackup(),
+                          },
+                          {
+                            key: 'restore',
+                            icon: <CloudDownloadOutlined />,
+                            label: '从云端取回',
+                            onClick: () => void doCloudRestore(),
+                          },
+                          ...(isAdmin
+                            ? [
+                                {
+                                  key: 'admin',
+                                  icon: <UserOutlined />,
+                                  label: '管理后台',
+                                  onClick: () => navigate('/admin'),
+                                },
+                              ]
+                            : []),
+                          { type: 'divider' as const },
+                          {
+                            key: 'signout',
+                            icon: <LogoutOutlined />,
+                            label: `退出 ${user?.username ?? ''}`,
+                            onClick: doSignOut,
+                          },
+                        ]
+                      : [
+                          {
+                            key: 'signin',
+                            icon: <UserOutlined />,
+                            label: '登录 / 注册',
+                            onClick: () => setAuthOpen(true),
+                          },
+                        ],
+                  }}
+                >
+                  <Button icon={<CloudUploadOutlined />} loading={cloudBusy}>
+                    {signedIn ? user?.username : '云端'}
+                  </Button>
+                </Dropdown>
                 <Button icon={<DownloadOutlined />} onClick={doExport} disabled={!children.length}>
                   导出备份
                 </Button>
@@ -409,69 +448,7 @@ export function ChildrenPage() {
         </Form>
       </Modal>
 
-      <Modal
-        open={backupOpen}
-        title="已备份到云端"
-        onCancel={() => setBackupOpen(false)}
-        footer={
-          <Button type="primary" onClick={() => setBackupOpen(false)}>
-            知道了
-          </Button>
-        }
-        width={480}
-      >
-        <Space direction="vertical" size={12} style={{ width: '100%' }}>
-          <Paragraph style={{ marginBottom: 0 }}>
-            记下这串同步码，在别的设备上输入它就能把档案拉回来。
-          </Paragraph>
-          <Space size={12} align="center">
-            <Text strong style={{ fontSize: 26, letterSpacing: 4, fontFamily: 'ui-monospace, monospace' }}>
-              {backupCode}
-            </Text>
-            <Button
-              size="small"
-              onClick={async () => {
-                try {
-                  await navigator.clipboard.writeText(backupCode)
-                  message.success('同步码已复制')
-                } catch {
-                  message.warning('浏览器不允许自动复制，请手动抄下')
-                }
-              }}
-            >
-              复制
-            </Button>
-          </Space>
-          <Text type="secondary" style={{ fontSize: 12 }}>
-            同步码是唯一的读取凭据，任何人都能用它读到这份档案，别公开发布。再次备份会生成新码，旧码仍可读。
-          </Text>
-        </Space>
-      </Modal>
-
-      <Modal
-        open={restoreOpen}
-        title="从云端恢复"
-        onCancel={() => setRestoreOpen(false)}
-        onOk={() => void doCloudRestore()}
-        okText="读取并合并"
-        cancelText="取消"
-        confirmLoading={cloudBusy}
-        width={480}
-      >
-        <Space direction="vertical" size={12} style={{ width: '100%' }}>
-          <Paragraph style={{ marginBottom: 0 }}>输入在另一台设备备份时得到的同步码。</Paragraph>
-          <Input
-            placeholder="例如 PWPWM43T"
-            value={restoreCode}
-            onChange={(event) => setRestoreCode(event.target.value.toUpperCase())}
-            maxLength={12}
-            style={{ letterSpacing: 3, fontFamily: 'ui-monospace, monospace' }}
-          />
-          <Text type="secondary" style={{ fontSize: 12 }}>
-            恢复采用合并方式，不会覆盖本机已有的孩子和记录，同名档案会先让你确认。
-          </Text>
-        </Space>
-      </Modal>
+      <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
 
     </div>
   )

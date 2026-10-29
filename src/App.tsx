@@ -10,6 +10,7 @@ const HomePage = lazy(() => import('@/routes/home').then((mod) => ({ default: mo
 const ExplorePage = lazy(() => import('@/routes/explore').then((mod) => ({ default: mod.ExplorePage })))
 const DiagnosePage = lazy(() => import('@/routes/diagnose').then((mod) => ({ default: mod.DiagnosePage })))
 const ChildrenPage = lazy(() => import('@/routes/children').then((mod) => ({ default: mod.ChildrenPage })))
+const AdminPage = lazy(() => import('@/routes/admin').then((mod) => ({ default: mod.AdminPage })))
 
 function PageFallback() {
   return (
@@ -33,6 +34,7 @@ function AppLayout() {
             <Route path="/explore" element={<ExplorePage />} />
             <Route path="/diagnose" element={<DiagnosePage />} />
             <Route path="/children" element={<ChildrenPage />} />
+            <Route path="/admin" element={<AdminPage />} />
           </Routes>
         </Suspense>
       </Layout.Content>
