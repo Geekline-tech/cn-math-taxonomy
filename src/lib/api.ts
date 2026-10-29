@@ -29,6 +29,7 @@ export type ExplainInput = {
   answer?: string
   studentAnswer?: string
   explanation?: string
+  context?: string
 }
 
 export type ExplainResult = {

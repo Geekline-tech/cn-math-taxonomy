@@ -472,10 +472,26 @@ export function DiagnosePage() {
                 </Text>
               ) : null}
             </div>
-            <Space>
+            <Space wrap>
               <Button type="primary" icon={<RightOutlined />} onClick={proceed}>
                 下一题
               </Button>
+              {correct ? null : (
+                <AiExplain
+                  size="middle"
+                  label="让 AI 讲讲这道题"
+                  input={{
+                    subject: SUBJECTS.find((entry) => entry.key === subject)?.label,
+                    grade: gradeText(graph.byId[last.topicId]?.grade ?? 0),
+                    topic: graph.byId[last.topicId]?.name,
+                    chapter: graph.byId[last.topicId]?.chapter,
+                    prompt: last.question.prompt,
+                    answer: last.question.answer,
+                    studentAnswer: last.text,
+                    explanation: last.question.explanation,
+                  }}
+                />
+              )}
               <Text type="secondary" style={{ fontSize: 12 }}>
                 已答 {session.answers.length} / 上限 {session.limit}
               </Text>

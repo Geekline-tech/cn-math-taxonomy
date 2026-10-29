@@ -29,6 +29,7 @@ import {
 } from 'antd'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { AiExplain } from '@/components/ai-explain'
 import { TopicGraph, type Depth } from '@/components/topic-graph'
 import { loadBase } from '@/data/core'
 import DiagEngine from '@/engine/diag-engine'
@@ -312,6 +313,17 @@ function DetailPane({ graph, subject, topic, standards, onSelect }: DetailPanePr
           <Button type="primary" icon={<ThunderboltOutlined />} onClick={() => navigate(`/diagnose?target=${topic.id}`)}>
             诊断这个知识点
           </Button>
+          <AiExplain
+            size="middle"
+            label="AI 讲讲这个点"
+            input={{
+              subject: SUBJECTS.find((item) => item.key === subject)?.label,
+              grade: gradeLabel(subject, topic.grade),
+              topic: topic.name,
+              chapter: topic.chapter,
+              context: [topic.description, ...(topic.mastery_criteria ?? [])].filter(Boolean).join('；'),
+            }}
+          />
           <Button
             icon={<CopyOutlined />}
             onClick={() => {

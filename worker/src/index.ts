@@ -79,27 +79,30 @@ type ExplainInput = {
   answer?: string
   studentAnswer?: string
   explanation?: string
+  context?: string
 }
 
 function buildMessages(input: ExplainInput) {
   const subject = input.subject?.slice(0, 20) || '数学'
   const grade = input.grade?.slice(0, 20) || '中小学'
   const system = [
-    `你是一位有二十年经验的${grade}${subject}老师，正在给学生做一对一讲题。`,
+    `你是一位有二十年经验的${grade}${subject}老师，正在给学生做一对一讲解。`,
     '要求：',
     '1. 只用简体中文，语气平实，不要客套话和鼓励式套话。',
-    '2. 先说清楚学生的答案错在哪一步，再讲正确思路，最后给一句检验方法。',
-    '3. 如果学生答案是空的，就当作没做出来，直接讲思路。',
-    '4. 总长度控制在 220 字以内，不要用 Markdown 标题、不要编号列表超过四条。',
-    '5. 不要编造教材页码、考试信息或超出题目范围的结论。',
+    '2. 有题目时：先说清楚学生的答案错在哪一步，再讲正确思路，最后给一句检验方法。',
+    '3. 没有题目时：讲清这个知识点是什么、最容易错在哪里、怎么判断自己真的会了。',
+    '4. 如果学生答案是空的，就当作没做出来，直接讲思路。',
+    '5. 总长度控制在 220 字以内，不要用 Markdown 标题、不要编号列表超过四条。',
+    '6. 不要编造教材页码、考试信息或超出范围的内容。',
   ].join('\n')
 
   const lines = [
     input.topic ? `知识点：${input.topic}` : '',
     input.chapter ? `所在章节：${input.chapter}` : '',
+    input.context ? `知识点说明：${input.context}` : '',
     input.prompt ? `题目：${input.prompt}` : '',
     input.answer ? `标准答案：${input.answer}` : '',
-    input.studentAnswer ? `学生的作答：${input.studentAnswer}` : '学生的作答：（空白）',
+    input.studentAnswer ? `学生的作答：${input.studentAnswer}` : input.prompt ? '学生的作答：（空白）' : '',
     input.explanation ? `题库原有解析：${input.explanation}` : '',
   ].filter(Boolean)
 

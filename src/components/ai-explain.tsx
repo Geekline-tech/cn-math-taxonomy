@@ -5,7 +5,15 @@ import { apiEnabled, explain, type ExplainInput } from '@/lib/api'
 
 const { Paragraph, Text } = Typography
 
-export function AiExplain({ input, label = 'AI 讲解' }: { input: ExplainInput; label?: string }) {
+export function AiExplain({
+  input,
+  label = 'AI 讲解',
+  size = 'small',
+}: {
+  input: ExplainInput
+  label?: string
+  size?: 'small' | 'middle'
+}) {
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
   const [text, setText] = useState('')
@@ -32,7 +40,7 @@ export function AiExplain({ input, label = 'AI 讲解' }: { input: ExplainInput;
 
   return (
     <>
-      <Button size="small" icon={<RobotOutlined />} onClick={start}>
+      <Button size={size} icon={<RobotOutlined />} onClick={start}>
         {label}
       </Button>
       <Modal
