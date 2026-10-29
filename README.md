@@ -2,7 +2,7 @@
 
 中小学知识图谱与自适应诊断。沿先修关系出题，答错就一路往回追，定位到真正没学会的那一步，再按年级顺序排出补学路径。
 
-在线地址：<https://origin-5bf.pages.dev>
+在线地址：<https://origin.new.tg>
 
 > 本项目 fork 自 [xiaoyang111222/cn-math-taxonomy](https://github.com/xiaoyang111222/cn-math-taxonomy)，在原仓库的知识图谱与诊断引擎之上重做了前端、数据加载与云端能力。
 
@@ -36,6 +36,34 @@ Origin 把这件事变成可执行的流程：
 - **学习档案**：本地可建最多 8 个孩子档案、每个 40 条诊断记录，支持导出/导入 JSON 备份与合并导入。登录后可把档案存到云端账号，换设备取回。
 - **管理后台**：`/admin`，管理员可看注册账号、云端档案占用、AI 用量趋势与账号列表。
 
+## 界面
+
+首页：直接给出知识图谱规模与三段式诊断流程，点任意一步就能进入对应页面。
+
+![首页](docs/screenshots/home.png)
+
+知识图谱：左侧按册次折叠的知识点目录，中间是当前知识点的局部先修图，右侧给出掌握标准、先修原因与课标条目。
+
+![知识图谱](docs/screenshots/explore.png)
+
+自适应诊断结果：给出根因清单、按年级从低到高的学习路径，以及掌握 / 不稳 / 薄弱 / 未测的分布。
+
+![诊断结果](docs/screenshots/diagnose.png)
+
+AI 讲解：关键步骤与易错点用高亮标出，底部提供常见追问，支持多轮对话。
+
+![AI 讲解](docs/screenshots/ai.png)
+
+学习档案：本地档案与云端账号打通，登录后可跨设备取回。
+
+![学习档案](docs/screenshots/children.png)
+
+移动端：头部收进抽屉，图谱页在窄屏下切换成「目录 / 图谱 / 详情」标签页。
+
+| 首页 | 知识图谱 |
+| --- | --- |
+| <img src="docs/screenshots/mobile.png" width="260" alt="移动端首页" /> | <img src="docs/screenshots/mobile-explore.png" width="260" alt="移动端知识图谱" /> |
+
 ## 技术栈
 
 - **前端**：Vite 8 + React 19 + TypeScript 7（`tsc -b` 严格模式）
@@ -50,12 +78,14 @@ Origin 把这件事变成可执行的流程：
 
 ```
 origin/
+├── docs/screenshots/          # README 展示图
 ├── public/
 │   ├── data/                  # 知识图谱与题库（构建时按学科拆分）
 │   ├── _headers               # Pages 缓存头
 │   └── _redirects             # SPA 回退
 ├── scripts/
 │   ├── build-stats.mjs        # 生成 stats.json 与分科题库
+│   ├── shots-readme.mjs       # 抓取 README 展示图
 │   ├── shot.mjs               # Playwright 截图
 │   └── flow-*.mjs             # Playwright 端到端流程验证
 ├── src/
