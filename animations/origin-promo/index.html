@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Origin · 回到知识的原点</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #000; overflow: hidden; }
+  #stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.78vh; }
+  #hint { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); color: #4a566b;
+          font: 12px/1.6 system-ui, sans-serif; letter-spacing: .12em; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="cv" width="1920" height="1080"></canvas></div>
+<div id="hint">SPACE 暂停 / 继续</div>
+<script>
+const DATA = {"n":[[-0.15,0.619,0.07,1,7,5],[0.057,0.641,-0.001,1,7,5],[0.172,0.621,-0.047,1,7,5],[-0.328,0.488,-0.267,1,7,5],[-0.075,0.588,0.254,1,7,5],[0.162,0.635,-0.205,1,8,5],[-0.051,0.356,-0.198,1,1,5],[-0.168,0.375,-0.009,1,1,8],[-0.153,0.368,-0.069,1,1,5],[-0.263,0.307,0.083,1,1,5],[0.125,0.405,-0.133,1,2,5],[0.207,0.378,0.096,1,2,5],[0.015,0.435,0.05,1,2,5],[0.092,0.399,-0.151,1,2,6],[0.177,0.29,0.296,1,2,6],[-0.041,0.387,0.211,1,2,6],[-0.006,0.405,0.245,1,3,6],[0.164,0.444,-0.093,1,3,5],[0.166,0.406,-0.176,1,3,5],[0.096,0.456,0.037,1,3,6],[0.014,0.425,-0.185,1,3,7],[0.168,0.444,0.003,1,3,5],[-0.409,0.265,0.004,1,3,5],[-0.097,0.428,0.249,1,4,5],[-0.122,0.489,0.006,1,4,5],[0.248,0.393,0.191,1,4,5],[-0.306,0.398,0.066,1,4,6],[0.117,0.391,0.309,1,4,5],[-0.049,0.518,-0.135,1,5,5],[-0.233,0.494,0.06,1,5,5],[-0.164,0.498,-0.146,1,5,5],[-0.024,0.523,-0.109,1,5,7],[-0.3,0.426,-0.227,1,6,6],[0.42,0.36,0.141,1,6,5],[-0.399,0.287,-0.312,1,6,5],[0.003,0.566,-0.008,1,6,5],[0.066,0.701,-0.382,2,10,6],[-0.711,0.471,-0.179,2,12,5],[0.033,0.934,0.121,2,14,7],[0.158,0.859,0.336,2,14,5],[0.279,0.242,0.523,2,7,5],[-0.049,0.571,-0.28,2,7,10],[0.392,0.362,-0.356,2,7,5],[-0.428,0.433,0.192,2,7,6],[0.37,0.402,-0.334,2,7,6],[0.138,0.578,-0.087,2,7,5],[0.41,0.446,-0.17,2,7,5],[-0.529,0.215,0.291,2,7,5],[0.258,0.563,0.181,2,7,7],[0.334,0.513,0.14,2,7,7],[0.077,0.62,0.007,2,7,8],[-0.104,0.618,-0.134,2,7,6],[0.095,0.249,0.587,2,7,5],[-0.567,0.313,-0.213,2,8,5],[-0.302,0.568,-0.053,2,8,10],[-0.071,0.667,-0.043,2,8,5],[0.062,0.661,0.149,2,8,6],[-0.056,0.704,0.031,2,8,6],[-0.452,0.47,0.18,2,8,5],[0.52,0.287,-0.321,2,8,5],[0.079,0.642,0.188,2,8,5],[0.269,0.629,-0.016,2,8,10],[-0.275,0.641,-0.129,2,9,7],[0.112,0.693,-0.143,2,9,11],[0.281,0.662,0.029,2,9,5],[-0.099,0.7,-0.185,2,9,5],[0.25,0.642,0.24,2,9,7],[0.098,0.619,0.352,2,9,7],[0.153,0.507,-0.452,2,9,6],[-0.211,0.375,-0.065,2,3,15],[0.117,0.397,-0.254,2,3,7],[0.273,0.387,-0.083,2,3,8],[0.376,0.279,-0.147,2,3,5],[0.191,0.34,-0.275,2,3,6],[-0.33,0.324,-0.096,2,3,5],[0.269,0.026,0.435,2,4,5],[0.456,0.289,0.049,2,5,6],[0.159,0.514,0.025,2,5,5],[0.374,0.201,-0.302,2,4,5],[0.114,0.543,-0.149,2,6,5],[0.423,0.316,0.244,2,6,5],[0.343,-0.401,-0.317,0,7,3],[0.525,-0.296,-0.159,0,7,5],[0.636,-0.078,-0.049,0,7,3],[0.531,-0.087,-0.131,0,7,6],[0.381,-0.163,0.391,0,7,6],[0.319,-0.065,-0.501,0,7,5],[0.046,-0.242,-0.559,0,7,4],[0.134,-0.197,0.583,0,7,6],[-0.593,-0.027,-0.256,0,7,8],[0.473,0.001,0.431,0,7,6],[-0.057,-0.49,-0.329,0,7,5],[-0.022,-0.345,-0.527,0,7,5],[0.176,-0.526,0.278,0,7,6],[0.215,-0.524,-0.046,0,7,9],[0.151,-0.405,0.403,0,7,11],[-0.102,-0.289,0.538,0,7,5],[0.081,-0.553,-0.295,0,7,7],[0.367,-0.494,0.09,0,7,6],[0.412,-0.421,0.224,0,7,8],[0.196,-0.521,0.319,0,7,9],[0.079,-0.581,0.155,0,7,9],[-0.271,-0.525,0.165,0,7,6],[0.325,-0.438,0.292,0,7,7],[0.096,-0.419,0.451,0,7,6],[0.495,-0.384,0.046,0,7,6],[-0.148,-0.587,0.074,0,7,7],[0.416,-0.461,0.036,0,7,15],[0.523,-0.263,0.245,0,7,5],[0.244,-0.427,-0.374,0,7,8],[0.377,-0.419,-0.27,0,7,6],[0.237,-0.113,0.582,0,7,5],[0.517,-0.086,-0.366,0,7,8],[0.54,-0.295,0.119,0,7,6],[-0.277,-0.26,-0.502,0,7,9],[-0.065,-0.445,-0.421,0,7,5],[0.177,-0.518,-0.301,0,7,6],[0.203,-0.62,0.119,0,8,9],[0.402,-0.537,0.078,0,8,6],[-0.022,-0.577,0.315,0,8,7],[0.282,-0.586,-0.086,0,8,6],[0.004,-0.656,0.004,0,8,6],[-0.158,-0.638,-0.071,0,8,7],[-0.221,-0.612,0.135,0,8,6],[-0.036,-0.644,0.098,0,8,11],[0.422,-0.503,-0.155,0,8,6],[0.232,-0.621,-0.061,0,8,6],[0.238,-0.607,0.137,0,8,7],[0.191,-0.613,0.155,0,8,8],[-0.274,-0.569,-0.027,0,8,3],[-0.216,-0.544,0.3,0,8,6],[-0.007,-0.604,0.272,0,8,7],[-0.374,-0.131,0.549,0,8,7],[0.004,-0.67,-0.08,0,8,12],[0.194,-0.638,-0.072,0,8,6],[-0.292,-0.594,-0.071,0,8,6],[-0.032,-0.442,-0.494,0,8,5],[0.653,-0.166,-0.101,0,8,6],[0.648,-0.169,0.088,0,8,7],[-0.432,-0.261,0.441,0,8,6],[-0.101,-0.496,-0.466,0,8,8],[0.019,-0.218,0.606,0,8,6],[0.12,-0.563,-0.29,0,8,6],[0.418,-0.482,-0.163,0,8,5],[-0.363,-0.367,0.484,0,9,8],[-0.032,-0.706,0.055,0,9,4],[-0.196,-0.656,0.172,0,9,5],[-0.276,-0.332,-0.554,0,9,6],[0.493,-0.46,0.213,0,9,6],[0.382,-0.522,0.331,0,9,8],[-0.037,-0.683,-0.029,0,9,7],[-0.195,-0.657,-0.178,0,9,6],[-0.018,-0.557,-0.303,0,7,6],[0.452,-0.618,-0.204,0,10,9],[0.441,-0.497,-0.419,0,10,6],[0.486,-0.612,0.044,0,10,7],[-0.492,-0.545,-0.352,0,11,6],[-0.421,-0.248,0.643,0,11,6],[-0.176,-0.544,0.603,0,11,6],[0.038,-0.792,-0.351,0,12,6],[-0.168,-0.711,-0.467,0,12,7],[-0.405,-0.679,0.361,0,12,6],[0.289,-0.604,0.542,0,12,7],[-0.059,-0.688,0.518,0,12,6],[0.429,-0.293,0.752,0,13,6],[-0.85,-0.424,-0.026,0,14,6],[-0.213,-0.732,-0.541,0,14,6],[0.149,-0.367,-0.048,0,1,7],[-0.037,-0.376,-0.112,0,1,6],[0.179,-0.36,-0.001,0,1,8],[-0.092,-0.342,-0.216,0,1,8],[-0.179,-0.336,0.133,0,1,8],[-0.093,-0.372,-0.105,0,1,6],[-0.097,-0.385,0.066,0,1,7],[-0.096,-0.369,-0.138,0,1,6],[0.174,-0.297,0.269,0,2,6],[-0.322,-0.307,-0.007,0,2,7],[0.128,-0.394,0.061,0,2,6],[0.248,-0.312,-0.182,0,2,6],[0.206,-0.399,0.061,0,3,7],[0.05,-0.33,-0.335,0,3,6],[0.404,-0.31,0.053,0,4,6],[0.036,-0.423,0.196,0,3,8],[0.34,-0.313,-0.104,0,3,8],[0.384,-0.227,0.242,0,4,7],[0.052,-0.476,0.15,0,4,11],[0.052,-0.379,0.305,0,4,6],[-0.2,-0.403,0.282,0,5,7],[0.101,-0.495,-0.193,0,5,9],[0.011,-0.471,0.309,0,6,6],[-0.165,-0.488,0.229,0,6,8],[0.032,-0.507,-0.25,0,6,6],[0.177,-0.423,-0.342,0,6,6],[-0.331,-0.358,0.291,0,6,6],[-0.035,-0.523,-0.21,0,6,6],[0.14,-0.531,-0.044,0,6,6],[-0.191,-0.648,-0.025,3,8,10],[-0.031,-0.646,-0.221,3,8,8],[-0.019,-0.613,0.302,3,8,7],[-0.14,-0.651,-0.081,3,8,9],[0.108,-0.657,-0.072,3,8,12],[-0.214,-0.691,0.134,3,9,7],[-0.12,-0.47,-0.529,3,9,6],[-0.235,-0.767,-0.032,3,10,11],[-0.036,-0.788,-0.053,3,10,8],[-0.134,-0.764,0.153,3,10,8],[0.402,-0.671,-0.052,3,10,8],[-0.066,-0.766,0.033,3,10,8],[0.01,-0.786,-0.111,3,10,9],[0.05,-0.775,0.134,3,10,8],[-0.19,-0.744,-0.175,3,10,18],[-0.137,-0.784,-0.204,3,11,9],[-0.133,-0.812,0.004,3,11,10],[-0.166,-0.788,-0.184,3,11,6],[0.022,-0.833,-0.04,3,11,12],[-0.215,-0.795,0.041,3,11,10],[-0.205,-0.799,-0.149,3,11,13],[-0.163,-0.836,0.143,3,12,7],[-0.161,-0.857,-0.088,3,12,7],[0.023,-0.849,-0.192,3,12,8],[0.122,-0.84,0.224,3,12,11],[0.026,-0.873,0.026,3,12,9],[0.069,-0.85,0.192,3,12,9],[-0.153,-0.845,0.163,3,12,10],[0.239,-0.835,0.072,3,12,10],[-0.053,-0.829,0.296,3,12,10],[-0.054,-0.866,-0.09,3,12,9],[0.19,-0.832,-0.192,3,12,9],[-0.387,-0.819,-0.06,3,13,7],[-0.094,-0.913,0.065,3,13,7],[-0.074,-0.856,-0.315,3,13,7],[-0.092,-0.886,-0.082,3,13,10],[-0.129,-0.868,0.208,3,13,6],[0.189,-0.914,0.095,3,14,8],[-0.195,-0.946,0.029,3,14,10],[0.01,-0.953,0.012,3,14,10],[0.019,-0.938,-0.233,3,14,8],[-0.291,-0.938,0.118,3,15,8],[-0.1,-0.977,0.106,3,15,8],[-0.086,-0.996,-0.038,3,15,6]],"e":[[167,168],[168,169],[172,173],[173,174],[171,176],[175,177],[172,177],[178,179],[179,181],[179,182],[181,184],[173,186],[180,188],[187,189],[189,190],[185,190],[188,192],[190,193],[194,195],[185,195],[188,81],[182,131],[188,150],[192,152],[81,82],[82,83],[83,84],[84,85],[84,86],[86,87],[87,91],[91,92],[93,94],[91,94],[94,95],[88,95],[95,96],[98,99],[98,100],[100,101],[101,102],[101,103],[103,104],[103,105],[82,107],[101,107],[107,108],[94,109],[94,110],[109,110],[85,111],[114,115],[115,116],[107,116],[98,117],[117,118],[99,118],[117,119],[104,119],[117,120],[105,120],[120,121],[121,122],[121,123],[122,123],[122,124],[123,124],[120,125],[125,126],[101,126],[121,126],[126,127],[124,127],[99,127],[124,128],[118,128],[91,129],[129,130],[130,131],[106,133],[133,134],[97,134],[124,135],[137,138],[108,138],[96,139],[85,141],[140,142],[106,142],[142,143],[113,143],[130,144],[131,145],[145,146],[136,147],[128,148],[100,149],[99,149],[150,151],[115,152],[152,151],[153,154],[153,155],[149,155],[135,156],[141,157],[159,160],[149,162],[162,163],[161,163],[140,166],[70,71],[71,76],[71,77],[71,79],[76,80],[49,50],[55,54],[40,52],[70,41],[73,42],[72,44],[45,46],[77,48],[80,49],[50,51],[45,54],[79,55],[55,56],[56,57],[54,58],[46,59],[48,60],[49,60],[50,61],[41,62],[41,63],[50,63],[63,64],[49,64],[62,65],[61,66],[49,66],[66,67],[56,67],[41,68],[44,68],[65,36],[57,38],[38,39],[66,39],[183,98],[199,200],[196,203],[203,204],[196,204],[203,205],[204,205],[200,206],[200,207],[208,209],[204,210],[208,210],[203,211],[196,211],[211,212],[210,212],[212,213],[207,213],[209,214],[214,215],[210,215],[215,216],[212,216],[217,218],[208,218],[207,218],[218,219],[210,219],[217,221],[219,221],[221,222],[222,223],[221,223],[220,224],[221,224],[223,225],[222,225],[221,226],[203,228],[210,228],[196,228],[207,229],[216,229],[211,230],[197,230],[230,231],[196,231],[197,231],[198,232],[231,232],[226,233],[226,234],[234,235],[225,235],[235,236],[227,236],[226,236],[231,236],[201,237],[237,238],[214,238],[201,238],[10,11],[12,13],[19,20],[6,7],[7,12],[12,28],[13,21],[20,21],[8,9],[18,19],[19,25],[17,20],[29,30],[30,35],[14,16],[23,26],[23,27],[32,34],[19,24],[0,1],[1,5]],"p":[81,82,83,84,86,87,91,129,130,131,145],"pn":["配方法"],"stat":{"topics":2490,"edges":3829,"math":845,"chinese":652,"english":724,"physics":269}};
+
+const W = 1920, H = 1080, TAU = Math.PI * 2, DUR = 38;
+const SANS = '"PingFang SC","Microsoft YaHei","Noto Sans SC","Hiragino Sans GB",system-ui,sans-serif';
+const cv = document.getElementById('cv');
+const c = cv.getContext('2d');
+
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+const lerp = (a, b, u) => a + (b - a) * u;
+const ss = (a, b, x) => { const u = clamp((x - a) / (b - a), 0, 1); return u * u * (3 - 2 * u); };
+const eOut = (u) => 1 - Math.pow(1 - clamp(u, 0, 1), 3);
+const eBack = (u) => { u = clamp(u, 0, 1); const k = 1.7; return 1 + (k + 1) * Math.pow(u - 1, 3) + k * Math.pow(u - 1, 2); };
+const mulberry32 = (a) => () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+
+const COOL = '#9fc0ff';
+const WARM = '#f1b25c';
+const WHITE = '#eaf1ff';
+const SUBJ = ['#3d8bff', '#ff7a45', '#2fd6c4', '#a06bff'];
+const SUBJ_NAME = ['数学', '语文', '英语', '物理'];
+const ANCHOR = [[0.92, 0.46, 0.22], [-0.94, 0.50, 0.16], [0.90, -0.44, -0.20], [-0.92, -0.40, -0.24]];
+
+const rnd = mulberry32(20261031);
+const NODES = DATA.n.map((n, i) => ({
+  x: n[0], y: n[1], z: n[2], s: n[3], g: n[4], d: n[5],
+  r: Math.hypot(n[0], n[1], n[2]),
+  j: rnd(),
+  br: 0,
+  sz: 1.0 + Math.min(n[5], 10) * 0.10 + rnd() * 0.5
+}));
+const MAXR = Math.max(...NODES.map((n) => n.r));
+NODES.forEach((n) => { n.br = 5.0 + (n.r / MAXR) * 1.0 + n.j * 0.7; });
+
+const MEAN = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
+const CNT = [0, 0, 0, 0];
+for (const n of NODES) { MEAN[n.s][0] += n.x; MEAN[n.s][1] += n.y; MEAN[n.s][2] += n.z; CNT[n.s] += 1; }
+for (const n of NODES) {
+  n.lx = n.x - MEAN[n.s][0] / CNT[n.s];
+  n.ly = n.y - MEAN[n.s][1] / CNT[n.s];
+  n.lz = n.z - MEAN[n.s][2] / CNT[n.s];
+}
+const EDGES = DATA.e;
+const PATH = DATA.p;
+const PATH_SET = new Set(PATH);
+const PATH_TURN = new Map();
+PATH.forEach((id, k) => PATH_TURN.set(id, 12.5 + k * 0.52));
+
+const STARS = [];
+for (let i = 0; i < 260; i++) STARS.push([rnd() * W, rnd() * H, 0.3 + rnd() * 1.4, 0.10 + rnd() * 0.35, rnd() * TAU]);
+
+function camAt(t) {
+  const spin = -0.35 + t * 0.082 + Math.sin(t * 0.21) * 0.04;
+  const settle = ss(18.4, 21.4, t);
+  const drift = Math.max(0, t - 24) * 0.055 * ss(24, 26.5, t);
+  return {
+    ry: lerp(spin, Math.PI, settle) + drift,
+    rx: lerp(-0.17 + Math.sin(t * 0.16) * 0.05, -0.30, settle),
+    dist: 3.35,
+    fov: 1560,
+    zoom: lerp(1, 1.16, ss(12.0, 13.4, t)) * lerp(1, 0.90, ss(18.6, 20.4, t)) * lerp(1, 0.96, ss(24.4, 26.0, t)),
+    cx: W / 2 + 150 * (1 - ss(19.6, 21.2, t)) - 320 * ss(25.0, 26.4, t) * (1 - ss(31.0, 32.2, t)),
+    cy: H / 2 + 96 * ss(19.6, 21.2, t) * (1 - ss(31.0, 32.2, t))
+  };
+}
+
+function project(p, cam) {
+  const cy = Math.cos(cam.ry), sy = Math.sin(cam.ry);
+  const x1 = p[0] * cy + p[2] * sy;
+  const z1 = -p[0] * sy + p[2] * cy;
+  const cx = Math.cos(cam.rx), sx = Math.sin(cam.rx);
+  const y1 = p[1] * cx - z1 * sx;
+  const z2 = p[1] * sx + z1 * cx + cam.dist;
+  const s = cam.fov / Math.max(0.45, z2);
+  return [cam.cx + x1 * s * cam.zoom, cam.cy - y1 * s * cam.zoom, z2, s];
+}
+
+function nodePos(n, t) {
+  const grow = eOut((t - n.br) / 0.55);
+  let x = n.x * grow, y = n.y * grow, z = n.z * grow;
+  const us = ss(19.3, 21.7, t);
+  if (us > 0) {
+    const a = ANCHOR[n.s];
+    x = lerp(x, a[0] + n.lx * 0.38, us);
+    y = lerp(y, a[1] + n.ly * 0.38, us);
+    z = lerp(z, a[2] + n.lz * 0.38, us);
+  }
+  const ue = ss(31.4, 33.0, t);
+  if (ue > 0) { const k = 1 - ue; x *= k; y *= k; z *= k; }
+  return [x, y, z];
+}
+
+function nodeAlpha(n, t) {
+  let a = ss(n.br, n.br + 0.45, t);
+  const dim = ss(12.1, 13.2, t) * (1 - ss(18.6, 19.6, t));
+  if (!PATH_SET.has(n.idx)) a *= lerp(1, 0.22, dim);
+  const aiDim = ss(25.0, 26.2, t) * (1 - ss(30.6, 31.4, t));
+  a *= lerp(1, 0.42, aiDim);
+  a *= 1 - ss(31.4, 33.0, t);
+  return a;
+}
+
+NODES.forEach((n, i) => { n.idx = i; });
+
+function nodeColor(n, t) {
+  const on = PATH_TURN.get(n.idx);
+  if (on !== undefined && t > on && t < 19.4) {
+    const gold = n.idx === PATH[PATH.length - 1];
+    return gold ? 'rgba(255,205,110,1)' : 'rgba(255,110,80,1)';
+  }
+  const us = ss(19.6, 21.4, t);
+  if (us > 0.01) {
+    const v = parseInt(SUBJ[n.s].slice(1), 16);
+    const r = Math.round(lerp(150, (v >> 16) & 255, us));
+    const g2 = Math.round(lerp(190, (v >> 8) & 255, us));
+    const b = Math.round(lerp(255, v & 255, us));
+    return `rgba(${r},${g2},${b},1)`;
+  }
+  return null;
+}
+
+function hexA(hex, a) {
+  const v = parseInt(hex.slice(1), 16);
+  return `rgba(${(v >> 16) & 255},${(v >> 8) & 255},${v & 255},${a})`;
+}
+
+function drawBackdrop(t) {
+  const g = c.createRadialGradient(W * 0.5, H * 0.46, 60, W * 0.5, H * 0.5, W * 0.72);
+  g.addColorStop(0, '#0a1120');
+  g.addColorStop(0.45, '#060a14');
+  g.addColorStop(1, '#020306');
+  c.fillStyle = g;
+  c.fillRect(0, 0, W, H);
+
+  c.save();
+  for (const s of STARS) {
+    const tw = 0.55 + 0.45 * Math.sin(t * 0.9 + s[4]);
+    c.globalAlpha = s[3] * tw;
+    c.fillStyle = '#9fb6e0';
+    c.fillRect(s[0], s[1], s[2], s[2]);
+  }
+  c.restore();
+}
+
+function drawIntro(t) {
+  if (t > 5.6) return;
+  const out = 1 - ss(4.6, 5.4, t);
+  const pulse = 0.85 + 0.15 * Math.sin(t * 2.4);
+  const r = 5 + 3 * pulse;
+  c.save();
+  c.globalCompositeOperation = 'lighter';
+  const g = c.createRadialGradient(W / 2, H / 2, 0, W / 2, H / 2, 120 * pulse);
+  g.addColorStop(0, `rgba(255,232,196,${0.55 * out})`);
+  g.addColorStop(0.35, `rgba(241,178,92,${0.22 * out})`);
+  g.addColorStop(1, 'rgba(241,178,92,0)');
+  c.fillStyle = g;
+  c.beginPath(); c.arc(W / 2, H / 2, 120 * pulse, 0, TAU); c.fill();
+
+  for (let k = 0; k < 3; k++) {
+    const t0 = 0.9 + k * 0.62;
+    const u = (t - t0) / 2.6;
+    if (u < 0 || u > 1) continue;
+    const rr = 20 + eOut(u) * 300;
+    c.globalAlpha = (1 - u) * 0.45 * out;
+    c.strokeStyle = '#f1b25c';
+    c.lineWidth = 1.2;
+    c.beginPath(); c.arc(W / 2, H / 2, rr, 0, TAU); c.stroke();
+  }
+  c.globalAlpha = out;
+  c.fillStyle = '#fff3dc';
+  c.beginPath(); c.arc(W / 2, H / 2, r, 0, TAU); c.fill();
+  c.restore();
+}
+
+function drawGraph(t, cam) {
+  const pos = [];
+  for (let i = 0; i < NODES.length; i++) {
+    const n = NODES[i];
+    const p = nodePos(n, t);
+    const pr = project(p, cam);
+    pos.push(pr);
+  }
+
+  c.save();
+  c.globalCompositeOperation = 'lighter';
+  c.lineCap = 'round';
+  for (let k = 0; k < EDGES.length; k++) {
+    const a = EDGES[k][0], b = EDGES[k][1];
+    const A = pos[a], B = pos[b];
+    const na = NODES[a], nb = NODES[b];
+    const born = ss(Math.max(na.br, nb.br) + 0.15, Math.max(na.br, nb.br) + 0.85, t);
+    if (born <= 0.01) continue;
+    const fade = clamp(1.32 - (A[2] + B[2]) * 0.115, 0.22, 1);
+    const alpha = 0.34 * born * fade * (1 - ss(31.4, 32.8, t)) * (1 - 0.55 * ss(12.1, 13.2, t) * (1 - ss(18.6, 19.6, t)));
+    c.strokeStyle = `rgba(132,170,236,${alpha.toFixed(3)})`;
+    c.lineWidth = 0.95;
+    c.beginPath(); c.moveTo(A[0], A[1]); c.lineTo(B[0], B[1]); c.stroke();
+  }
+
+  for (let k = 0; k < PATH.length - 1; k++) {
+    const a = PATH[k], b = PATH[k + 1];
+    const on = PATH_TURN.get(b);
+    if (on === undefined || t < on) continue;
+    const A = pos[a], B = pos[b];
+    const u = clamp((t - on) / 0.34, 0, 1);
+    const ex = lerp(A[0], B[0], u), ey = lerp(A[1], B[1], u);
+    c.strokeStyle = `rgba(255,150,90,${0.9 * (1 - ss(18.4, 19.4, t))})`;
+    c.lineWidth = 2.6;
+    c.beginPath(); c.moveTo(A[0], A[1]); c.lineTo(ex, ey); c.stroke();
+  }
+
+  const pa = 1 - ss(18.4, 19.4, t);
+  if (pa > 0.01 && t > 13.4) {
+    let total = 0;
+    const segs = [];
+    for (let k = 0; k < PATH.length - 1; k++) {
+      const A = pos[PATH[k]], B = pos[PATH[k + 1]];
+      const d = Math.hypot(B[0] - A[0], B[1] - A[1]);
+      segs.push([A, B, d]);
+      total += d;
+    }
+    let run = ((t * 0.42) % 1) * total;
+    for (const [A, B, d] of segs) {
+      if (run <= d) {
+        const u = run / Math.max(1, d);
+        const px2 = lerp(A[0], B[0], u), py2 = lerp(A[1], B[1], u);
+        const g3 = c.createRadialGradient(px2, py2, 0, px2, py2, 26);
+        g3.addColorStop(0, `rgba(255,238,205,${0.9 * pa})`);
+        g3.addColorStop(0.3, `rgba(255,178,92,${0.45 * pa})`);
+        g3.addColorStop(1, 'rgba(255,178,92,0)');
+        c.fillStyle = g3;
+        c.beginPath(); c.arc(px2, py2, 26, 0, TAU); c.fill();
+        break;
+      }
+      run -= d;
+    }
+  }
+
+  const order = pos.map((p, i) => i).sort((i, j) => pos[j][2] - pos[i][2]);
+  for (const i of order) {
+    const n = NODES[i], p = pos[i];
+    const a = nodeAlpha(n, t);
+    if (a <= 0.01) continue;
+    const depth = clamp(1.5 - p[2] * 0.32, 0.3, 1.15);
+    const onPath = PATH_TURN.has(i) && t > PATH_TURN.get(i);
+    const rad = n.sz * depth * 1.7 * (onPath ? 2.5 : 1);
+    const col = nodeColor(n, t);
+    const rg = c.createRadialGradient(p[0], p[1], 0, p[0], p[1], rad * 5.5);
+    const base = col ? col.replace(/,[\d.]+\)$/, ',') : 'rgba(150,190,255,';
+    rg.addColorStop(0, base + (0.95 * a).toFixed(3) + ')');
+    rg.addColorStop(0.25, base + (0.35 * a).toFixed(3) + ')');
+    rg.addColorStop(1, base + '0)');
+    c.fillStyle = rg;
+    c.beginPath(); c.arc(p[0], p[1], rad * 5.5, 0, TAU); c.fill();
+
+    c.fillStyle = col ? col.replace(/,[\d.]+\)$/, ',' + a.toFixed(3) + ')') : `rgba(214,230,255,${a.toFixed(3)})`;
+    c.beginPath(); c.arc(p[0], p[1], rad, 0, TAU); c.fill();
+  }
+  c.restore();
+}
+
+function measure(str, size, weight, tracking) {
+  c.save();
+  c.font = `${weight} ${size}px ${SANS}`;
+  let w = 0;
+  for (const ch of str) w += c.measureText(ch).width + (tracking || 0);
+  c.restore();
+  return w;
+}
+
+function text(str, x, y, size, color, alpha, opt) {
+  if (alpha <= 0.004) return;
+  opt = opt || {};
+  c.save();
+  c.globalAlpha = alpha;
+  c.font = `${opt.weight || 400} ${size}px ${SANS}`;
+  c.fillStyle = color;
+  c.textAlign = opt.align || 'left';
+  c.textBaseline = opt.baseline || 'alphabetic';
+  if (opt.tracking) c.letterSpacing = opt.tracking + 'px';
+  c.fillText(str, x, y);
+  c.restore();
+}
+
+function reveal(str, x, y, size, color, t, t0, opt) {
+  opt = opt || {};
+  const stagger = opt.stagger ?? 0.05;
+  const dur = opt.dur ?? 0.45;
+  const weight = opt.weight || 500;
+  const tracking = opt.tracking || 0;
+  const total = measure(str, size, weight, tracking);
+  let cx = opt.align === 'center' ? x - total / 2 : x;
+  c.save();
+  c.font = `${weight} ${size}px ${SANS}`;
+  c.textAlign = 'left';
+  c.textBaseline = opt.baseline || 'alphabetic';
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    const w = c.measureText(ch).width;
+    const u = clamp((t - (t0 + i * stagger)) / dur, 0, 1);
+    const a = eOut(u);
+    if (a > 0.01) {
+      c.globalAlpha = a * (opt.alpha ?? 1);
+      c.fillStyle = color;
+      c.fillText(ch, cx, y + (1 - a) * (opt.rise ?? 16));
+    }
+    cx += w + tracking;
+  }
+  c.restore();
+}
+
+function fadeOut(t, t0, dur) { return 1 - ss(t0, t0 + dur, t); }
+
+function drawStats(t) {
+  if (t < 5.4 || t > 12.6) return;
+  const a = ss(5.5, 6.2, t) * fadeOut(t, 11.5, 0.9);
+  const x = 150;
+  reveal('2,490', x, 430, 128, COOL, t, 5.6, { weight: 700, stagger: 0.06, alpha: a });
+  text('个知识点', x + 6, 500, 34, 'rgba(168,196,240,0.72)', a * ss(6.0, 6.5, t), { tracking: 2 });
+  reveal('3,829', x, 660, 128, COOL, t, 6.15, { weight: 700, stagger: 0.06, alpha: a });
+  text('条先修关系', x + 6, 730, 34, 'rgba(168,196,240,0.72)', a * ss(6.55, 7.0, t), { tracking: 2 });
+  text('知 识 图 谱', W - 150, 132, 24, 'rgba(150,180,230,0.62)', a * ss(6.9, 7.4, t), { align: 'right', tracking: 6 });
+}
+
+function drawDiag(t) {
+  if (t < 12.2 || t > 19.6) return;
+  const a = fadeOut(t, 18.5, 1.0);
+  const x = 150;
+  reveal('12 道题', x, 380, 86, WHITE, t, 12.3, { weight: 700, stagger: 0.06, alpha: a });
+  text('找到真正卡住你的那一环', x + 4, 440, 34, 'rgba(180,205,245,0.78)', a * ss(12.9, 13.4, t), { tracking: 1 });
+  text('根 因', x + 4, 630, 22, 'rgba(255,150,100,0.85)', a * ss(14.9, 15.3, t), { tracking: 5 });
+  const name = (DATA.pn && DATA.pn[0]) || '配方法';
+  reveal(name, x, 712, 72, '#ffcd6e', t, 15.05, { weight: 700, stagger: 0.07, alpha: a });
+  const lineW = 260 * ss(15.6, 16.4, t);
+  c.save();
+  c.globalAlpha = a * 0.5;
+  c.fillStyle = '#ffcd6e';
+  c.fillRect(x + 2, 742, lineW, 2);
+  c.restore();
+}
+
+function drawSubjects(t, cam) {
+  if (t < 19.4 || t > 26.0) return;
+  const a = ss(20.0, 21.0, t) * fadeOut(t, 25.0, 0.9);
+  const acc = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
+  for (let i = 0; i < NODES.length; i++) {
+    const n = NODES[i];
+    const p = project(nodePos(n, t), cam);
+    acc[n.s][0] += p[0];
+    acc[n.s][1] += p[1];
+    acc[n.s][2] += 1;
+  }
+  for (let k = 0; k < 4; k++) {
+    const cnt = Math.max(1, acc[k][2]);
+    const cx0 = acc[k][0] / cnt;
+    const cy0 = acc[k][1] / cnt + 112;
+    const u = clamp((t - (20.0 + k * 0.16)) / 0.5, 0, 1);
+    const al = eOut(u) * a;
+    if (al <= 0.01) continue;
+    c.save();
+    c.globalAlpha = al;
+    c.font = `700 40px ${SANS}`;
+    c.fillStyle = SUBJ[k];
+    c.textAlign = 'center';
+    c.textBaseline = 'middle';
+    c.letterSpacing = '4px';
+    c.fillText(SUBJ_NAME[k], cx0, cy0 + (1 - eOut(u)) * 12);
+    c.restore();
+  }
+  text('四 个 学 科 ， 一 张 图', W / 2, 556, 34, 'rgba(178,203,244,0.85)', a * ss(21.2, 21.8, t), { align: 'center', tracking: 8 });
+}
+
+function roundRect(x, y, w, h, r) {
+  c.beginPath();
+  c.moveTo(x + r, y);
+  c.arcTo(x + w, y, x + w, y + h, r);
+  c.arcTo(x + w, y + h, x, y + h, r);
+  c.arcTo(x, y + h, x, y, r);
+  c.arcTo(x, y, x + w, y, r);
+  c.closePath();
+}
+
+function drawAi(t) {
+  if (t < 25.0 || t > 31.6) return;
+  const a = ss(25.2, 26.2, t) * fadeOut(t, 30.4, 1.0);
+  const x = 150;
+  reveal('AI 讲给你听', x, 470, 66, WHITE, t, 25.3, { weight: 700, stagger: 0.06, alpha: a });
+  reveal('还能一直追问', x, 552, 66, WARM, t, 25.85, { weight: 700, stagger: 0.06, alpha: a });
+  text('重点会被高亮，不是一整段糊在一起', x + 4, 612, 28, 'rgba(170,196,240,0.7)', a * ss(26.4, 26.9, t), { tracking: 1 });
+
+  const px = 1010, py = 250, pw = 760, ph = 580;
+  const u = eOut((t - 25.8) / 0.9);
+  const dy = (1 - u) * 40;
+  c.save();
+  c.globalAlpha = a * u;
+  c.shadowColor = 'rgba(60,110,220,0.35)';
+  c.shadowBlur = 60;
+  roundRect(px, py + dy, pw, ph, 22);
+  c.fillStyle = 'rgba(12,18,30,0.92)';
+  c.fill();
+  c.shadowBlur = 0;
+  c.strokeStyle = 'rgba(120,160,235,0.28)';
+  c.lineWidth = 1.4;
+  c.stroke();
+
+  c.fillStyle = 'rgba(120,160,235,0.16)';
+  c.fillRect(px + 1, py + dy + 1, pw - 2, 52);
+  ['#ff6b5e', '#ffc94d', '#4ad07a'].forEach((col, i) => {
+    c.fillStyle = col;
+    c.globalAlpha = a * u * 0.75;
+    c.beginPath(); c.arc(px + 30 + i * 20, py + dy + 27, 5, 0, TAU); c.fill();
+  });
+  c.globalAlpha = a * u;
+  text('AI 讲解', px + pw - 28, py + dy + 34, 20, 'rgba(150,180,230,0.7)', a * u, { align: 'right', tracking: 2 });
+
+  const bub = (bx, by, bw, bh, fill) => {
+    roundRect(bx, by, bw, bh, 14);
+    c.fillStyle = fill;
+    c.fill();
+  };
+
+  const s1 = ss(26.4, 26.9, t);
+  if (s1 > 0.01) {
+    c.globalAlpha = a * s1;
+    bub(px + pw - 32 - 430, py + dy + 82, 430, 56, 'rgba(56,110,220,0.22)');
+    text('为什么这道题要用配方法？', px + pw - 52, py + dy + 118, 24, 'rgba(226,236,255,0.95)', a * s1, { align: 'right' });
+  }
+
+  const s2 = ss(27.2, 27.8, t);
+  if (s2 > 0.01) {
+    c.globalAlpha = a * s2;
+    bub(px + 32, py + dy + 158, 520, 250, 'rgba(24,34,52,0.9)');
+    const lines = [
+      ['把 x²+6x 拆开看，', []],
+      ['它离完全平方只差一个常数。', []],
+      ['补上 9，就变成 (x+3)²−9。', ['补上 9']],
+      ['这一步，就是配方法。', ['配方法']]
+    ];
+    let ly = py + dy + 200;
+    for (const [line, marks] of lines) {
+      let lx = px + 56;
+      c.font = `400 23px ${SANS}`;
+      c.textAlign = 'left';
+      c.textBaseline = 'alphabetic';
+      const segs = line.split(/(补上 9|配方法)/);
+      for (const seg of segs) {
+        if (!seg) continue;
+        const hot = marks.includes(seg);
+        if (hot) {
+          const w = c.measureText(seg).width;
+          c.fillStyle = 'rgba(241,178,92,0.18)';
+          c.fillRect(lx - 4, ly - 19, w + 8, 26);
+          c.fillStyle = '#ffcd6e';
+        } else {
+          c.fillStyle = 'rgba(214,228,250,0.88)';
+        }
+        c.fillText(seg, lx, ly);
+        lx += c.measureText(seg).width;
+      }
+      ly += 46;
+    }
+  }
+
+  const s3 = ss(28.6, 29.2, t);
+  if (s3 > 0.01) {
+    c.globalAlpha = a * s3;
+    const chips = ['再举一个例子', '这一步为什么', '换种讲法'];
+    let cx0 = px + 32;
+    for (const chip of chips) {
+      c.font = `400 20px ${SANS}`;
+      const w = c.measureText(chip).width + 40;
+      roundRect(cx0, py + dy + 440, w, 44, 22);
+      c.fillStyle = 'rgba(40,60,95,0.55)';
+      c.fill();
+      c.strokeStyle = 'rgba(120,160,235,0.28)';
+      c.lineWidth = 1;
+      c.stroke();
+      c.fillStyle = 'rgba(200,218,248,0.9)';
+      c.textAlign = 'center';
+      c.textBaseline = 'middle';
+      c.fillText(chip, cx0 + w / 2, py + dy + 463);
+      cx0 += w + 12;
+    }
+  }
+
+  const s4 = ss(29.6, 30.0, t);
+  if (s4 > 0.01) {
+    c.globalAlpha = a * s4;
+    for (let i = 0; i < 3; i++) {
+      const ph2 = (t * 1.6 + i * 0.25) % 1;
+      c.fillStyle = `rgba(150,180,230,${0.25 + 0.6 * (1 - Math.abs(ph2 - 0.5) * 2)})`;
+      c.beginPath(); c.arc(px + 56 + i * 16, py + dy + 528, 4, 0, TAU); c.fill();
+    }
+  }
+  c.restore();
+}
+
+function drawEnd(t) {
+  if (t < 31.2) return;
+  const u = eBack((t - 31.9) / 0.7);
+  const lx = W / 2, ly = 402;
+  c.save();
+  c.globalCompositeOperation = 'lighter';
+  c.globalAlpha = clamp(u, 0, 1);
+  const glow = c.createRadialGradient(lx, ly, 0, lx, ly, 150);
+  glow.addColorStop(0, 'rgba(90,150,255,0.30)');
+  glow.addColorStop(1, 'rgba(90,150,255,0)');
+  c.fillStyle = glow;
+  c.beginPath(); c.arc(lx, ly, 150, 0, TAU); c.fill();
+  c.globalAlpha = 1;
+  const pts = [[lx, ly + 26], [lx - 42, ly - 28], [lx + 42, ly - 28]];
+  const rr = [15, 12, 12];
+  c.strokeStyle = 'rgba(150,195,255,0.9)';
+  c.lineWidth = 3.2;
+  c.beginPath();
+  c.moveTo(pts[0][0], pts[0][1]); c.lineTo(pts[1][0], pts[1][1]);
+  c.moveTo(pts[0][0], pts[0][1]); c.lineTo(pts[2][0], pts[2][1]);
+  c.stroke();
+  for (let i = 0; i < 3; i++) {
+    const p = pts[i];
+    const g2 = c.createRadialGradient(p[0], p[1], 0, p[0], p[1], rr[i] * 4);
+    g2.addColorStop(0, 'rgba(190,220,255,0.85)');
+    g2.addColorStop(1, 'rgba(120,170,255,0)');
+    c.fillStyle = g2;
+    c.beginPath(); c.arc(p[0], p[1], rr[i] * 4, 0, TAU); c.fill();
+    c.fillStyle = i === 0 ? '#8fc0ff' : 'rgba(150,195,255,0.72)';
+    c.beginPath(); c.arc(p[0], p[1], rr[i] * clamp(u, 0, 1), 0, TAU); c.fill();
+  }
+  c.restore();
+
+  const a = ss(32.2, 32.9, t);
+  c.save();
+  c.globalAlpha = a;
+  c.font = `700 132px ${SANS}`;
+  c.fillStyle = WHITE;
+  c.textAlign = 'center';
+  c.textBaseline = 'alphabetic';
+  c.letterSpacing = '2px';
+  c.fillText('Origin', W / 2, 640);
+  c.restore();
+
+  text('回 到 知 识 的 原 点', W / 2, 700, 28, 'rgba(170,198,242,0.82)', ss(32.9, 33.5, t), { align: 'center', tracking: 8 });
+  text('origin.new.tg', W / 2, 790, 30, 'rgba(150,185,240,0.9)', ss(33.5, 34.1, t), { align: 'center', tracking: 3 });
+  text('by geekline.tech', W / 2, 832, 20, 'rgba(96,116,146,0.9)', ss(34.0, 34.6, t), { align: 'center', tracking: 2 });
+}
+
+function drawVignette() {
+  const g = c.createRadialGradient(W / 2, H / 2, H * 0.46, W / 2, H / 2, H * 1.02);
+  g.addColorStop(0, 'rgba(0,0,0,0)');
+  g.addColorStop(1, 'rgba(0,0,0,0.46)');
+  c.fillStyle = g;
+  c.fillRect(0, 0, W, H);
+}
+
+const GRAIN = [];
+for (let k = 0; k < 6; k++) {
+  const gv = document.createElement('canvas');
+  gv.width = 240; gv.height = 135;
+  const gx = gv.getContext('2d');
+  const img = gx.createImageData(240, 135);
+  for (let i = 0; i < img.data.length; i += 4) {
+    const v = Math.floor(rnd() * 5);
+    img.data[i] = v; img.data[i + 1] = v; img.data[i + 2] = v; img.data[i + 3] = 255;
+  }
+  gx.putImageData(img, 0, 0);
+  GRAIN.push(gv);
+}
+
+function drawGrain(t) {
+  const tile = GRAIN[Math.floor(t * 30) % 6];
+  c.save();
+  c.globalCompositeOperation = 'lighter';
+  c.globalAlpha = 0.30;
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) c.drawImage(tile, x * 240, y * 135);
+  c.restore();
+}
+
+function draw(t) {
+  const cam = camAt(t);
+  drawBackdrop(t);
+  if (t < 5.4) drawIntro(t);
+  if (t > 4.6 && t < 33.4) drawGraph(t, cam);
+  drawStats(t);
+  drawDiag(t);
+  drawSubjects(t, cam);
+  drawAi(t);
+  drawEnd(t);
+  drawVignette();
+  drawGrain(t);
+}
+
+const q = new URLSearchParams(location.search);
+const fixedT = q.has('t') ? parseFloat(q.get('t')) : null;
+if (fixedT !== null) document.getElementById('hint').style.display = 'none';
+let start = performance.now();
+let paused = false;
+let pauseAt = 0;
+
+function frame(now) {
+  if (fixedT === null) {
+    const t = paused ? pauseAt : (now - start) / 1000;
+    draw(t % DUR);
+    if (!paused) requestAnimationFrame(frame);
+  }
+}
+if (fixedT !== null) {
+  draw(fixedT);
+} else {
+  requestAnimationFrame(frame);
+}
+
+window.__frame = (t) => { draw(t); };
+window.__duration = DUR;
+
+addEventListener('keydown', (e) => {
+  if (e.code !== 'Space') return;
+  e.preventDefault();
+  if (fixedT !== null) return;
+  if (paused) { start = performance.now() - pauseAt * 1000; paused = false; requestAnimationFrame(frame); }
+  else { pauseAt = (performance.now() - start) / 1000 % DUR; paused = true; }
+});
+</script>
+</body>
+</html>

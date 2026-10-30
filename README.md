@@ -64,6 +64,28 @@ AI 讲解：关键步骤与易错点用高亮标出，底部提供常见追问�
 | --- | --- |
 | <img src="docs/screenshots/mobile.png" width="260" alt="移动端首页" /> | <img src="docs/screenshots/mobile-explore.png" width="260" alt="移动端知识图谱" /> |
 
+## 宣传片
+
+38 秒，1080p。画面和配乐全部由代码生成，没有用任何剪辑软件，也没有用任何素材库。
+
+<a href="docs/video/origin-promo.mp4"><img src="animations/origin-promo/poster.png" width="640" alt="Origin 宣传片" /></a>
+
+- 成片：[`docs/video/origin-promo.mp4`](docs/video/origin-promo.mp4)（8.8 MB）
+- 可直接在浏览器打开的单文件动画：[`animations/origin-promo/index.html`](animations/origin-promo/index.html)（Canvas 2D，纯 `draw(t)` 函数，支持 `?t=12.5` 定格、空格暂停）
+- 源码：[`promo/`](promo/)
+
+图谱里的 240 个节点、234 条边全部来自真实数据（`public/data/topics.json`、`dependencies.json`），诊断段那条橙色路径是从「有理数的分类」到「配方法」用 BFS 在真实先修图上算出来的 11 步链路，不是画上去的。
+
+重新生成：
+
+```bash
+python promo/build_graph.py      # 真实数据 → promo/graph3d.json
+node promo/anim/build.mjs        # 注入模板 → animations/origin-promo/index.html
+python promo/anim/music.py       # 代码合成 38s 配乐 → promo/out/music.wav
+node promo/anim/capture.mjs      # 逐帧抓图 → promo/out/frames/
+# 再用 ffmpeg 合成（参数见 promo/anim/README 注释或提交记录）
+```
+
 ## 技术栈
 
 - **前端**：Vite 8 + React 19 + TypeScript 7（`tsc -b` 严格模式）
@@ -79,7 +101,11 @@ AI 讲解：关键步骤与易错点用高亮标出，底部提供常见追问�
 ```
 origin/
 ├── data-src/                  # 手工整理的教材原始条目（初中语文逐课）
-├── docs/screenshots/          # README 展示图
+├── animations/origin-promo/   # 单文件 Canvas 宣传动画（可直接浏览器打开）
+├── docs/
+│   ├── screenshots/           # README 展示图
+│   └── video/                 # 宣传片成片
+├── promo/                     # 宣传片源码（图谱抽取、动画模板、配乐合成、抓帧）
 ├── public/
 │   ├── data/                  # 知识图谱与题库（构建时按学科拆分）
 │   ├── _headers               # Pages 缓存头
