@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- Origin film · built with onetake (PolyForm Noncommercial 1.0.0) · concept: one chain -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Origin · 一条链</title>
+<style>
+:root{
+  --bg:#efeae0; --deep:#dcd3c4; --card:#ffffff; --line:#ded8cd;
+  --mute:#8d877c; --ink:#1b1a17; --accent:#1474fc; --accent2:#e2553c;
+}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:var(--bg)}
+body{font-family:'Text',Inter,system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+#stage{position:absolute;inset:0;overflow:hidden;background:var(--bg)}
+#pool{position:absolute;inset:0;background:
+  radial-gradient(1180px 780px at 57% 33%, #ffffff 0%, rgba(255,255,255,0) 66%),
+  radial-gradient(1500px 1000px at 40% 108%, #e4dbcc 0%, rgba(0,0,0,0) 74%)}
+#vig{position:absolute;inset:0;background:radial-gradient(1300px 900px at 52% 46%, rgba(0,0,0,0) 46%, rgba(96,74,44,.17) 100%)}
+
+#cards,#chain,#panelLayer,#markLayer{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;will-change:transform}
+
+.sheet{position:absolute;overflow:hidden;border-radius:9px;background:var(--card);
+  border:1px solid rgba(38,28,14,.10);
+  box-shadow:0 44px 96px -34px rgba(52,38,18,.46),0 3px 10px rgba(52,38,18,.10);
+  will-change:transform,opacity}
+.sheet .chrome{position:absolute;left:0;right:0;top:0;height:30px;background:#f2eee6;border-bottom:1px solid rgba(38,28,14,.08)}
+.sheet .chrome i{position:absolute;top:11px;width:9px;height:9px;border-radius:50%;background:#d9d1c2}
+.sheet .chrome .u{position:absolute;left:74px;right:74px;top:7px;height:17px;border-radius:4px;background:#fff;
+  font:400 11px/17px 'Mono',monospace;color:#a89e8c;text-align:center;letter-spacing:.02em;overflow:hidden}
+.sheet img{display:block;width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top center}
+
+#edges{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible}
+.node{position:absolute;left:0;top:0;display:flex;align-items:center;gap:8px;padding:7px 11px 7px 8px;
+  border-radius:8px;background:var(--card);border:1px solid rgba(38,28,14,.13);white-space:nowrap;
+  font-size:17px;font-weight:500;color:var(--ink);
+  box-shadow:0 14px 30px -14px rgba(52,38,18,.42);will-change:transform,opacity}
+.node .d{width:11px;height:11px;border-radius:50%;background:var(--accent2);flex:none;box-shadow:0 0 0 3px rgba(226,85,60,.15)}
+.node .g{font:400 10.5px/1 'Mono',monospace;color:var(--mute);margin-left:2px;letter-spacing:.04em}
+.node.root{background:var(--accent2);border-color:#c9482f;color:#fff;
+  box-shadow:0 18px 40px -14px rgba(200,72,47,.62)}
+.node.root .d{background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.36)}
+.node.root .g{color:rgba(255,255,255,.8)}
+.node .tag{font-size:12px;font-weight:600;color:#fff;background:rgba(255,255,255,.24);padding:3px 7px;border-radius:5px;margin-left:5px}
+
+#note{position:absolute;left:0;right:0;bottom:104px;text-align:center;font-size:25px;font-weight:500;
+  color:#6f6858;opacity:0;letter-spacing:.01em}
+#ui{position:absolute;inset:0;pointer-events:none}
+#note b{color:var(--accent2);font-weight:600}
+
+#panel{position:absolute;left:440px;top:306px;width:1040px;height:460px;border-radius:16px;background:var(--card);
+  border:1px solid rgba(38,28,14,.10);box-shadow:0 70px 150px -50px rgba(52,38,18,.5),0 4px 12px rgba(52,38,18,.08);
+  opacity:0;transform-origin:50% 8%;will-change:transform,opacity;overflow:hidden}
+#panel .hd{position:absolute;left:0;right:0;top:0;height:118px;border-bottom:1px solid rgba(38,28,14,.08)}
+#panel .hd .t{position:absolute;left:36px;top:28px;font-size:22px;font-weight:600;letter-spacing:-.01em}
+#panel .hd .t small{font:400 15px/1 'Mono',monospace;color:var(--mute);margin-left:12px;letter-spacing:.02em}
+#panel .hd .c{position:absolute;right:32px;top:32px;width:12px;height:12px;border-radius:50%;background:#e3dccd}
+#strip{position:absolute;left:36px;top:82px;width:700px;height:14px}
+#strip i{position:absolute;top:3px;width:8px;height:8px;border-radius:50%;background:var(--accent2);opacity:.9}
+#strip .ln{position:absolute;left:4px;top:7px;height:1px;background:var(--accent2);opacity:.34}
+#panel .stripLab{position:absolute;right:32px;top:74px;font:400 14px/1 'Mono',monospace;color:var(--mute)}
+
+#ask{position:absolute;right:40px;top:120px;max-width:560px;padding:14px 22px;border-radius:15px 15px 4px 15px;
+  background:var(--accent);color:#fff;font-size:23px;font-weight:500;opacity:0;transform-origin:100% 100%;
+  box-shadow:0 18px 40px -18px rgba(20,116,252,.5)}
+#ans{position:absolute;left:46px;top:192px;width:880px;font-size:30px;line-height:1.62;font-weight:450;color:var(--ink)}
+#ans em{font-style:normal;background:rgba(20,116,252,.12);box-shadow:inset 0 -2px 0 rgba(20,116,252,.5);padding:1px 3px;border-radius:3px}
+#caret{display:inline-block;width:2px;height:31px;background:var(--ink);vertical-align:-5px;margin-left:2px}
+#chips{position:absolute;left:46px;bottom:30px;display:flex;gap:12px;opacity:0}
+#chips .chip{padding:12px 20px;border:1px solid rgba(38,28,14,.12);border-radius:999px;font-size:20px;color:var(--ink);background:#faf8f4}
+#chips .chip.dim{color:var(--mute)}
+#dots{position:absolute;left:46px;top:166px;display:flex;gap:6px;opacity:0}
+#dots i{width:8px;height:8px;border-radius:50%;background:var(--mute)}
+
+#mark{position:absolute;left:0;right:0;top:372px;text-align:center;font-family:'Display',Instrument Serif,serif;
+  font-size:196px;line-height:1;letter-spacing:-.015em;color:var(--ink);opacity:0}
+#mark span{display:inline-block;transform-origin:50% 88%}
+#rule{position:absolute;left:50%;top:596px;height:2px;background:var(--accent2);transform-origin:0 50%;opacity:0}
+#tagline{position:absolute;left:0;right:0;top:634px;text-align:center;font-size:28px;font-weight:500;letter-spacing:.18em;color:var(--ink);opacity:0}
+#url{position:absolute;left:0;right:0;top:704px;text-align:center;font:400 26px/1 'Mono',monospace;color:var(--accent);opacity:0;letter-spacing:.02em}
+#by{position:absolute;left:0;right:0;top:750px;text-align:center;font:400 18px/1 'Mono',monospace;color:#8b8371;opacity:0;letter-spacing:.07em}
+#hud{position:absolute;right:14px;bottom:10px;font:13px 'Mono',monospace;color:#c00;display:none}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="pool"></div>
+  <div id="vig"></div>
+  <div id="ui"><div id="note">11 步 · 一路退到<b>没学会的那一步</b></div></div>
+
+  <div id="cards">
+    <div class="sheet" id="cHome"><div class="chrome"><i style="left:16px"></i><i style="left:33px"></i><i style="left:50px"></i><span class="u">origin.new.tg</span></div><img alt="" src="shots/home.png"></div>
+    <div class="sheet" id="cExpl"><div class="chrome"><i style="left:16px"></i><i style="left:33px"></i><i style="left:50px"></i><span class="u">origin.new.tg/explore · 配方法</span></div><img alt="" src="shots/explore.png"></div>
+  </div>
+
+  <div id="chain">
+    <svg id="edges">
+      <path id="punder" fill="none" stroke="#e2553c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0" style="stroke-opacity:.13"></path>
+      <path id="pline" fill="none" stroke="#e2553c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0"></path>
+      <circle id="wring" r="8" fill="none" stroke="#e2553c" stroke-width="2.2" opacity="0"></circle>
+      <circle id="wdot" r="7.5" fill="#e2553c" opacity="0"></circle>
+      <circle id="glow" r="5.5" fill="#fff" opacity="0"></circle>
+    </svg>
+    <div id="nodes"></div>
+  </div>
+
+  <div id="panelLayer">
+    <div id="panel">
+      <div class="hd"><div class="t">AI 讲解<small>配方法 · 一元二次方程</small></div><div class="c"></div>
+        <div id="strip"><div class="ln"></div></div>
+        <div class="stripLab">先修路径</div>
+      </div>
+      <div id="ask">为什么这里要用配方法？</div>
+      <div id="dots"><i></i><i></i><i></i></div>
+      <div id="ans"><span id="ansTxt"></span><i id="caret"></i></div>
+      <div id="chips"><div class="chip">那 x²−4x 呢？</div><div class="chip dim">为什么是 9 不是 6？</div></div>
+    </div>
+  </div>
+
+  <div id="markLayer">
+    <div id="rule"></div>
+    <div id="mark"></div>
+    <div id="tagline">回到知识的原点</div>
+    <div id="url">origin.new.tg</div>
+    <div id="by">by geekline.tech</div>
+  </div>
+
+  <div id="hud"></div>
+</div>
+<script src="look.js"></script>
+<script src="motion.js"></script>
+<script>
+const FPS = 30, DUR = 17.5, W = 1920, H = 1080;
+const $ = id => document.getElementById(id);
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, k) => a + (b - a) * k;
+const seg = (t, t0, t1) => (t1 === t0 ? (t >= t1 ? 1 : 0) : clamp((t - t0) / (t1 - t0)));
+const ss = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const sss = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * k * (k * (k * 6 - 15) + 10); };
+const OM = window.OM, E = OM.ease;
+
+const NAMES = ['配方法', '完全平方公式', '多项式乘多项式', '单项式乘多项式', '合并同类项',
+  '乘法运算律与多个因数相乘', '有理数的乘法法则', '绝对值的化简与计算', '相反数',
+  '在数轴上表示有理数', '有理数的分类'];
+const GRADES = [9, 8, 8, 8, 7, 7, 7, 7, 7, 7, 7];
+const N = NAMES.length;
+
+const FLAT = NAMES.map((_, i) => [1178 - i * 48, 508 - i * 7 + Math.sin(i * 1.4) * 9]);
+const RAISED = NAMES.map((_, i) => {
+  const u = i / (N - 1);
+  const zig = (i % 2 === 0 ? -1 : 1) * 52;
+  return [1174 - 1128 * Math.pow(u, 0.88), 712 - 392 * u - 62 * Math.sin(Math.PI * u) + zig];
+});
+
+const T_DOT = 2.30, T_LINE = 2.58, T_RISE = 4.16, RISE_DT = 0.44, T_STOP = 9.62;
+const T_GATHER = 10.20, T_PANEL = 10.60, T_ASK = 10.66, T_TYPE = 11.22;
+const T_HOLD = 13.70, T_CLOSE = 14.30, T_RULE = 14.78, T_MARK = 15.34, T_END = 17.5;
+
+const riseAt = i => T_RISE + i * RISE_DT;
+window.__meta = { dur: DUR, fps: FPS, w: W, h: H, inFrame: { mark: [T_MARK, T_END, 'whole'], panel: [T_PANEL + 0.2, T_CLOSE, 'whole'] } };
+
+const CAM = [
+  { t: 0.00, x: 1012, y: 462, zoom: 1.15 },
+  { t: T_DOT - 0.10, x: 978, y: 508, zoom: 1.07, curve: E.sineInOut },
+  { t: T_RISE, x: 1000, y: 536, zoom: 1.20 },
+  { t: 6.10, x: 880, y: 500, zoom: 0.99, curve: E.smoother },
+  { t: 7.30, x: 740, y: 462, zoom: 1.12, curve: E.sineInOut },
+  { t: T_STOP, x: 566, y: 418, zoom: 1.26, curve: E.smoother },
+  { t: T_GATHER, x: 620, y: 444, zoom: 1.20 },
+  { t: T_GATHER + 0.16, x: 706, y: 476, zoom: 1.23, curve: E.cubicInOut },
+  { t: T_PANEL + 0.03, x: 960, y: 540, zoom: 1.04, curve: E.cubicInOut },
+  { t: 12.40, x: 960, y: 526, zoom: 1.11, curve: E.sineInOut },
+  { t: T_HOLD, x: 960, y: 540, zoom: 1.07 },
+  { t: T_RULE, x: 960, y: 540, zoom: 1.00, curve: E.sineInOut },
+  { t: T_END, x: 960, y: 540, zoom: 1.03, curve: E.linear },
+];
+
+const CARDS = [
+  { el: 'cHome', l: -272, t: 330, w: 880, depth: 0.38, rot: -0.030, out: [-210, -96] },
+  { el: 'cExpl', l: 418, t: 186, w: 1210, depth: 0.00, rot: 0.004, out: [0, 48] },
+];
+
+const AI = [
+  { s: '把 x²+6x 拆开看，它离完全平方只差一个常数。' },
+  { s: '补上 9', hl: 1 }, { s: '，就变成 (x+3)²−9。' },
+  { s: '这一步，就是' }, { s: '配方法', hl: 1 },
+  { s: '。它把方程变成能直接开平方的形式，所以先配方、再求解。' },
+];
+
+const nodeEls = [], dotEls = [];
+NAMES.forEach((nm, i) => {
+  const d = document.createElement('div');
+  d.className = 'node' + (i === N - 1 ? ' root' : '');
+  d.innerHTML = '<span class="d"></span><span class="nm">' + nm + '</span><span class="g">' +
+    GRADES[i] + '年级</span>' + (i === N - 1 ? '<span class="tag">根因</span>' : '');
+  $('nodes').appendChild(d);
+  nodeEls.push(d);
+  const dot = document.createElement('i');
+  dot.style.left = (i * 62) + 'px';
+  $('strip').appendChild(dot);
+  dotEls.push(dot);
+});
+$('strip').querySelector('.ln').style.width = ((N - 1) * 62) + 'px';
+
+const markTxt = 'Origin';
+$('mark').innerHTML = markTxt.split('').map(c => '<span>' + c + '</span>').join('');
+const markChars = [...$('mark').querySelectorAll('span')];
+
+const AI_CHARS = [];
+for (const part of AI) for (const ch of part.s) AI_CHARS.push([ch, part.hl ? 1 : 0]);
+
+let ruleW = 520;
+const setT = (el, v) => { if (el._t !== v) { el.style.transform = v; el._t = v; } };
+const setO = (el, v) => { const s = v.toFixed(3); if (el._o !== s) { el.style.opacity = s; el._o = s; } };
+const M6 = m => 'matrix(' + m.map(v => v.toFixed(5)).join(',') + ')';
+
+function seek(t) {
+  const cam = OM.camera(t, CAM);
+  const sh = OM.shake(t, T_DOT, { amp: 7, decay: 12, freq: 22, seed: 3 });
+  const sh2 = OM.shake(t, T_GATHER, { amp: 10, decay: 11, freq: 18, seed: 7 });
+  cam.x += sh.x + sh2.x; cam.y += sh.y + sh2.y; cam.rot += (sh.rot + sh2.rot) * 0.0016;
+
+  const recede = sss(T_RISE - 0.16, 5.80, t);
+
+  for (const c of CARDS) {
+    const el = $(c.el);
+    el.style.left = c.l + 'px'; el.style.top = c.t + 'px';
+    el.style.width = c.w + 'px'; el.style.height = Math.round(c.w * 1080 / 1920) + 'px';
+    const press = c.el === 'cExpl' ? OM.press(t, T_DOT, { depth: 0.035, decay: 11, omega: 26 }) : { s: 1 };
+    const dx = c.out[0] * recede, dy = c.out[1] * recede;
+    const sc = (1 - 0.16 * recede) * press.s;
+    setT(el, 'translate(' + dx.toFixed(2) + 'px,' + dy.toFixed(2) + 'px) rotate(' + (c.rot + 0.018 * recede).toFixed(4) + 'rad) scale(' + sc.toFixed(4) + ')');
+    setO(el, (1 - 0.46 * recede) * (1 - ss(9.10, 9.85, t)));
+  }
+
+  setT($('chain'), M6(OM.view(cam, { depth: -0.20 })));
+  setT($('panelLayer'), M6(OM.view(cam, { depth: -0.26 })));
+  setT($('markLayer'), M6(OM.view(cam, { depth: -0.31 })));
+
+  const pts = basePts(t);
+
+  const prog = clamp((t - T_LINE) / (riseAt(N - 1) - T_LINE + 0.30), 0, 1);
+  const upto = prog * (N - 1);
+  const pathEl = $('pline'), underEl = $('punder');
+  if (t < T_LINE) { setO(pathEl, 0); setO(underEl, 0); setO($('glow'), 0); }
+  else {
+    const fade = 1 - ss(T_GATHER - 0.06, T_GATHER + 0.30, t);
+    setO(pathEl, fade); setO(underEl, fade);
+    let d = 'M' + pts[0][0].toFixed(1) + ',' + pts[0][1].toFixed(1);
+    const full = Math.floor(upto);
+    for (let i = 1; i <= full && i < N; i++) d += 'L' + pts[i][0].toFixed(1) + ',' + pts[i][1].toFixed(1);
+    if (full < N - 1) {
+      const fr = upto - full, A = pts[full], B = pts[Math.min(full + 1, N - 1)];
+      d += 'L' + lerp(A[0], B[0], fr).toFixed(1) + ',' + lerp(A[1], B[1], fr).toFixed(1);
+    }
+    pathEl.setAttribute('d', d); underEl.setAttribute('d', d);
+    const gi = Math.min(N - 1, Math.floor(upto)), gf = upto - gi;
+    const G = pts[gi], G2 = pts[Math.min(gi + 1, N - 1)];
+    $('glow').setAttribute('cx', lerp(G[0], G2[0], gf).toFixed(1));
+    $('glow').setAttribute('cy', lerp(G[1], G2[1], gf).toFixed(1));
+    setO($('glow'), fade * ss(T_LINE, T_LINE + 0.2, t));
+  }
+
+  // the wrong answer lands before anything rises
+  const wd = ss(T_DOT, T_DOT + 0.12, t) * (1 - ss(riseAt(0) - 0.10, riseAt(0) + 0.22, t));
+  const wr = OM.ring(t - T_DOT, 7, 20);
+  setO($('wdot'), wd);
+  setO($('wring'), wd * 0.9);
+  $('wring').setAttribute('r', (8 + 26 * clamp(wr, 0, 1)).toFixed(1));
+  $('wdot').setAttribute('cx', FLAT[0][0].toFixed(1)); $('wdot').setAttribute('cy', FLAT[0][1].toFixed(1));
+  $('wring').setAttribute('cx', FLAT[0][0].toFixed(1)); $('wring').setAttribute('cy', FLAT[0][1].toFixed(1));
+
+  const gatherK = sss(T_GATHER, T_PANEL - 0.02, t);
+  for (let i = 0; i < N; i++) {
+    const el = nodeEls[i];
+    const born = ss(riseAt(i) - 0.12, riseAt(i) + 0.20, t);
+    const P = chainPts(t)[i];
+    let sc = 1, op = born;
+    if (gatherK > 0) {
+      sc = lerp(1, 0.02, gatherK);
+      op = lerp(born, 0, sss(T_GATHER + 0.06, T_GATHER + 0.34, t));
+    }
+    el.style.left = P[0].toFixed(2) + 'px'; el.style.top = P[1].toFixed(2) + 'px';
+    setT(el, 'translate(-50%,-50%) scale(' + sc.toFixed(4) + ')');
+    setO(el, op);
+    el.style.zIndex = String(10 + i);
+  }
+
+  setO($('note'), ss(T_STOP - 0.16, T_STOP + 0.34, t) * (1 - ss(T_GATHER - 0.12, T_GATHER + 0.14, t)));
+
+  const over = OM.spring(t - T_PANEL, 0.70, 14);
+  const inK = ss(T_PANEL - 0.34, T_PANEL - 0.01, t);
+  const closeK = sss(T_CLOSE, T_CLOSE + 0.62, t);
+  setO($('panel'), inK * (1 - closeK));
+  setT($('panel'), 'translateY(' + (lerp(24, 0, inK) + 28 * closeK).toFixed(2) + 'px) scale(' +
+    (lerp(0.948, 1, inK) * (1 + 0.013 * clamp(over, 0, 1.6)) * (1 - 0.05 * closeK)).toFixed(4) + ')');
+
+  for (let i = 0; i < N; i++) {
+    const on = ss(T_PANEL + 0.02 + i * 0.026, T_PANEL + 0.10 + i * 0.026, t);
+    dotEls[i].style.opacity = (0.22 + 0.78 * on) * (1 - closeK);
+    dotEls[i].style.transform = 'scale(' + (0.8 + 0.2 * on).toFixed(3) + ')';
+  }
+  $('strip').querySelector('.ln').style.opacity = 0.34 * (1 - closeK);
+
+  const ak = OM.spring(t - T_ASK, 0.66, 16);
+  setO($('ask'), (t > T_ASK - 0.06 ? 1 : 0) * clamp(ak * 1.5, 0, 1) * (1 - closeK));
+  setT($('ask'), 'translateY(' + lerp(22, 0, clamp(ak, 0, 1)).toFixed(2) + 'px) scale(' + lerp(0.94, 1, clamp(ak, 0, 1)).toFixed(4) + ')');
+
+  const typing = t > T_TYPE - 0.34 && t < T_TYPE + 0.06;
+  setO($('dots'), typing ? 1 : 0);
+  if (typing) for (let i = 0; i < 3; i++) {
+    const b = 0.5 + 0.5 * Math.sin((t - T_TYPE) * 13 - i * 1.5);
+    $('dots').children[i].style.opacity = (0.35 + 0.6 * b).toFixed(3);
+  }
+
+  const ty = OM.typeOn(t, T_TYPE, AI_CHARS.map(c => c[0]).join(''), { cps: 36 });
+  let html = '', cur = 0, hl = 0;
+  for (const [ch, h] of AI_CHARS) {
+    if (cur >= ty.n) break;
+    if (h !== hl) { if (hl) html += '</em>'; if (h) html += '<em>'; hl = h; }
+    html += ch; cur++;
+  }
+  if (hl) html += '</em>';
+  $('ansTxt').innerHTML = html;
+  $('caret').style.opacity = ((ty.done ? 0 : ty.caret) * (1 - closeK)).toFixed(3);
+
+  const ck = OM.spring(t - (T_TYPE + 2.14), 0.68, 15);
+  setO($('chips'), clamp(ck * 1.4, 0, 1) * (1 - closeK));
+  setT($('chips'), 'translateY(' + lerp(16, 0, clamp(ck, 0, 1)).toFixed(2) + 'px)');
+
+  const rk = ss(T_RULE, T_RULE + 0.62, t);
+  $('rule').style.width = (ruleW * rk).toFixed(1) + 'px';
+  $('rule').style.marginLeft = (-ruleW * rk / 2).toFixed(1) + 'px';
+  setO($('rule'), t > T_RULE - 0.02 ? 1 : 0);
+
+  setO($('mark'), t > T_MARK - 0.05 ? 1 : 0);
+  markChars.forEach((el, i) => {
+    const k = clamp(OM.spring(t - T_MARK - i * 0.045, 0.52, 21), 0, 1.2);
+    el.style.transform = 'translateY(' + lerp(52, 0, k).toFixed(2) + 'px) scale(' + lerp(0.93, 1, k).toFixed(4) + ')';
+    el.style.opacity = clamp(k * 1.6, 0, 1).toFixed(3);
+  });
+
+  const tagIn = OM.spring(t - (T_MARK + 0.52), 0.6, 15);
+  setO($('tagline'), clamp(tagIn * 1.4, 0, 1));
+  setT($('tagline'), 'translateY(' + lerp(20, 0, clamp(tagIn, 0, 1)).toFixed(2) + 'px)');
+  setO($('url'), ss(T_MARK + 0.94, T_MARK + 1.30, t));
+  setO($('by'), ss(T_MARK + 1.28, T_MARK + 1.62, t));
+
+  if (q.has('hud')) {
+    const h = $('hud'); h.style.display = 'block';
+    h.textContent = 't=' + t.toFixed(2) + '  z=' + cam.zoom.toFixed(2) + '  x=' + cam.x.toFixed(0) + '  y=' + cam.y.toFixed(0);
+  }
+}
+
+function basePts(t) {
+  return NAMES.map((_, i) => {
+    const k = OM.spring(t - riseAt(i), 0.62, 15);
+    const e = i === N - 1 ? sss(0, 1, clamp(k, 0, 1)) : clamp(k, 0, 1);
+    return [lerp(FLAT[i][0], RAISED[i][0], e), lerp(FLAT[i][1], RAISED[i][1], e)];
+  });
+}
+
+function chainPts(t) {
+  const g = sss(T_GATHER, T_PANEL - 0.02, t);
+  return basePts(t).map((p, i) => g > 0 ? [lerp(p[0], 476 + i * 62, g), lerp(p[1], 395, g)] : p);
+}
+
+function motion(t0, t1) {
+  const a = OM.camera(t0, CAM), b = OM.camera(t1, CAM);
+  const M0 = OM.view(a, { depth: -0.20 }), M1 = OM.view(b, { depth: -0.20 });
+  const P0 = chainPts(t0), P1 = chainPts(t1);
+  let mx = 0;
+  for (let i = 0; i < N; i++) {
+    const s0 = OM.project(M0, P0[i][0], P0[i][1]), s1 = OM.project(M1, P1[i][0], P1[i][1]);
+    mx = Math.max(mx, Math.hypot(s1[0] - s0[0], s1[1] - s0[1]));
+  }
+  const corners = [[0, 0], [1920, 0], [0, 1080], [1920, 1080], [960, 540]];
+  const M0f = OM.view(a, { depth: 0 }), M1f = OM.view(b, { depth: 0 });
+  for (const c of corners) {
+    const s0 = OM.project(M0f, c[0], c[1]), s1 = OM.project(M1f, c[0], c[1]);
+    mx = Math.max(mx, Math.hypot(s1[0] - s0[0], s1[1] - s0[1]));
+  }
+  return mx;
+}
+window.__motion = motion;
+
+window.__events = function () {
+  const ev = [{ t: 0.0, k: 'room', dur: DUR }];
+  ev.push({ t: T_DOT, k: 'tick', v: 0.9 });
+  ev.push({ t: T_LINE, k: 'draw', dur: riseAt(N - 1) - T_LINE });
+  for (let i = 0; i < N; i++) ev.push({ t: riseAt(i) + 0.02, k: 'plate', i: i, v: 0.55 + 0.3 * (i / N) });
+  ev.push({ t: 6.30, k: 'air', dur: T_STOP - 6.30, v: 0.7 });
+  ev.push({ t: T_STOP, k: 'settle', v: 0.6 });
+  ev.push({ t: T_GATHER, k: 'hit', v: 1.0 });
+  ev.push({ t: T_PANEL, k: 'air', dur: 0.5, v: 0.5 });
+  ev.push({ t: T_ASK, k: 'bubble', v: 0.6 });
+  ev.push({ t: T_TYPE + 0.30, k: 'key', v: 0.34 });
+  ev.push({ t: T_TYPE + 0.96, k: 'key', v: 0.30 });
+  ev.push({ t: T_TYPE + 1.55, k: 'key', v: 0.26 });
+  ev.push({ t: T_CLOSE, k: 'fold', v: 0.7 });
+  ev.push({ t: T_RULE, k: 'draw2', dur: 0.62, v: 0.55 });
+  ev.push({ t: T_MARK, k: 'land', v: 1.0 });
+  ev.push({ t: T_MARK + 0.52, k: 'soft', v: 0.5 });
+  ev.push({ t: T_MARK + 0.94, k: 'soft', v: 0.42 });
+  ev.push({ t: T_MARK + 1.28, k: 'soft', v: 0.34 });
+  return ev;
+};
+
+const q = new URLSearchParams(location.search);
+window.__seek = async t => { seek(t); return true; };
+window.__ready = (window.LOOK && LOOK.ready ? LOOK.ready : Promise.resolve())
+  .then(() => document.fonts.ready)
+  .then(() => { ruleW = 520; return seek(0); });
+if (q.has('t')) __ready.then(() => seek(parseFloat(q.get('t'))));
+if (q.has('play')) __ready.then(() => {
+  const t0 = performance.now();
+  (function loop() { seek(((performance.now() - t0) / 1000) % DUR); requestAnimationFrame(loop); })();
+});
+</script>
+</body>
+</html>

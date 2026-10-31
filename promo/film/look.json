@@ -1,0 +1,32 @@
+{
+ "name": "origin-table",
+ "from": "shots/home.png, shots/explore.png, shots/diagnose.png",
+ "mood": "a lit table, white sheets, the product blue, one red marking line",
+ "color": {
+  "ground": "#f5f3ef",
+  "deep": "#e6e1d8",
+  "card": "#ffffff",
+  "line": "#ded8cd",
+  "mute": "#8d877c",
+  "ink": "#1b1a17",
+  "accent": "#1474fc",
+  "accent2": "#e2553c"
+ },
+ "type": {
+  "display": {
+   "face": "Instrument Serif",
+   "weight": 400,
+   "tracking": -0.01
+  },
+  "text": {
+   "face": "Inter",
+   "weight": 500,
+   "tracking": -0.02
+  },
+  "mono": {
+   "face": "Geist Mono",
+   "weight": 400,
+   "tracking": 0
+  }
+ }
+}

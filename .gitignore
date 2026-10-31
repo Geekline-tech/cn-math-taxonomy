@@ -29,3 +29,11 @@ worker/.wrangler/
 
 # promo build artifacts
 promo/out/
+
+# onetake film build artifacts
+promo/film/out/
+promo/film/ana/
+promo/film/ref/
+promo/film/_*.jpg
+promo/film/stills_*.png
+promo/film/comp_v1.html

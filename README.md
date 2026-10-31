@@ -66,7 +66,21 @@ AI 讲解：关键步骤与易错点用高亮标出，底部提供常见追问�
 
 ## 宣传片
 
-38 秒，1080p。画面和配乐全部由代码生成，没有用任何剪辑软件，也没有用任何素材库。
+两支片子，画面和配乐全部由代码生成，没有剪辑软件，也没有素材库。同一件事的两种讲法：一支用暗底发光的知识图谱，一支用暖光桌面上的一条红笔迹。
+
+### 一条链 · 17.5 秒
+
+<a href="docs/video/origin-film.mp4"><img src="promo/film/poster.png" width="640" alt="Origin · 一条链" /></a>
+
+全片只有一个主角：一条先修链。它先是一张卡片上的一根红线，然后从桌面上立起来，变成空间里 11 层物理的链，镜头骑在链上往回飞，停在根因；链压平、变成 AI 讲解面板；最后链被抽出来，写成字标。零硬切，一处镜头甩，两处死静。
+
+- 成片：[`docs/video/origin-film.mp4`](docs/video/origin-film.mp4)
+- 源码与制作记录：[`promo/film/`](promo/film/)（`comp.html` 是唯一的合成文件，每个值都是时间的纯函数）
+- 用的是 [onetake](https://github.com/feitangyuan/onetake)（PolyForm Noncommercial 1.0.0）
+
+链上 11 个节点不是画的：`promo/build_graph.py` 在真实先修图上跑 BFS 求出这条路径，再写进合成的常量表，从「配方法」一路退到「有理数的分类」，年级从九年级退到七年级。每张牌子上的年级、界面卡片里的每个字都是产品里真的有的。
+
+### 星空图谱 · 38 秒
 
 <a href="docs/video/origin-promo.mp4"><img src="animations/origin-promo/poster.png" width="640" alt="Origin 宣传片" /></a>
 
@@ -104,8 +118,11 @@ origin/
 ├── animations/origin-promo/   # 单文件 Canvas 宣传动画（可直接浏览器打开）
 ├── docs/
 │   ├── screenshots/           # README 展示图
-│   └── video/                 # 宣传片成片
-├── promo/                     # 宣传片源码（图谱抽取、动画模板、配乐合成、抓帧）
+│   └── video/                 # 两支片子的成片
+├── promo/                     # 宣传片源码
+│   ├── build_graph.py         # 真实先修图 → graph3d.json（BFS 求根因链）
+│   ├── anim/                  # 38 秒那支：Canvas 模板、配乐合成、抓帧
+│   └── film/                  # 17.5 秒那支：onetake 合成、look、音轨、渲染脚本
 ├── public/
 │   ├── data/                  # 知识图谱与题库（构建时按学科拆分）
 │   ├── _headers               # Pages 缓存头
